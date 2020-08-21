@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: My Projects
+title: Unravelling Ideas
 email: francocaspe@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Franco Caspe"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Student and Traveller. Musician and Maker. Analog Photographer. Doing what I enjoy."
   links:
     - label: "Website"
 #      icon: "fas fa-fw fa-link"
@@ -72,21 +72,24 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/fcaspe"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://instagram.com/francocaspe"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/francocaspe"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/fcaspe"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://instagram.com/francocaspe"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/francocaspe"
 
 defaults:
   # _posts
