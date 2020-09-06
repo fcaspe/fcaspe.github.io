@@ -16,21 +16,18 @@ Below you can see a list of works I have done involving audio, deep learning, el
 
 ## dx7pytorch
 *Musical instrument dataset synthesized on-the-fly.*
-<figure>
 <a href="https://github.com/fcaspe/dx7pytorch">
-    <img src="/assets/images/dx7pytorch.png"/></a>
-</figure>
+    <img src="/assets/images/dx7pytorch.png"/>
+</a>
 
 ## Binary Neural Networks for FPGAs
 *Extremely Fast - Extremely quantized.*
-<figure>
 <a href="/blog/fpga_BNN/">
-    <img src="/assets/images/bnn_fpga.jpg"/></a>
-</figure>
+<img src="/assets/images/bnn_fpga.jpg"/>
+</a>
 
 ## Lo Barato Sale Caro: Intromisión
 *The first album of my Funk Trio.*
-<figure>
 <a href="https://lobaratosalecaro.bandcamp.com/releases">
-    <img src="/assets/images/lbsc.jpg"/></a>
-</figure>
+<img src="/assets/images/lbsc.jpg"/>
+</a>
