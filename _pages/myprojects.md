@@ -35,4 +35,11 @@ A CNN designed to regress an FM synthesizer configuration from audio samples. Ex
 melopak generates audio samples of specific lenght and sample frequency using MIDI and a Synthesizer.
 <br/><b><a href="https://github.com/fcaspe/melopak">GitHub Link</a></b>
 
-## Numpy vae with automatic gradient
+## VAE with automatic gradient
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cs/interpolated_set_2.png){: .align-left}
+Approximating a distribution using automatic gradient and a fully-connected neural network.
+{: .text-justify}
+<b><a href="https://github.com/fcaspe/vaeAutograd">GitHub Link</a></b>
+<br/><b><a href="/assets/pdf/ABM_Assignment3.pdf">Report</a></b>
+

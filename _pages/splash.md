@@ -4,7 +4,7 @@ title: "Franco Caspe"
 layout: splash #Overriding default Layout for main webpage.
 ---
 
-## Franco Santiago Caspe
+## Franco Caspe
 
 <div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
 	<img style="padding-right:30px" src="/assets/images/fran.jpg" width="460px/">
@@ -24,13 +24,13 @@ layout: splash #Overriding default Layout for main webpage.
 
 <div markdown="1">
 <p align="justify">
-As a computer-vision student, I am excited about the possibilities of <code>Cross-Domain</code> solutions developed between image processing and sound and music analysis.
+As a Computer Vision student, I am excited about the possibilities of <code>Cross-Domain</code> solutions developed for image processing and sound and music analysis.
 <br/>
 <b>I am interested in conducting research in the intersection of Audio & Music and Deep-Learning.</b>
 </p>
 
 
-## My Projects
+## Projects
 
 <div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
     <a href="/myprojects/#deep-learning">
