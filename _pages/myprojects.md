@@ -2,7 +2,7 @@
 permalink: /myprojects/
 title: "Computer Science Projects"
 ---
-In this webpage I intend to showcase my most relevant personal projects, in the topics of electronics, deep-learning, signal proessing and real-time systems.
+My most relevant personal projects, in the topics of electronics, deep-learning, signal proessing and real-time systems.
 {: .text-justify}
 
 # Electronics

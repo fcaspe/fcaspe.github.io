@@ -36,3 +36,4 @@ Thesis written in Spanish. Published in UTN's repository.
 
 - <i> Baking a custom BNN for the Zybo-Z7.</i> Instructions for implementing Xilinx's Binary Neural Network streaming architecture with the smallest FPGA in the market.
 <a href="https://www.hackster.io/franco-caspe/bnn-pynq-baking-a-custom-bnn-for-the-zybo-z7-f0bbe3" target="_blank">Link</a>
+{: .text-justify}

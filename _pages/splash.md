@@ -4,7 +4,7 @@ title: "Franco Caspe"
 layout: splash #Overriding default Layout for main webpage.
 ---
 
-## Hello, my name is Franco Caspe.
+## Franco Santiago Caspe
 
 <div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
 	<img style="padding-right:30px" src="/assets/images/fran.jpg" width="460px/">
@@ -16,7 +16,7 @@ layout: splash #Overriding default Layout for main webpage.
     Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> in Universidad Tecnológica Nacional, while working in R&D on <code>Defense and Communications</code>.
     During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.</p>
     <p align="justify"> 
-    During 2018-2019 I worked in Karunya Univerity (India) as a Research Intern on <code>RF Metamaterial Applications</code>,
+    During 2018-2019, I worked in Karunya University (India) as a Research Intern on <code>RF Metamaterial Applications</code>
     and in Italy developing a synthesis plattform for a <code>Tonewheel Organ Synthesizer</code>.
     </p>
 
@@ -24,7 +24,7 @@ layout: splash #Overriding default Layout for main webpage.
 
 <div markdown="1">
 <p align="justify">
-As a computer-vision student, I am excited about the possibilities of <code>Cross-Domain</code> solutions developed for image processing and appliable to sound and music.
+As a computer-vision student, I am excited about the possibilities of <code>Cross-Domain</code> solutions developed between image processing and sound and music analysis.
 <br/>
 <b>I am interested in conducting research in the intersection of Audio & Music and Deep-Learning.</b>
 </p>
