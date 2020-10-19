@@ -6,4 +6,4 @@ header:
 ---
 
 
-{% include video id="XsxDH4HcOWA" provider="youtube" %}
+## <a href="/photography/polaroid_600SE/"> India: Taking Polaroids with my favorite camera</a>
