@@ -1,23 +1,16 @@
 ---
 permalink: /myprojects/
-title: "My Projects"
+title: "Computer Science Projects"
 ---
-Welcome! Thank you for stopping by. In this webpage I will showcase my projects and write posts about my work. This site is under construction, so it still looks incomplete. 
+In this webpage I intend to showcase my most relevant personal projects, in the topics of electronics, deep-learning, signal proessing and real-time systems.
 {: .text-justify}
 
-Below you can see a list of works I have done involving audio, deep learning, electronics and music. To know more about each one, please click on the respective banner.
-{: .text-justify}
+# Electronics
 
 ## bFreeOrgan2
 *Open Source Additive Synthesizer for Cortex M4.*
 <a href="https://github.com/fcaspe/bfreeOrgan2">
     <img src="/assets/images/bfreeorgan2.png"/>
-</a>
-
-## dx7pytorch
-*Musical instrument dataset synthesized on-the-fly.*
-<a href="https://github.com/fcaspe/dx7pytorch">
-    <img src="/assets/images/dx7pytorch.png"/>
 </a>
 
 ## Binary Neural Networks for FPGAs
@@ -26,8 +19,20 @@ Below you can see a list of works I have done involving audio, deep learning, el
 <img src="/assets/images/bnn_fpga.jpg"/>
 </a>
 
-## Lo Barato Sale Caro: Intromisión
-*The first album of my Funk Trio.*
-<a href="https://lobaratosalecaro.bandcamp.com/releases">
-<img src="/assets/images/lbsc.jpg"/>
+# Deep Learning
+
+## DXNet
+A CNN designed to regress an FM synthesizer configuration from audio samples. Extracts features from a 2s samples and models Yamaha DX7 patches.
+{: .text-justify}
+<br/><b><a href="https://github.com/fcaspe/dxnet">GitHub Link</a></b>
+
+## dx7pytorch
+*Musical instrument dataset synthesized on-the-fly.*
+<a href="https://github.com/fcaspe/dx7pytorch">
+    <img src="/assets/images/dx7pytorch.png"/>
 </a>
+## melopak
+melopak generates audio samples of specific lenght and sample frequency using MIDI and a Synthesizer.
+<br/><b><a href="https://github.com/fcaspe/melopak">GitHub Link</a></b>
+
+## Numpy vae with automatic gradient

@@ -13,7 +13,7 @@ layout: splash #Overriding default Layout for main webpage.
     Currently following an international Joint M.Sc. Degree in Image Processing and Computer Vision focusing on <code>Real-Time</code> applications.
     </p>
     <p align="justify"> 
-    Previously I studied in Argentina, where I received my diploma in <code>Electronic Engineering</code> in Universidad Tecnológica Nacional, while working in R&D on <code>Defense and Communications</code>.
+    Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> in Universidad Tecnológica Nacional, while working in R&D on <code>Defense and Communications</code>.
     During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.</p>
     <p align="justify"> 
     During 2018-2019 I worked in Karunya Univerity (India) as a Research Intern on <code>RF Metamaterial Applications</code>,
@@ -33,7 +33,7 @@ As a computer-vision student, I am excited about the possibilities of <code>Cros
 ## My Projects
 
 <div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
-    <a href="/deeplearning/">
+    <a href="/myprojects/#deep-learning">
     <img style="padding-right:30px" src="/assets/images/banners/dl_t.jpg" width="600px/">
     </a>
     <a href="/music/">
@@ -45,7 +45,7 @@ As a computer-vision student, I am excited about the possibilities of <code>Cros
 	<a href="/photography">
     <img style="padding-right:30px" src="/assets/images/banners/photography_t.jpg" width="600px/">
     </a>
-    <a href="/electronics/">
+    <a href="/myprojects/#electronics">
     <img style="padding-right:30px" src="/assets/images/banners/electronics_t.jpg" width="600px/">	
     </a>
 </div>
