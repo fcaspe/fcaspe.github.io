@@ -5,7 +5,7 @@ title: "Publications"
 
 ## Peer Reviewed Articles
 
-- Janapala, Doondi Kumar, Caspe, Franco S., Moses, Nesasudha. Metasurface based pattern reconfigurable antenna for 2.45 GHz ISM band applications.
+- Janapala, Doondi Kumar, Caspe, Franco S., Moses, Nesasudha. <i>Metasurface based pattern reconfigurable antenna for 2.45 GHz ISM band applications</i>.
 International Journal of RF and Microwave Computer-Aided Engineering. <a href="https://doi.org/10.1002/mmce.22007">DOI</a>
 {: .text-justify}
 

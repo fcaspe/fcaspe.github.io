@@ -13,10 +13,10 @@ layout: splash #Overriding default Layout for main webpage.
     Currently following an international Joint M.Sc. Degree in Image Processing and Computer Vision focusing on <code>Real-Time</code> applications.
     </p>
     <p align="justify"> 
-    Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> in Universidad Tecnológica Nacional, while working in R&D on <code>Defense and Communications</code>.
+    Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>.
     During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.</p>
     <p align="justify"> 
-    During 2018-2019, I worked in Karunya University (India) as a Research Intern on <code>RF Metamaterial Applications</code>
+    During 2018-2019, I worked in India as a Research Intern on <code>RF Metamaterial Applications</code>
     and in Italy developing a synthesis plattform for a <code>Tonewheel Organ Synthesizer</code>.
     </p>
 
@@ -24,7 +24,7 @@ layout: splash #Overriding default Layout for main webpage.
 
 <div markdown="1">
 <p align="justify">
-As a Computer Vision student, I am excited about the possibilities of <code>Cross-Domain</code> solutions developed for image processing and sound and music analysis.
+As a Computer Vision student, I am excited about the possibilities of <code>Cross-Modal</code> applications for image and sound processing and understanding.
 <br/>
 <b>I am interested in conducting research in the intersection of Audio & Music and Deep-Learning.</b>
 </p>

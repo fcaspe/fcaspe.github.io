@@ -13,22 +13,21 @@ I firstly started playing electric guitar at 15, and through the years I had sev
 
 Over the years I played in my native town, Bahía Blanca, I collaborated with several bands playing different styles; from rock and reggae to bossa nova.
 {: .text-justify}
-In this page I intend to showcase some of the work of I done with some bands I played with. There are videos and studio recordings.
-{: .text-justify}
 
 <b>To see my Computer Science projects related to Music, please visit my <a href="/myprojects/">CS Projects</a> section.</b>
 {: .text-justify}
 
 ## Lo Barato Sale Caro
 
-Lo Barato Sale Caro was my primary music project. A flexible funk power-trio of friends that generally incorporated guest musics in the gigs, I had the best of the times playing with them.
-While being the main vocalist and composer, I played the guitar or the synthesizer depending of the song. 
+Lo Barato Sale Caro was my primary music project. A flexible funk power-trio of friends that generally incorporated guest musics in the gigs,
+I had the best of the times playing with them. While being the main vocalist and composer, I played the guitar or the synthesizer depending of the song. 
 {: .text-justify}
 The flexibility of the band allowed me to explore different genres within it, such as
 blues, funk, Classic R&B and West Coast. In 2017 we issued our first and only EP comprising five original songs.
 {: .text-justify}
 
-### EP: Intromisión
+{% include video id="x-Zkgu6Rqc4" provider="youtube" %}
+
 <a href="https://lobaratosalecaro.bandcamp.com/releases">
 <img src="/assets/images/lbsc.jpg"/>
 </a>
