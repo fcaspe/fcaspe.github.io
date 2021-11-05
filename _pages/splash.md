@@ -9,10 +9,12 @@ layout: splash #Overriding default Layout for main webpage.
 <div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
 	<img style="padding-right:30px" src="/assets/images/fran.jpg" width="460px/">
 	<div style="min-width:30px; max-width: 770px;flex-shrink:1">
-	<p align="justify"><b>I am a master student in Computer Vision, a musician, engineer and hobbyist analog photographer.</b>
-    Currently following an international Joint M.Sc. Degree in Image Processing and Computer Vision focusing on <code>Real-Time</code> applications.
+	<p align="justify"><b>I am a PhD student at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, maker, and photographer using analog processes.</b>
     </p>
     <p align="justify"> 
+    I have an International M.Sc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>, my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>.
+    </p>
+    <p align="justify">
     Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>.
     During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.</p>
     <p align="justify"> 
@@ -23,10 +25,10 @@ layout: splash #Overriding default Layout for main webpage.
 </div>
 
 <div markdown="1">
+
 <p align="justify">
-As a Computer Vision student, I am excited about the possibilities of <code>Cross-Modal</code> applications for image and sound processing and understanding.
+Main interests: <code>Neural Synthesis</code>,<code>Instrument Agumentation</code>, and <code>Sound Matching</code>.
 <br/>
-<b>I am interested in conducting research in the intersection of Audio & Music and Deep-Learning.</b>
 </p>
 
 
