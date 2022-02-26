@@ -7,7 +7,7 @@ Electronics, deep-learning, signal proessing and real-time systems.
 
 
 ## DDSP in VCVRack
-*A Neural Synthesisizer in your virtual Eurorack!*
+*A Neural Synthesizer for your virtual Eurorack!*
 <a href="https://github.com/tonetechnician/neural-vcv-synths">
     <img src="/assets/images/ddsp_vcvrack.png"/>
 </a>
