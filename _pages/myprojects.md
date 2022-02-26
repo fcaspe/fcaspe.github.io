@@ -2,10 +2,15 @@
 permalink: /myprojects/
 title: "Computer Science Projects"
 ---
-My most relevant personal projects, in the topics of electronics, deep-learning, signal proessing and real-time systems.
+Electronics, deep-learning, signal proessing and real-time systems.
 {: .text-justify}
 
-# Electronics
+
+## DDSP in VCVRack
+*A Neural Synthesisizer in your virtual Eurorack!*
+<a href="https://github.com/tonetechnician/neural-vcv-synths">
+    <img src="/assets/images/ddsp_vcvrack.png"/>
+</a>
 
 ## bFreeOrgan2
 *Open Source Additive Synthesizer for Cortex M4.*
@@ -13,13 +18,17 @@ My most relevant personal projects, in the topics of electronics, deep-learning,
     <img src="/assets/images/bfreeorgan2.png"/>
 </a>
 
+## Efficient DNN Serving
+*Master's Thesis: Inference efficiency with FPGAs*
+<a href="/assets/pubs/Efficient_DNN_Serving.pdf">
+    <img src="/assets/images/efficient_dnn_serving.png"/>
+</a>
+
 ## Binary Neural Networks for FPGAs
 *Extremely Fast - Extremely quantized.*
 <a href="/deep%20learning/fpga_BNN/">
 <img src="/assets/images/bnn_fpga.jpg"/>
 </a>
-
-# Deep Learning
 
 ## dx7pytorch
 *Musical instrument dataset synthesized on-the-fly.*
