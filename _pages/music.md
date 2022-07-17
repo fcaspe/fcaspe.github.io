@@ -1,21 +1,7 @@
 ---
 permalink: /music/
 title: "Music"
-header:
-  image: /assets/images/music/lbsc_band.jpg
-  caption: Lo Barato Sale Caro. - Lourdes Lopez
 ---
-
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/music/guitar.jpg){: .align-left}
-Music is one of my passions, and a conduit for self-discovery and expression.
-I firstly started playing electric guitar at 15, and through the years I had several music projects and bands playing keyboards, guitar, and singing.
-{: .text-justify}
-
-Over the years I played in my native town, Bahía Blanca, I collaborated with several bands playing different styles; from rock and reggae to bossa nova.
-{: .text-justify}
-
-<b>To see my Computer Science projects related to Music, please visit my <a href="/myprojects/">CS Projects</a> section.</b>
-{: .text-justify}
 
 ## Lo Barato Sale Caro
 

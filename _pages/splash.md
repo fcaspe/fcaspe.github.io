@@ -4,8 +4,6 @@ title: "Franco Caspe"
 layout: splash #Overriding default Layout for main webpage.
 ---
 
-## Franco Caspe
-
 <div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
 	<img style="padding-right:30px" src="/assets/images/fran.jpg" width="460px/">
 	<div style="min-width:30px; max-width: 770px;flex-shrink:1">

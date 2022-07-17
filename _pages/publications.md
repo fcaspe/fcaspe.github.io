@@ -1,13 +1,10 @@
 ---
 permalink: /publications/
 title: "Publications"
+layout: splash
 ---
 
-## Erasmus Mundus Master's in Computer Vision (IPCV) Thesis
-
-- <a href="/assets/pubs/Efficient_DNN_Serving.pdf" target="_blank"><i>Efficient DNN Serving.</i></a>  
-Defended at Peter Pazmany Catholic University.
-{: .text-justify}
+# My Publications
 
 ## Peer Reviewed Articles
 
@@ -29,6 +26,14 @@ Published in Spanish. Proceedings of CASE 2017. ISBN: 978-987-46297-3-9.
 Published in Spanish. Proceedings of CASE 2016. ISBN: 978-987-45523-8-9.
 Outstanding work mention.
 {: .text-justify}
+
+
+## Erasmus Mundus Master's in Computer Vision (IPCV) Thesis
+
+- <a href="/assets/pubs/Efficient_DNN_Serving.pdf" target="_blank"><i>Efficient DNN Serving.</i></a>  
+Defended at Peter Pazmany Catholic University.
+{: .text-justify}
+
 
 ## Electronic Engineering Thesis
 

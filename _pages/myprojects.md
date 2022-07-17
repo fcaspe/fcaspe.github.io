@@ -1,6 +1,6 @@
 ---
-permalink: /myprojects/
-title: "Computer Science Projects"
+permalink: /projects/
+title: "Projects"
 ---
 Electronics, deep-learning, signal proessing and real-time systems.
 {: .text-justify}

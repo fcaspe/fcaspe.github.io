@@ -1,6 +1,6 @@
 main:
-  - title: "CS Projects"
-    url: /myprojects/ #Let's put here DL and electronics
+  - title: "Projects"
+    url: /projects/ #Let's put here DL and electronics
   - title: "Music"
     url: /music/
   - title: "Photography"
