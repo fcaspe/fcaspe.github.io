@@ -33,7 +33,7 @@ Main interests: <code>Neural Synthesis</code>,<code>Instrument Agumentation</cod
 ## Projects
 
 <div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
-    <a href="/myprojects/#deep-learning">
+    <a href="/projects/#deep-learning">
     <img style="padding-right:30px" src="/assets/images/banners/dl_t.jpg" width="600px/">
     </a>
     <a href="/music/">
@@ -45,7 +45,7 @@ Main interests: <code>Neural Synthesis</code>,<code>Instrument Agumentation</cod
 	<a href="/photography">
     <img style="padding-right:30px" src="/assets/images/banners/photography_t.jpg" width="600px/">
     </a>
-    <a href="/myprojects/#electronics">
+    <a href="/projects/#electronics">
     <img style="padding-right:30px" src="/assets/images/banners/electronics_t.jpg" width="600px/">	
     </a>
 </div>
