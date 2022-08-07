@@ -18,7 +18,7 @@ Your browser does not support the audio element.
 ## Real-time Factor test
 
 Due to lack of space in the paper, we left out a comparison of the real-time factor between
-**DDX7** (*400k parameters*) and our **HpN Baseline** (*4.5 M parameters*). 
+our **DDX7** model (*400k parameters*) and the **HpN Baseline** (*4.5 M parameters*). 
 We execute on Pytorch the inference of audio excerpts of different length 
 (to accomodate for different latencies) for both our model and the baseline on a laptop CPU 
 ( Intel i7-6700HQ ). We render the audio excerpts a hundred times and extract the Real-time Factor 
@@ -46,4 +46,4 @@ These metrics can be improved further for both models if a different framework i
 |**4**              |5.01    (*0.215*)     |15.2	(*1.19*)       |
 
 *Table 1:* Mean and *std* (in italics) of the Real-time Factor for **DDX7** and the **HpN Baseline**.  
-Minimum latencies are shown in bold for both models.
+Minimum feasible latencies are shown in bold for both models.
