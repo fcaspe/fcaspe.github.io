@@ -227,7 +227,250 @@ We leave for future work a thorough exploration of these affordances.
 <font size="4">
 <i>Table 2:</i> By performing simple FM transformations, users can generate new timbre without re-training the model.
 </font>
-## Convergence and room response estimation
+
+## Hyperparameters
+
+In **DDX7**, the maximum modulation index that the oscillators can take (I<sub>max</sub>), and the FM configuration 
+that is selected in the differentiable synthesizer, are important hyperparameters that have an impact on the convergence 
+of the model. We present resynthesis audio excerpts generated during the two evaluations we conducted to assess their agency on the final results.
+
+<i>Maximum Modulation Index Test</i>
+
+We observe that I<sub>max</sub> is an important hyperparameter for DDX7. A wrong selection may hinder model convergence, 
+with results sounding unnatural, and the optimization process failing at the estimation of the room response.
+We leave further analysis of the impact of I<sub>max</sub> and the Learnable Reverb on the training process for future work.
+
+<table>
+  <tr>
+    <th><center>Model</center></th>
+    <th><center>Flute</center></th>
+    <th><center>Violin</center></th>
+    <th><center>Trumpet</center></th>
+  </tr>
+  <tr>
+    <td><b>Original</b></td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/refs/flute_ref.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/refs/violin_ref.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/refs/trumpet_ref.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+
+  <tr>
+    <td><b>HpN Baseline</b></td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/hpn_baseline/flute_hpn.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/hpn_baseline/violin_hpn.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/hpn_baseline/trumpet_hpn.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+
+  </tr>
+
+  <tr>
+    <td><b>DDX7</b> I<sub>max</sub>=2</td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>DDX7</b> I<sub>max</sub>=2&pi;</td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2pi.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2pi.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2pi.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>DDX7</b> I<sub>max</sub>=4&pi;</td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_4pi.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_4pi.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_4pi.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+</table>
+<font size="4">
+<i>Table 3:</i> Excerpts from the test set for different values of I<sub>max</sub> tested.
+</font>
+
+<style>
+#player {
+ width: 100%;
+}​
+</style>
+&nbsp;
+
+<i>Oscillator Ablation Test</i>
+
+For **Violin** and **Flute**, we observe that the models benefit from the extra degrees of freedom present with more oscillators.
+Surprisingly, for **Trumpet**, our model shows the best results with a simple 2 oscillator FM configuration, even outperforming the baseline.
+
+<table>
+  <tr>
+    <th><center>Instrument</center></th>
+    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 oscillator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
+    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 osc. "Y"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
+    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 osc. 4x1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
+    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 osc. 2x2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
+    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 oscillator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
+  </tr>
+  <tr>
+    <td><b>Flute</b> I<sub>max</sub>=2</td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/flute_ddx7_4osc_4y.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    </td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/flute_ddx7_2osc.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+
+  <tr>
+    <td><b>Violin</b> I<sub>max</sub>=2</td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    &nbsp;
+    </td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/violin_ddx7_4osc_1x4.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/violin_ddx7_4osc_2x2.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/violin_ddx7_2osc.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+
+  <tr>
+    <td><b>Trumpet</b> I<sub>max</sub>=2&pi;</td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2pi.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/trumpet_ddx7_4osc_4y.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    </td>
+    <td>
+    <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/trumpet_ddx7_2osc.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+</table>
+<font size="4">
+<i>Table 4:</i> Excerpts from the test set evaluated on the ablated models.
+</font>
 
 ## Real-time Factor test
 
@@ -260,7 +503,7 @@ These metrics can be improved further for both models if a different framework i
 |**4**              |5.01    (*0.215*)     |15.2	(*1.19*)       |
 
 <font size="4">
-<i>Table 3:</i> Mean and <i>std</i> (in italics) of the Real-time Factor for <b>DDX7</b> and the <b>HpN Baseline</b>.
+<i>Table 5:</i> Mean and <i>std</i> (in italics) of the Real-time Factor for <b>DDX7</b> and the <b>HpN Baseline</b>.
 Minimum feasible latencies are shown in bold for both models.
 </font>
 
