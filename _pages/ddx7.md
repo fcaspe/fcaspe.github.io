@@ -293,7 +293,7 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
   </tr>
 
   <tr>
-    <td><b>DDX7</b> I<sub>max</sub>=2</td>
+    <td><b>DDX7</b><br>I<sub>max</sub>=2</td>
     <td>
     <audio controls>
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
@@ -314,7 +314,7 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     </td>
   </tr>
   <tr>
-    <td><b>DDX7</b> I<sub>max</sub>=2&pi;</td>
+    <td><b>DDX7</b><br>I<sub>max</sub>=2&pi;</td>
     <td>
     <audio controls>
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2pi.wav" type="audio/ogg">
@@ -335,7 +335,7 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     </td>
   </tr>
   <tr>
-    <td><b>DDX7</b> I<sub>max</sub>=4&pi;</td>
+    <td><b>DDX7</b><br>I<sub>max</sub>=4&pi;</td>
     <td>
     <audio controls>
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_4pi.wav" type="audio/ogg">
@@ -370,7 +370,8 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
 <i>Oscillator Ablation Test</i>
 
 For **Violin** and **Flute**, we observe that the models benefit from the extra degrees of freedom present with more oscillators.
-Surprisingly, for **Trumpet**, our model shows the best results with a simple 2 oscillator FM configuration, even outperforming the baseline.
+Surprisingly, for **Trumpet**, we achieve the best results with a simple 2 oscillator FM configuration, even outperforming the baseline,
+which suggests that good results can be obtained even with very simple configurations.
 
 <table>
   <tr>
@@ -382,7 +383,7 @@ Surprisingly, for **Trumpet**, our model shows the best results with a simple 2 
     <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 oscillator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
   </tr>
   <tr>
-    <td><b>Flute</b> I<sub>max</sub>=2</td>
+    <td><b>Flute</b><br>I<sub>max</sub>=2</td>
     <td>
     <audio controls id="player">
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
@@ -410,7 +411,7 @@ Surprisingly, for **Trumpet**, our model shows the best results with a simple 2 
   </tr>
 
   <tr>
-    <td><b>Violin</b> I<sub>max</sub>=2</td>
+    <td><b>Violin</b><br>I<sub>max</sub>=2</td>
     <td>
     <audio controls id="player">
     <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2.wav" type="audio/ogg">
@@ -441,7 +442,7 @@ Surprisingly, for **Trumpet**, our model shows the best results with a simple 2 
   </tr>
 
   <tr>
-    <td><b>Trumpet</b> I<sub>max</sub>=2&pi;</td>
+    <td><b>Trumpet</b><br>I<sub>max</sub>=2&pi;</td>
     <td>
     <audio controls id="player">
     <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2pi.wav" type="audio/ogg">
