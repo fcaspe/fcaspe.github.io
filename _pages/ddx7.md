@@ -9,7 +9,7 @@ layout: splash
 
 <div>
 <center>
-<h1>DDX7: Differentiable FM Synthesis of Musical Instrument Sounds</h1>
+<font size="+3"><b>DDX7: Differentiable FM Synthesis of Musical Instrument Sounds</b></font><br>
 <font size="+2"><b>Franco Caspe - Andrew McPherson - Mark Sandler</b></font><br>
 <font size="4">Queen Mary University of London - Centre for Digital Music</font><br>
 <font size="+1"><b>Paper - Code</b></font><br>
@@ -43,13 +43,16 @@ audio quality against selected benchmarks.
 <img src="../../assets/ddx7/architecture.png">
 </center>
 <font size="4">
-The DDX7 architecture employs a TCN decoder conditioned on a sequence of pitch and loudness frames to drive the envelopes
-of a few-oscillator differentiable FM synthesizer, effectively mapping continuous controls of pitched musical instruments 
-to a well-known synthesis architecture.
+<i>Figure 1: </i> The DDX7 architecture employs a TCN decoder conditioned on a sequence of pitch and loudness frames to drive the envelopes 
+of a few-oscillator differentiable FM synthesizer that features a fixed FM configuration with fixed frequency ratios, 
+effectively mapping continuous controls of pitched musical instruments to a well-known synthesis architecture.
 </font>
-## FM Synthesis and Continuous Control
 
-We show resynthesis results on unseen data for the best scored **DDX7** models according to the Frechet Audio Distance.
+## Continuous Control of an FM Synthesizer
+
+We show resynthesis results on unseen data for the best scored <b>DDX7</b> models according to the Frechet Audio Distance<a href="#r1">[1]</a>.
+We compare the results with the <b>Harmonic plus Noise (HpN)</b> baseline model (a Pytorch implementation of the DDSP Decoder<a href="#r2">[2]</a>), 
+and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset.
 
 <table>
   <tr>
@@ -83,30 +86,6 @@ We show resynthesis results on unseen data for the best scored **DDX7** models a
     </td>
   </tr>
 
-  <tr>
-    <td><b>Trumpet</b><br>&nbsp;</td>
-    <td>
-    <audio controls>
-    <source src="../../assets/ddx7/ref_trumpet.wav" type="audio/ogg">
-    Your browser does not support the audio element.
-    </audio>
-    <br>&nbsp;
-    </td>
-    <td>
-    <audio controls>
-    <source src="../../assets/ddx7/hpn_trumpet.wav" type="audio/ogg">
-    Your browser does not support the audio element.
-    </audio>
-    <br>&nbsp;
-    </td>
-    <td>
-    <audio controls>
-    <source src="../../assets/ddx7/trumpet_ddx7_2osc.wav" type="audio/ogg">
-    Your browser does not support the audio element.
-    </audio>
-    <br>2 Oscillators. I<sub>max</sub> = 2&pi;
-    </td>
-  </tr>
 
   <tr>
     <td><b>Flute</b><br>&nbsp;</td>
@@ -132,15 +111,123 @@ We show resynthesis results on unseen data for the best scored **DDX7** models a
     <br>6 Oscillators. I<sub>max</sub> = 2
     </td>
   </tr>
+
+  <tr>
+    <td><b>Trumpet</b><br>&nbsp;</td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/ref_trumpet.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    <br>&nbsp;
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/hpn_trumpet.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    <br>&nbsp;
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/trumpet_ddx7_2osc.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    <br>2 Oscillators. I<sub>max</sub> = 2&pi;
+    </td>
+  </tr>
+
 </table>
 
 <font size="4">
 <i>Table 1:</i> We show that for our resynthesis tasks, even with few oscillators, Differentiable FM can achieve
 a performance comparable to a more complex spectral modeling synthesis architecture.
 </font>
+
+## Intervenable Synthesis Process
+
+FM is a well-known synthesis architecture that features a compact set of sound design parameters.
+Once <b>DDX7</b> is trained, such parameters can be modified on-the-fly to alter the model's output.
+Here we present a set of simple and temporally static transformations as a proof of concept.
+We leave for future work a thorough exploration of these affordances.
+<table>
+  <tr>
+    <th><center>Model</center></th>
+    <th><center>Intervention</center></th>
+    <th><center>DDX7 Resynthesis</center></th>
+    <th><center>Intervened Result</center></th>
+  </tr>
+  <tr>
+    <td>
+    <b>Violin</b><br>
+    6 oscillators. I<sub>max</sub> = 2<br>
+    </td>
+    <td>
+    <center>Tripled all modulator <br> ratios of value 1.</center>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/violin_ddx7_imax_2.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/mod_6osc_imax2_op2_and_op4_fr3.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+    <b>Flute</b><br>
+    6 oscillators. I<sub>max</sub> = 2<br>
+    </td>
+    <td>
+    <center>Doubled modulators' <br>envelope amplitudes.</center>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/mod_6osc_flute_double_mod_env.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+    <b>Trumpet</b><br>
+    2 oscillators. I<sub>max</sub> = 2&pi;<br>
+    </td>
+    <td>
+    <center>Modulator ratio <br>changed to &radic;2.</center>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/trumpet_ddx7_2osc.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+    <td>
+    <audio controls>
+    <source src="../../assets/ddx7/mod_2osc_frop2_1.41_trmpt.wav" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    </td>
+  </tr>
+
+</table>
+<font size="4">
+<i>Table 2:</i> By performing simple FM transformations, users can generate new timbre without re-training the model.
+</font>
 ## Convergence and room response estimation
-
-
 
 ## Real-time Factor test
 
@@ -173,6 +260,24 @@ These metrics can be improved further for both models if a different framework i
 |**4**              |5.01    (*0.215*)     |15.2	(*1.19*)       |
 
 <font size="4">
-<i>Table 2:</i> Mean and <i>std</i> (in italics) of the Real-time Factor for <b>DDX7</b> and the <b>HpN Baseline</b>.
+<i>Table 3:</i> Mean and <i>std</i> (in italics) of the Real-time Factor for <b>DDX7</b> and the <b>HpN Baseline</b>.
 Minimum feasible latencies are shown in bold for both models.
 </font>
+
+
+### References
+
+<a name="r1"></a>
+1. K. Kilgour, M. Zuluaga, D. Roblek, and M. Sharifi,
+“Fréchet Audio Distance: A Reference-Free Metric for
+Evaluating Music Enhancement Algorithms,” in *Interspeech 2019*. ISCA, Sep. 2019, pp. 2350–2354.
+<a name="r2"></a>
+2. B. Li, X. Liu, K. Dinesh, Z. Duan, and G. Sharma,
+“Creating a Multitrack Classical Music Performance
+Dataset for Multimodal Music Analysis: Challenges,
+Insights, and Applications,” *IEEE Transactions on Multimedia*,
+vol. 21, no. 2, pp. 522–535, Feb. 2019.
+<a name="r3"></a>
+3. J. Engel, L. H. Hantrakul, C. Gu, and A. Roberts,
+“DDSP: Differentiable Digital Signal Processing,” in
+*8th International Conference on Learning Representations*, Addis Ababa, Ethiopia, 2020.
