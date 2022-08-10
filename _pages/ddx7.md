@@ -5,19 +5,6 @@ author_profile: false
 layout: splash
 ---
 
-# Test audio file!
-
-<audio controls>
-<source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/mpeg">
-<source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-
-<audio controls>
-<source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio>
-
 &nbsp;
 
 <div>
@@ -78,6 +65,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     <td><b>Violin</b><br>&nbsp;</td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/ref_violin.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/ref_violin.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -85,6 +73,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/hpn_violin.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/hpn_violin.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -92,6 +81,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/violin_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/violin_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -104,6 +94,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     <td><b>Flute</b><br>&nbsp;</td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/ref_flute.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/ref_flute.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -111,6 +102,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/hpn_flute.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/hpn_flute.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -118,6 +110,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/flute_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -129,6 +122,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     <td><b>Trumpet</b><br>&nbsp;</td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/ref_trumpet.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/ref_trumpet.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -136,6 +130,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/hpn_trumpet.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/hpn_trumpet.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -143,6 +138,7 @@ and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/trumpet_ddx7_2osc.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/trumpet_ddx7_2osc.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -180,12 +176,14 @@ We leave for future work a thorough exploration of these affordances.
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/violin_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/violin_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/mod_6osc_imax2_op2_and_op4_fr3.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/mod_6osc_imax2_op2_and_op4_fr3.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -202,12 +200,14 @@ We leave for future work a thorough exploration of these affordances.
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/flute_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/mod_6osc_flute_double_mod_env.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/mod_6osc_flute_double_mod_env.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -224,12 +224,14 @@ We leave for future work a thorough exploration of these affordances.
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/trumpet_ddx7_2osc.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/trumpet_ddx7_2osc.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/mod_2osc_frop2_1.41_trmpt.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/mod_2osc_frop2_1.41_trmpt.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -264,18 +266,21 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     <td><b>Original</b></td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/refs/flute_ref.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/refs/flute_ref.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/refs/violin_ref.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/refs/violin_ref.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/refs/trumpet_ref.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/refs/trumpet_ref.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -286,18 +291,21 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     <td><b>HpN Baseline</b></td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/hpn_baseline/flute_hpn.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/hpn_baseline/flute_hpn.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/hpn_baseline/violin_hpn.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/hpn_baseline/violin_hpn.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/hpn_baseline/trumpet_hpn.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/hpn_baseline/trumpet_hpn.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -309,18 +317,21 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     <td><b>DDX7</b><br>I<sub>max</sub>=2</td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -330,18 +341,21 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     <td><b>DDX7</b><br>I<sub>max</sub>=2&pi;</td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2pi.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2pi.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2pi.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2pi.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2pi.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2pi.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -351,18 +365,21 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     <td><b>DDX7</b><br>I<sub>max</sub>=4&pi;</td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_4pi.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_4pi.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_4pi.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_4pi.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls>
+    <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_4pi.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_4pi.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -399,12 +416,14 @@ which suggests that good results can be obtained even with very simple configura
     <td><b>Flute</b><br>I<sub>max</sub>=2</td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/flute_ddx7_4osc_4y.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ablation/flute_ddx7_4osc_4y.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -417,6 +436,7 @@ which suggests that good results can be obtained even with very simple configura
     </td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/flute_ddx7_2osc.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ablation/flute_ddx7_2osc.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -427,6 +447,7 @@ which suggests that good results can be obtained even with very simple configura
     <td><b>Violin</b><br>I<sub>max</sub>=2</td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/violin_ddx7_imax_2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -436,18 +457,21 @@ which suggests that good results can be obtained even with very simple configura
     </td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/violin_ddx7_4osc_1x4.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ablation/violin_ddx7_4osc_1x4.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/violin_ddx7_4osc_2x2.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ablation/violin_ddx7_4osc_2x2.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/violin_ddx7_2osc.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ablation/violin_ddx7_2osc.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -458,12 +482,14 @@ which suggests that good results can be obtained even with very simple configura
     <td><b>Trumpet</b><br>I<sub>max</sub>=2&pi;</td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2pi.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ddx7/trumpet_ddx7_imax_2pi.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
     </td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/trumpet_ddx7_4osc_4y.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ablation/trumpet_ddx7_4osc_4y.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
@@ -476,6 +502,7 @@ which suggests that good results can be obtained even with very simple configura
     </td>
     <td>
     <audio controls id="player">
+    <source src="../../assets/ddx7/testset/ablation/trumpet_ddx7_2osc.wav" type="audio/mpeg">
     <source src="../../assets/ddx7/testset/ablation/trumpet_ddx7_2osc.wav" type="audio/ogg">
     Your browser does not support the audio element.
     </audio>
