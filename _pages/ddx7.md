@@ -5,6 +5,13 @@ author_profile: false
 layout: splash
 ---
 
+# Test audio file!
+
+<audio controls>
+<source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/mpeg">
+<source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
 &nbsp;
 
 <div>
