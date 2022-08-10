@@ -392,7 +392,7 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
 
 <style>
 #player {
- width: 100%;
+ width: 200px;
 }​
 </style>
 &nbsp;
@@ -406,11 +406,11 @@ which suggests that good results can be obtained even with very simple configura
 <table>
   <tr>
     <th><center>Instrument</center></th>
-    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 oscillator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
-    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 osc. "Y"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
-    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 osc. 4x1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
-    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 osc. 2x2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
-    <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 oscillator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
+    <th><center>6 oscillators </center></th>
+    <th><center>4 oscillators "Y"</center></th>
+    <th><center>4 oscillators 4x1</center></th>
+    <th><center>4 oscillators 2x2</center></th>
+    <th><center>2 oscillators </center></th>
   </tr>
   <tr>
     <td><b>Flute</b><br>I<sub>max</sub>=2</td>
