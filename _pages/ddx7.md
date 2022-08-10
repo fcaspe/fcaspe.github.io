@@ -40,7 +40,7 @@ audio quality against selected benchmarks.
 
 ## Architecture
 <center>
-<img src="../../assets/ddx7/architecture.png">
+<img src="../../assets/ddx7/architecture.png" style="width:1000px;height:300px;">
 </center>
 <font size="4">
 <i>Figure 1: </i> The DDX7 architecture employs a TCN decoder conditioned on a sequence of pitch and loudness frames to drive the envelopes 
@@ -54,6 +54,7 @@ We show resynthesis results on unseen data for the best scored <b>DDX7</b> model
 We compare the results with the <b>Harmonic plus Noise (HpN)</b> baseline model (a Pytorch implementation of the DDSP Decoder<a href="#r2">[2]</a>), 
 and the original recordings extracted from the URMP<a href="#r3">[3]</a> dataset.
 
+<br>
 <table>
   <tr>
     <th><center>Instrument</center></th>
@@ -249,12 +250,46 @@ In **DDX7**, the maximum modulation index that the oscillators can take (I<sub>m
 that is selected in the differentiable synthesizer, are important hyperparameters that have an impact on the convergence 
 of the model. We present resynthesis audio excerpts generated during the two evaluations we conducted to assess their agency on the final results.
 
+<style>
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<div class="row">
+  <div class="column">
+    <p>
+    6-oscillator configurations
+    <img src="../../assets/ddx7/config.png" style="width:500px;height:290px;">
+    </p>
+  </div>
+  <div class="column">
+    Ablated configurations
+    <img src="../../assets/ddx7/ablated.png" style="width:520px;height:290px;">
+  </div>
+</div>
+
+<center>
+<font size="4">
+<i>Figure 2: </i> FM configurations evaluated for the different instruments tested.
+</font>
+</center>
+
 <i>Maximum Modulation Index Test</i>
 
 We observe that I<sub>max</sub> is an important hyperparameter for DDX7. A wrong selection may hinder model convergence, 
 with results sounding unnatural, and the optimization process failing at the estimation of the room response.
 We leave further analysis of the impact of I<sub>max</sub> and the Learnable Reverb on the training process for future work.
 
+<br>
 <table>
   <tr>
     <th><center>Model</center></th>
@@ -314,7 +349,7 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
   </tr>
 
   <tr>
-    <td><b>DDX7</b><br>I<sub>max</sub>=2</td>
+    <td><b>DDX7</b> 6 osc.<br>I<sub>max</sub>=2</td>
     <td>
     <audio controls>
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2.wav" type="audio/mpeg">
@@ -338,7 +373,7 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     </td>
   </tr>
   <tr>
-    <td><b>DDX7</b><br>I<sub>max</sub>=2&pi;</td>
+    <td><b>DDX7</b> 6 osc.<br>I<sub>max</sub>=2&pi;</td>
     <td>
     <audio controls>
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_2pi.wav" type="audio/mpeg">
@@ -362,7 +397,7 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
     </td>
   </tr>
   <tr>
-    <td><b>DDX7</b><br>I<sub>max</sub>=4&pi;</td>
+    <td><b>DDX7</b> 6 osc.<br>I<sub>max</sub>=4&pi;</td>
     <td>
     <audio controls>
     <source src="../../assets/ddx7/testset/ddx7/flute_ddx7_imax_4pi.wav" type="audio/mpeg">
@@ -400,9 +435,10 @@ We leave further analysis of the impact of I<sub>max</sub> and the Learnable Rev
 <i>Oscillator Ablation Test</i>
 
 For **Violin** and **Flute**, we observe that the models benefit from the extra degrees of freedom present with more oscillators.
-Surprisingly, for **Trumpet**, we achieve the best results with a simple 2 oscillator FM configuration, even outperforming the baseline,
+Surprisingly, for **Trumpet**, we achieve the best results with a simple 2-oscillator FM configuration, even outperforming the baseline,
 which suggests that good results can be obtained even with very simple configurations.
 
+<br>
 <table>
   <tr>
     <th><center>Instrument</center></th>
