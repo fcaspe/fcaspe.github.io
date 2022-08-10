@@ -40,7 +40,7 @@ audio quality against selected benchmarks.
 
 ## Architecture
 <center>
-<img src="../../assets/ddx7/architecture.png" style="width:1000px;height:300px;">
+<img src="../../assets/ddx7/architecture.png" style="width:80%;">
 </center>
 <font size="4">
 <i>Figure 1: </i> The DDX7 architecture employs a TCN decoder conditioned on a sequence of pitch and loudness frames to drive the envelopes 
@@ -268,12 +268,12 @@ of the model. We present resynthesis audio excerpts generated during the two eva
   <div class="column">
     <p>
     6-oscillator configurations
-    <img src="../../assets/ddx7/config.png" style="width:500px;height:290px;">
+    <img src="../../assets/ddx7/config.png" style="width:80%">
     </p>
   </div>
   <div class="column">
     Ablated configurations
-    <img src="../../assets/ddx7/ablated.png" style="width:520px;height:290px;">
+    <img src="../../assets/ddx7/ablated.png" style="width:85%">
   </div>
 </div>
 
