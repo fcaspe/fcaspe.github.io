@@ -25,7 +25,7 @@ layout: splash
 
 <h2>FM Tone Transfer Demo</h2>
 <p>
-Here I present a series of examples generated with the Tone Transfer App. The original audio examples are monophonic excerpts from different sources.
+Here I present a series of examples generated with the Tone Transfer App. The original audio examples are monophonic excerpts from different sources, which are converted using four different models, namely "DX E. Piano", "Strings", "OB8 Brass" and "Marimba!". More models are available in the Colab Notebook.
 </p>
 
 <br>
