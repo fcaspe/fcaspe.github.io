@@ -12,7 +12,9 @@ layout: splash
 <font size="+3"><b>FM Tone Transfer with Learned Envelopes</b></font><br>
 <font size="+2"><b>Franco Caspe - Andrew McPherson - Mark Sandler</b></font><br>
 <font size="4">Queen Mary University of London - Centre for Digital Music</font><br>
-<font size="+1"><b><a href="/assets/pdf/learned_envelopes.pdf" target="_blank">Paper</a> - <a href="https://github.com/fcaspe/fmtransfer" target="_blank">Code</a></b>
+<font size="+1"><b><a href="/assets/pdf/learned_envelopes.pdf" target="_blank">Paper</a> - <a href="https://github.com/fcaspe/fmtransfer" target="_blank">Code</a> - 
+<a href="https://www.dropbox.com/s/pkzpy4t0vkkjik5/FM%20Tone%20Transfer.mp4?dl=0" target="_blank">Demo Video</a>
+</b>
 </font><br>
 </center>
 </div>
@@ -29,5 +31,3 @@ Finally, we implement a VST plugin for real-time live use and discuss possibilit
 </font>
 </p>
 </div>
-
-
