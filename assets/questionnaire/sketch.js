@@ -75,7 +75,7 @@ function showResults(posX,posY)
       text(String((results_array[i])[j]),posX+150+50*j,posY+70*i)
 }
 }
-function resetSlider()
+function resetSliders()
 {
   for (var i=0; i<5; i++) 
     slider_array[i].remove();
@@ -91,6 +91,7 @@ function continueForm()
     results_array[SOUND_NUMBER][i] = slider_array[i].value();
   
   SOUND_NUMBER = SOUND_NUMBER + 1;
+  resetSliders();
   if(SOUND_NUMBER === NUMBER_OF_SOUNDS)
     {
       IS_FINISHED = 1;
@@ -143,7 +144,7 @@ function setup() {
     slider_array[i] = createSliderSet(-100,100,0,1,50+SLIDER_OFFSET*2,180+SLIDER_SPACING*i);
   r_button = createButton('Reset Form');
   r_button.position(50, 620);
-  r_button.mousePressed(resetSlider);
+  r_button.mousePressed(resetSliders);
   c_button = createButton('Next !');
   c_button.position(400, 620);
   c_button.mousePressed(continueForm);
