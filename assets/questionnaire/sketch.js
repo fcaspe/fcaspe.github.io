@@ -41,7 +41,7 @@ function save_csv()
           {
           csvRow += (results_array[j])[i] + ",";
           }
-      csvContent += csvRow + (results_array[j])[NUMBER_OF_QUESTIONS-1] + "\n";
+      csvContent += csvRow + (results_array[NUMBER_OF_QUESTIONS-1])[i] + "\n";
       }
   //console.log(csvContent);
 
