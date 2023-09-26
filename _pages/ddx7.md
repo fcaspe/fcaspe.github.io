@@ -12,7 +12,7 @@ layout: splash
 <font size="+3"><b>DDX7: Differentiable FM Synthesis of Musical Instrument Sounds</b></font><br>
 <font size="+2"><b>Franco Caspe - Andrew McPherson - Mark Sandler</b></font><br>
 <font size="4">Queen Mary University of London - Centre for Digital Music</font><br>
-<font size="+1"><b><a href="http://arxiv.org/abs/2208.06169" target="_blank">Paper</a> - <a href="https://github.com/fcaspe/ddx7" target="_blank">Code</a></b>
+<font size="+1"><b><a href="http://arxiv.org/abs/2208.06169" target="_blank">Paper</a> - <a href="https://github.com/fcaspe/ddx7" target="_blank">Code</a> - <a href="https://www.youtube.com/watch?v=hxlgO3EWVYI" target="_blank">Video</a></b>
 </font><br>
 
 </center>
