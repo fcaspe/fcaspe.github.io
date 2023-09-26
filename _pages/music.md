@@ -1,11 +1,27 @@
 ---
 permalink: /music/
 title: "Music"
+layout: splash
 ---
+
+## Mode Collapse
+
+In Mode Collapse we explored with Xiaowan Yi the use of Deep Learning algorithms 
+for sound generation in live electronic music performances, combining
+different stlyes within a techno narrative.
+
+<i>Pain and pleasure are the different sides of the same coin. Arm-wrestling sensations that crush our mind towards the primal. As said by Marvin Minsky “Too much suffering diminishes us by restricting the complexities that constitute our very selves. It must be the same for pleasure as well.” 
+Artificial brains seem to suffer from similar problems. They can lock into repeating themselves in order to sustain the presence of a reward signal. If we build machines in our likeness, how can we learn to think differently?
+<center>
+<a href="https://drive.google.com/file/d/10bhdxu8KEbWc6AKpZGq_cEj2XIwzOxY5/view?usp=sharing">
+<img src="/assets/images/mcollapse.jpg" width=600/>
+</a> <br>
+<i>Live at Iklectic (London) 2023</i>
+</center>
 
 ## Lo Barato Sale Caro
 
-Lo Barato Sale Caro was my primary music project. A flexible funk power-trio of friends that generally incorporated guest musics in the gigs,
+Back in Argentina, Lo Barato Sale Caro was my primary music project. A flexible funk power-trio of friends that generally incorporated guest musics in the gigs,
 I had the best of the times playing with them. While being the main vocalist and composer, I played the guitar or the synthesizer depending of the song. 
 {: .text-justify}
 The flexibility of the band allowed me to explore different genres within it, such as
@@ -15,7 +31,7 @@ blues, funk, Classic R&B and West Coast. In 2017 we issued our first and only EP
 {% include video id="x-Zkgu6Rqc4" provider="youtube" %}
 
 <a href="https://lobaratosalecaro.bandcamp.com/releases">
-<img src="/assets/images/lbsc.jpg"/>
+<img src="/assets/images/lbsc.jpg" with=600/>
 </a>
 
 
