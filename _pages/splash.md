@@ -5,7 +5,7 @@ layout: splash #Overriding default Layout for main webpage.
 ---
 
 <div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
-	<img style="padding-right:30px" src="/assets/images/fran.jpg" width="460px/">
+	<img style="padding-right:30px" src="/assets/images/40k2.jpeg" width="460px/">
 	<div style="min-width:30px; max-width: 770px;flex-shrink:1">
 	<p align="justify"><b>I am a PhD student at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, maker, and photographer using analog processes.</b>
     </p>
@@ -28,24 +28,3 @@ layout: splash #Overriding default Layout for main webpage.
 Main interests: <code>Neural Synthesis</code>,<code>Instrument Agumentation</code>, and <code>Sound Matching</code>.
 <br/>
 </p>
-
-
-## Projects
-
-<div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
-    <a href="/projects/#deep-learning">
-    <img style="padding-right:30px" src="/assets/images/banners/dl_t.jpg" width="600px/">
-    </a>
-    <a href="/music/">
-    <img style="padding-right:30px" src="/assets/images/banners/music_t.jpg" width="600px/">
-    </a>
-</div>
-<br/>
-<div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
-	<a href="/photography">
-    <img style="padding-right:30px" src="/assets/images/banners/photography_t.jpg" width="600px/">
-    </a>
-    <a href="/projects/#electronics">
-    <img style="padding-right:30px" src="/assets/images/banners/electronics_t.jpg" width="600px/">	
-    </a>
-</div>
