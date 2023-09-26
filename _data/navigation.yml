@@ -9,8 +9,6 @@ main:
 #    url: /posts/
   - title: "Publications"
     url: /publications/
-  - title: "About"
-    url: /
 
 #  - title: "Categories"
 #    url: /categories/
