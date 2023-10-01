@@ -55,10 +55,12 @@ Our approach employs a *generic* excitation model, defined by a step response an
 The training tasks consists of reconstructing the temporal envelope sequence 𝑜𝑙 of different synthesizer patches from the pair of generic excitation signals 𝑎 and 𝑓.
 
 <center>
-<img src="../assets/fmtransfer/epiano_dataset.png">
-&nbsp;Excerpt from an envelope dataset extracted from the E.PIANO 1 patch.
+<img src="../assets/fmtransfer/epiano_dataset.png" style="width:80%;">
 </center>
-
+  
+<center>
+Excerpt from an envelope dataset extracted from the E.PIANO 1 patch.
+</center>
 ## Audio examples
 
 We show that our model can reconstruct the oscillator envelopes and synthesize high fidelity audio with them.
