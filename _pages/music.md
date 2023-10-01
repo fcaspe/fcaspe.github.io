@@ -28,7 +28,7 @@ The flexibility of the band allowed me to explore different genres within it, su
 blues, funk, Classic R&B and West Coast. In 2017 we issued our first and only EP comprising five original songs.
 {: .text-justify}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x-Zkgu6Rqc4?si=WZj_1FuQqo9umC_Z" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+{% include video id="x-Zkgu6Rqc4" provider="youtube" %}
 
 <b>Lo Barato Sale Caro - EP 2017</b>  
 <a href="https://lobaratosalecaro.bandcamp.com/releases">
