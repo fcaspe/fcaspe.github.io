@@ -1,10 +1,10 @@
 let NUMBER_OF_SOUNDS = 5 //How many sounds are we going to test
-let NUMBER_OF_QUESTIONS = 5; //How many questions per sound
+let NUMBER_OF_QUESTIONS = 6; //How many questions per sound
 let SOUND_NUMBER = 0; //Current sound number
 let IS_FINISHED = 0; //Flag that marks when we are done with the test
 
 results_array = new Array(NUMBER_OF_SOUNDS);
-slider_array = new Array(NUMBER_OF_SOUNDS);
+slider_array = new Array(NUMBER_OF_QUESTIONS);
 let SLIDER_SPACING = 100;
 let SLIDER_OFFSET = 20;
 
@@ -12,12 +12,18 @@ let c_button;
 let r_button;
 
 
-const q_entries = ["1. Ease of Play","2. Responsiveness","3. Predictability","4. Nuance","5. Closeness"];
+const q_entries = ["1. Ease of Play",
+"2. Responsiveness",
+"3. Predictability",
+"4. Nuance",
+"5. Closeness",
+"6. Preference"];
 const q_entries_long = ["1. Ease of Play",
 "2. Responsiveness",
 "3. Predictability",
 "4. Nuance",
-"5. Closeness to the Guitar."];
+"5. Closeness to the Guitar.",
+"6. Your Preference."];
 
 
 function save_csv()
@@ -34,14 +40,14 @@ function save_csv()
 
   //csvContent += \n';
   //Write values (last entry goes without a comma)
-  for(var i = 0; i < NUMBER_OF_SOUNDS;i++)
+  for(var q = 0; q < NUMBER_OF_QUESTIONS;q++)
       {
-      let csvRow = q_entries[i] + ',';
-      for(var j = 0; j < NUMBER_OF_QUESTIONS-1; j++)
+      let csvRow = q_entries[q] + ',';
+      for(var s = 0; s < NUMBER_OF_SOUNDS-1; s++)
           {
-          csvRow += (results_array[j])[i] + ",";
+          csvRow += (results_array[s])[q] + ",";
           }
-      csvContent += csvRow + (results_array[NUMBER_OF_QUESTIONS-1])[i] + "\n";
+      csvContent += csvRow + (results_array[NUMBER_OF_SOUNDS-1])[q] + "\n";
       }
   //console.log(csvContent);
 
@@ -77,9 +83,9 @@ function showResults(posX,posY)
 }
 function resetSliders()
 {
-  for (var i=0; i<5; i++) 
+  for (var i=0; i<NUMBER_OF_QUESTIONS; i++) 
     slider_array[i].remove();
-  for (var i=0; i<5; i++) 
+  for (var i=0; i<NUMBER_OF_QUESTIONS; i++) 
     slider_array[i] = createSliderSet(-100,100,0,1,50+SLIDER_OFFSET*2,180+SLIDER_SPACING*i);
 }
 
@@ -112,9 +118,9 @@ function setupEntry(posX,posY,message)
   text(message ,posX,posY);
   textSize(15);
   posX = posX+SLIDER_OFFSET;
-  text('Mode 1' ,posX,posY+20); text('|' ,posX+32,posY+35);
+  text('Mode A' ,posX,posY+20); text('|' ,posX+32,posY+35);
   text('Indifferent' ,posX+150,posY+20); text('|' ,posX+180,posY+35);
-  text('Mode 2' ,posX+300,posY+20); text('|' ,posX+329,posY+35);
+  text('Mode B' ,posX+300,posY+20); text('|' ,posX+329,posY+35);
 
 }
 function setupText(posX,posY,soundnumber)
@@ -140,13 +146,13 @@ function createSliderSet(minval,maxval,setval,step,posX,posY){
 
 function setup() {
   createCanvas(1000, 1000);
-  for (var i=0; i<5; i++) 
+  for (var i=0; i<NUMBER_OF_QUESTIONS; i++) 
     slider_array[i] = createSliderSet(-100,100,0,1,50+SLIDER_OFFSET*2,180+SLIDER_SPACING*i);
   r_button = createButton('Reset Form');
-  r_button.position(50, 620);
+  r_button.position(50, 120+SLIDER_SPACING*NUMBER_OF_QUESTIONS);
   r_button.mousePressed(resetSliders);
   c_button = createButton('Next !');
-  c_button.position(400, 620);
+  c_button.position(400, 120+SLIDER_SPACING*NUMBER_OF_QUESTIONS);
   c_button.mousePressed(continueForm);
 }
 
