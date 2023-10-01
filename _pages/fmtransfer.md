@@ -56,7 +56,7 @@ The training tasks consists of reconstructing the temporal envelope sequence ùë
 
 <center>
 <img src="../assets/fmtransfer/epiano_dataset.png">
-Excerpt from an envelope dataset extracted from the E.PIANO 1 patch.
+&nbsp;Excerpt from an envelope dataset extracted from the E.PIANO 1 patch.
 </center>
 
 ## Audio examples
