@@ -28,6 +28,9 @@ const q_entries_long = ["1. Ease of Play",
 
 function save_csv()
 {
+  // Clear flag after downloading results
+  storeItem('finished',0);
+  storeItem('sound_number',null);
   let csvContent = "";
   //Write column names
   csvContent += String('Entry') + ",";
@@ -89,6 +92,13 @@ function resetSliders()
     slider_array[i] = createSliderSet(-100,100,0,1,50+SLIDER_OFFSET*2,180+SLIDER_SPACING*i);
 }
 
+function newForm()
+{
+  SOUND_NUMBER = 0;
+  storeItem('sound_number',SOUND_NUMBER);
+  redraw();
+}
+
 function continueForm()
 {
   //Store results
@@ -97,6 +107,7 @@ function continueForm()
     results_array[SOUND_NUMBER][i] = slider_array[i].value();
   
   SOUND_NUMBER = SOUND_NUMBER + 1;
+
   resetSliders();
   if(SOUND_NUMBER === NUMBER_OF_SOUNDS)
     {
@@ -109,6 +120,10 @@ function continueForm()
       r_button.position(50, 120);
       r_button.mousePressed(save_csv);
     }
+    //Store items for persistent recall
+    storeItem('sound_number',SOUND_NUMBER);
+    storeItem('results',results_array);
+    storeItem('finished',IS_FINISHED);
 }
 
 function setupEntry(posX,posY,message)
@@ -145,7 +160,25 @@ function createSliderSet(minval,maxval,setval,step,posX,posY){
 }
 
 function setup() {
+  // Fetch items from local storage if any
+  let sn = getItem('sound_number');
+  if(sn !== null)
+  {
+    SOUND_NUMBER = sn;
+  }
+  let results = getItem('results')
+  if(results !== null)
+  {
+    results_array = results;
+  }
+  let fin = getItem('finished');
+  if(fin !== null)
+  {
+    IS_FINISHED = fin;
+  }
   createCanvas(1000, 1000);
+  if(IS_FINISHED === 0)
+  {
   for (var i=0; i<NUMBER_OF_QUESTIONS; i++) 
     slider_array[i] = createSliderSet(-100,100,0,1,50+SLIDER_OFFSET*2,180+SLIDER_SPACING*i);
   r_button = createButton('Reset Form');
@@ -154,6 +187,13 @@ function setup() {
   c_button = createButton('Next !');
   c_button.position(400, 120+SLIDER_SPACING*NUMBER_OF_QUESTIONS);
   c_button.mousePressed(continueForm);
+  }
+  else
+  {
+    r_button = createButton('Download Results');
+    r_button.position(50, 120);
+    r_button.mousePressed(save_csv);
+  }
 }
 
 function draw() {
