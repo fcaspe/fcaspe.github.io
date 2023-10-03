@@ -1,5 +1,5 @@
 let NUMBER_OF_SOUNDS = 5 //How many sounds are we going to test
-let NUMBER_OF_QUESTIONS = 6; //How many questions per sound
+let NUMBER_OF_QUESTIONS = 5; //How many questions per sound
 let SOUND_NUMBER = 0; //Current sound number
 let IS_FINISHED = 0; //Flag that marks when we are done with the test
 
@@ -16,14 +16,12 @@ const q_entries = ["1. Ease of Play",
 "2. Responsiveness",
 "3. Predictability",
 "4. Nuance",
-"5. Closeness",
-"6. Preference"];
+"5. Preference"];
 const q_entries_long = ["1. Ease of Play",
 "2. Responsiveness",
 "3. Predictability",
 "4. Nuance",
-"5. Closeness to the Guitar.",
-"6. Your Preference."];
+"5. Your Preference."];
 
 
 function save_csv()
