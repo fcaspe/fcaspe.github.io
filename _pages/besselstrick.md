@@ -13,6 +13,8 @@ header:
       url: "/BesselsTrick/#get-the-plugin"
     - label: "See it on GitHub"
       url: "https://github.com/fcaspe/BesselsTrick"
+    - label: "Demo Video"
+      url: "https://youtu.be/-Po4Y1WtoBs"
 ---
 <style>
 .center {
@@ -20,13 +22,12 @@ header:
   margin-right: auto;
   font-size: 140%;
 }
+
 </style>
 <center>
 <font size="+2">Transform the sound of your instrument using <b>Neural Nets</b> and <b>FM synthesis</b>.
 <br>As you play. <b>In Real Time.</b></font>
 </center>
-
-{% include video id="-Po4Y1WtoBs" provider="youtube" %}
 
 ## How does it work? 
 
