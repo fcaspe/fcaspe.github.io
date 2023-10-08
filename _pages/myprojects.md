@@ -5,6 +5,13 @@ layout: splash
 ---
 # My Projects
 
+## Bessel's Trick
+*FM Tone Transfer plugin for real-time performances!*.  
+<b><a href="">Demo Video</a></b>  
+<a href="/BesselsTrick">
+    <img src="../assets/BT/screenshot.png" width=600/>
+</a>
+
 ## 40k On The Floor
 *Re-imagined barrel organ for electronic music live performances*.  
 <b><a href="https://www.youtube.com/watch?v=Qg-__b-Iu7M">Demo Video</a></b>  
@@ -45,24 +52,3 @@ layout: splash
 <a href="https://github.com/fcaspe/dx7pytorch">
     <img src="/assets/images/dx7pytorch.png" width=600/>
 </a>
-
-## DXNet
-A CNN designed to regress an FM synthesizer configuration from audio samples.  
-Extracts features from 2s samples and models Yamaha DX7 patches.
-<br/><b><a href="https://github.com/fcaspe/dxnet">GitHub Link</a></b>
-{: .text-justify}
-
-
-## melopak
-melopak generates audio samples of specific lenght and sample frequency using MIDI and a Synthesizer.
-<br/><b><a href="https://github.com/fcaspe/melopak">GitHub Link</a></b>
-{: .text-justify}
-
-## VAE with automatic gradient
-
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cs/interpolated_set_2.png){: .align-left}
-Approximating a distribution using automatic gradient and a fully-connected neural network.
-{: .text-justify}
-<b><a href="https://github.com/fcaspe/vaeAutograd">GitHub Link</a></b>
-<br/><b><a href="/assets/pdf/ABM_Assignment3.pdf">Report</a></b>
-

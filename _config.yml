@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Franco Caspe
 email: f.s.caspe@qmul.ac.uk
-description: >- # this means to ignore newlines until "baseurl:"
-Unravelling ideas and showcasing my projects and passions: Computer Science, Music, and Photography.
+#description: >- # this means to ignore newlines until "baseurl:"
+#Unravelling ideas and showcasing my projects and passions: Computer Science, Music, and Photography.
 twitter_username: francocaspe
 github_username: fcaspe
 minimal_mistakes_skin: default

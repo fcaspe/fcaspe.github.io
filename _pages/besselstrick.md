@@ -3,7 +3,8 @@ permalink: /BesselsTrick/
 title: "Bessel's Trick"
 layout: splash
 
-excerpt: "<b>FM Tone Transfer Plugin</b><br>Designed for live use!"
+excerpt: "<b>FM Tone Transfer Plugin</b><br><i>For live use</i>
+"
 header:
   overlay_image: ../assets/BT/screenshot.png
   overlay_filter: rgba(0, 0, 0, 0.5)
@@ -20,8 +21,24 @@ header:
   font-size: 140%;
 }
 </style>
+<center>
+<font size="+2">Transform the sound of your instrument using <b>Neural Nets</b> and <b>FM synthesis</b>.
+<br>As you play. <b>In Real Time.</b></font>
+</center>
 
-Explanation, what is this?
+{% include video id="-Po4Y1WtoBs" provider="youtube" %}
+
+## How does it work? 
+
+**Bessel's Trick** uses **Audio-to-Audio** transformation of musical instrument sounds.  
+Under the hood, the plugin extracts features (*RMS*, *Pitch*) from a musical instrument input, and feeds them to a **neural net** that controls an **FM synth**.
+
+<p align="center" width="100%">
+<img src="../assets/BT/pipeline.png" alt="Screenshot" width="60%">
+</p>
+
+We run the nets at **~700 times a second**, providing **minimum latency**.
+
 
 ## Get the Plugin
 
@@ -43,11 +60,22 @@ Explanation, what is this?
 
 - Next, <a href="/BesselsTrick"><b>Download the Pretrained Models</b></a>
 
-## How to use?
-Explain open where the VST can see it, provide multiple instructions to other webpages
-Explaiun download the pretrained models and open them on the plugin, each model is a sound
+## Instructions
 
-## Contact
+The plugin can be loaded into any DAW (Digital Audio Workstation) that supports VST3 or AU plugin formats.  
+Each each **neural net** (called *model*)  works like a synth patch. Each **model** implements a new sound you can control with your instrument.
+
+
+ - <a href="/BesselsTrick#get-the-plugin">Download the plugin</a> into a directory where your <a href="https://higherhz.com/adding-a-new-vst-synth-plugin-to-reaper/">DAW can see it</a>.
+ - Download and uncompress the <a href="/BesselsTrick">pretrained models</a>.
+ - Open the plugin at your DAW, and press the **(+)** button.
+ - Select the folder where you uncompressed the **pretrained models**.
+ - **Done!** The models can now be selected from the GUI's list.
+
+
+## About
+
+This project was developed as part of my PhD at the <a href="https://c4dm.eecs.qmul.ac.uk/">Centre For Digital Music</a> and the <a href="http://instrumentslab.org/index.html">Augmented Instruments Lab</a>.
 
 <p align="center" width="100%">
 <img src="../assets/BT/screenshot.png" alt="Screenshot" width=600>

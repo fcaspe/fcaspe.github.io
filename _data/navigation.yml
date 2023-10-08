@@ -3,8 +3,8 @@ main:
     url: /projects/ #Let's put here DL and electronics
   - title: "Music"
     url: /music/
-  - title: "Photography"
-    url: /photography/
+#  - title: "Photography"
+#    url: /photography/
 #  - title: "Posts"
 #    url: /posts/
   - title: "Publications"
