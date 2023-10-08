@@ -32,12 +32,12 @@ header:
 ## How does it work? 
 
 **Bessel's Trick** uses **Audio-to-Audio** transformation of musical instrument sounds.  
-Under the hood, the plugin extracts features (*RMS*, *Pitch*) from a musical instrument input, and feeds them to a **neural net** that controls an **FM synth**.
 
 <p align="center" width="100%">
 <img src="../assets/BT/pipeline.png" alt="Screenshot" width="60%">
 </p>
 
+Under the hood, the plugin extracts features (*RMS*, *Pitch*) from a musical instrument input, and feeds them to a **neural net** that controls an **FM synth**.
 We run the nets at **~700 times a second**, providing **minimum latency**.
 
 
@@ -47,24 +47,25 @@ We run the nets at **~700 times a second**, providing **minimum latency**.
 <table class="center">
 <tr>
     <th>
-    <a href="/BesselsTrick">macOS <font size="+1">ARM</font></a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.1/BesselsTrick_MacOS_arm64.zip">macOS <font size="+1">ARM</font></a>
     </th>
     <th>
-    <a href="/BesselsTrick">macOS <font size="+1">intel</font></a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.1/BesselsTrick_MacOS_intel.zip">macOS <font size="+1">intel</font></a>
     </th>
     <th>
-    <a href="/BesselsTrick">Debian</a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.1/BesselsTrick_Ubuntu.zip">Ubuntu</a>
     </th>
 </tr>
 
 </table>
 
-- Next, <a href="/BesselsTrick"><b>Download the Pretrained Models</b></a>
+- Next, <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.1/PretrainedModels.zip"><b>Download the Pretrained Models</b></a>
 
 ## Instructions
 
 The plugin can be loaded into any DAW (Digital Audio Workstation) that supports VST3 or AU plugin formats.  
-Each each **neural net** (called *model*)  works like a synth patch. Each **model** implements a new sound you can control with your instrument.
+Each each **neural net** (called *model*)  works like a synth patch.  
+Each **model** implements a new sound you can control with your instrument.
 
 
  - <a href="/BesselsTrick#get-the-plugin">Download the plugin</a> into a directory where your <a href="https://higherhz.com/adding-a-new-vst-synth-plugin-to-reaper/">DAW can see it</a>.
@@ -73,6 +74,9 @@ Each each **neural net** (called *model*)  works like a synth patch. Each **mode
  - Select the folder where you uncompressed the **pretrained models**.
  - **Done!** The models can now be selected from the GUI's list.
 
+## Contact
+
+Your feedback is very valuable! If you and have any comments, feedback or ideas about this project <a href="http://www.eecs.qmul.ac.uk/people/profiles/caspefrancosantiago.html">Contact Me</a>.
 
 ## About
 
