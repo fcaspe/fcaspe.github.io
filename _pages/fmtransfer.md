@@ -13,9 +13,24 @@ layout: splash
 <font size="+2"><b>Franco Caspe - Andrew McPherson - Mark Sandler</b></font><br>
 <font size="4">Queen Mary University of London - Centre for Digital Music</font><br>
 <font size="+1"><b><a href="/assets/pdf/learned_envelopes.pdf" target="_blank">Paper</a> - <a href="https://github.com/fcaspe/fmtransfer" target="_blank">Code</a> - 
-<a href="https://www.dropbox.com/s/pkzpy4t0vkkjik5/FM%20Tone%20Transfer.mp4?dl=0" target="_blank">Demo Video</a>
+<a href="https://www.dropbox.com/s/pkzpy4t0vkkjik5/FM%20Tone%20Transfer.mp4?dl=0" target="_blank">Paper Demo</a>
 </b>
 </font><br>
+</center>
+</div>
+<br>
+<div>
+<font size="+2">
+<b>New Plugin Released !</b><br>
+</font>
+<font size="+2">
+Introducing <a href="/BesselsTrick"><b>Bessel's Trick</b></a>, FM Tone Transfer for live use.
+</font>
+</div>
+<br>
+<div>
+<center>
+<a href="/BesselsTrick"><img src="../assets/BT/screenshot.png" width="50%"></a>
 </center>
 </div>
 <div>

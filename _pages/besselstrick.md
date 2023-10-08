@@ -9,8 +9,9 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
   actions:
     - label: "Download Now"
-      url: "/BesselsTrick/#download"
-
+      url: "/BesselsTrick/#get-the-plugin"
+    - label: "See it on GitHub"
+      url: "https://github.com/fcaspe/BesselsTrick"
 ---
 <style>
 .center {
@@ -19,25 +20,28 @@ header:
   font-size: 140%;
 }
 </style>
+
 Explanation, what is this?
 
-## Download in two simple steps
+## Get the Plugin
 
- - First, choose your OS and download the package.
+ - First, choose the package according to your OS.
 <table class="center">
-  <tr>
-    <th>macOS <font size="+1">ARM</font></th>
-    <th>macOS <font size="+1">intel</font></th>
-    <th>Debian</th>
+<tr>
+    <th>
+    <a href="/BesselsTrick">macOS <font size="+1">ARM</font></a>
+    </th>
+    <th>
+    <a href="/BesselsTrick">macOS <font size="+1">intel</font></a>
+    </th>
+    <th>
+    <a href="/BesselsTrick">Debian</a>
+    </th>
 </tr>
+
 </table>
 
-- Next, download the pretrained models.
-<table class="center">
-  <tr>
-    <th>Pretrained Models</th>
-</tr>
-</table>
+- Next, <a href="/BesselsTrick"><b>Download the Pretrained Models</b></a>
 
 ## How to use?
 Explain open where the VST can see it, provide multiple instructions to other webpages
