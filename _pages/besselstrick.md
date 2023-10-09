@@ -3,7 +3,7 @@ permalink: /BesselsTrick/
 title: "Bessel's Trick"
 layout: splash
 
-excerpt: "<b>FM Tone Transfer Plugin</b><br><i>For live use</i>
+excerpt: "<b>FM Tone Transfer Plugin. </b><br><i>For live use</i>
 "
 header:
   overlay_image: ../assets/BT/screenshot.png
