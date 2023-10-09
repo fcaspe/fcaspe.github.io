@@ -8,7 +8,7 @@ layout: splash
 ## Bessel's Trick
 *FM Tone Transfer plugin for real-time performances!*.  
 <b><a href="">Demo Video</a></b>  
-<a href="/BesselsTrick">
+<a href="https://youtu.be/-Po4Y1WtoBs">
     <img src="../assets/BT/screenshot.png" width=600/>
 </a>
 
