@@ -47,19 +47,21 @@ We run the nets at **~700 times a second**, providing **minimum latency**.
 <table class="center">
 <tr>
     <th>
-    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.1/BesselsTrick_MacOS_arm64.zip">macOS <font size="+1">ARM</font></a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.11/BesselsTrick_MacOS_arm64.zip">macOS <font size="+1">ARM</font></a>
     </th>
     <th>
-    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.1/BesselsTrick_MacOS_intel.zip">macOS <font size="+1">intel</font></a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.11/BesselsTrick_MacOS_intel.zip">macOS <font size="+1">intel</font></a>
     </th>
     <th>
-    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.1/BesselsTrick_Ubuntu.zip">Ubuntu</a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.11/BesselsTrick_Ubuntu.zip">Ubuntu</a>
     </th>
 </tr>
 
 </table>
 
-- Next, <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.1/PretrainedModels.zip"><b>Download the Pretrained Models</b></a>
+- Next, <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.11/PretrainedModels.zip"><b>Download the Pretrained Models</b></a>
+
+Latest update: `18/10/23 - Version 0.11`  
 
 ## Instructions
 
