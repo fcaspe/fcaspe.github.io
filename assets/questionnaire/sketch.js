@@ -1,15 +1,17 @@
 let NUMBER_OF_SOUNDS = 5 //How many sounds are we going to test
 let NUMBER_OF_QUESTIONS = 5; //How many questions per sound
 let SOUND_NUMBER = 0; //Current sound number
-let IS_FINISHED = 0; //Flag that marks when we are done with the test
+let IS_FINISHED = -1; //Flag that marks when we are done with the test
 
 results_array = new Array(NUMBER_OF_SOUNDS);
 slider_array = new Array(NUMBER_OF_QUESTIONS);
 let SLIDER_SPACING = 100;
 let SLIDER_OFFSET = 20;
 
+// Global items for easy removing
 let c_button;
 let r_button;
+let input_box;
 
 
 const q_entries = ["1. Ease of Play",
@@ -23,11 +25,37 @@ const q_entries_long = ["1. Ease of Play",
 "4. Nuance",
 "5. Your Preference."];
 
+function start_questionnaire()
+{
+  storeItem('finished',0);
+  IS_FINISHED = 0;
+  r_button.remove();
+  input_box.remove();
+  draw_questionnaire();
+}
+
+function draw_questionnaire()
+{
+for (var i=0; i<NUMBER_OF_QUESTIONS; i++) 
+  slider_array[i] = createSliderSet(-100,100,0,1,50+SLIDER_OFFSET*2,180+SLIDER_SPACING*i);
+r_button = createButton('Reset Form');
+r_button.position(50, 120+SLIDER_SPACING*NUMBER_OF_QUESTIONS);
+r_button.mousePressed(resetSliders);
+c_button = createButton('Next !');
+c_button.position(400, 120+SLIDER_SPACING*NUMBER_OF_QUESTIONS);
+c_button.mousePressed(continueForm);
+}
+
+function process_text_box()
+{
+  let id = new String(this.value());
+  storeItem('participant_id',id);
+}
 
 function save_csv()
 {
   // Clear flag after downloading results
-  storeItem('finished',0);
+  storeItem('finished',-1);
   storeItem('sound_number',null);
   let csvContent = "";
   //Write column names
@@ -66,7 +94,7 @@ function save_csv()
 
   // Setting the anchor tag attribute for downloading
   // and passing the download file name
-  a.setAttribute('download', 'download.csv');
+  a.setAttribute('download', getItem("participant_id") + '.csv');
 
   // Performing a download with click
   a.click();
@@ -148,6 +176,8 @@ function setupText(posX,posY,soundnumber)
   {
     setupEntry(posX,posY+100+SLIDER_SPACING*i,q_entries_long[i]);
   }
+  textSize(10);
+  text('ID:' + getItem("participant_id") ,posX,posY+100+SLIDER_SPACING*(NUMBER_OF_QUESTIONS+1));
 }
 
 function createSliderSet(minval,maxval,setval,step,posX,posY){
@@ -175,18 +205,21 @@ function setup() {
     IS_FINISHED = fin;
   }
   createCanvas(1000, 1000);
-  if(IS_FINISHED === 0)
+  if(IS_FINISHED === -1)
   {
-  for (var i=0; i<NUMBER_OF_QUESTIONS; i++) 
-    slider_array[i] = createSliderSet(-100,100,0,1,50+SLIDER_OFFSET*2,180+SLIDER_SPACING*i);
-  r_button = createButton('Reset Form');
-  r_button.position(50, 120+SLIDER_SPACING*NUMBER_OF_QUESTIONS);
-  r_button.mousePressed(resetSliders);
-  c_button = createButton('Next !');
-  c_button.position(400, 120+SLIDER_SPACING*NUMBER_OF_QUESTIONS);
-  c_button.mousePressed(continueForm);
+    input_box = createInput('');
+    input_box.position(60, 60);
+    input_box.input(process_text_box)
+    input_box.size(200);
+    r_button = createButton('OK');
+    r_button.position(50, 120);
+    r_button.mousePressed(start_questionnaire);
   }
-  else
+  else if(IS_FINISHED === 0)
+  {
+  draw_questionnaire();
+  }
+  else if(IS_FINISHED === 1)
   {
     r_button = createButton('Download Results');
     r_button.position(50, 120);
@@ -196,12 +229,17 @@ function setup() {
 
 function draw() {
   background(200,200,200);
-  if(IS_FINISHED == 0)
+  if(IS_FINISHED === -1)
+  {
+  textSize(20);
+  text("Please enter participant's ID",40,40);
+  }
+  if(IS_FINISHED === 0)
   {
   setupText(20,50,SOUND_NUMBER+1);
   let val = slider.value();
   }
-  else
+  else if(IS_FINISHED === 1)
   {
     textSize(50);
     text('Questionnaire Done!',50,100);
