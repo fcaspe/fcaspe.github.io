@@ -1,4 +1,4 @@
-let NUMBER_OF_SOUNDS = 5 //How many sounds are we going to test
+let NUMBER_OF_SOUNDS = 4 //How many sounds are we going to test
 let NUMBER_OF_QUESTIONS = 5; //How many questions per sound
 let SOUND_NUMBER = 0; //Current sound number
 let IS_FINISHED = -1; //Flag that marks when we are done with the test
