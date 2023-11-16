@@ -1,5 +1,5 @@
 ---
-permalink: /adc23talk/
+permalink: /dl4dsp/
 title: "Deep Learning for DSP Engineers"
 author_profile: false
 layout: splash
