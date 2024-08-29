@@ -8,6 +8,12 @@ layout: splash
 
 ## Peer Reviewed Articles
 
+
+- <a href="http://dx.doi.org/10.1145/3689043"><b>Shifting Ambiguity, Collapsing Indeterminacy: Designing with Data as Baradian Apparatus</b></a>  
+Courtney N. Reed, Adan L. Benito, Franco Caspe, Andrew P. McPherson.  
+<i>ACM Transactions on Computer-Human Interaction</i>
+{: .text-justify}
+
 - <a href="https://fcaspe.github.io/fmtransfer/"><b>FM Tone Transfer with Learned Envelopes</b></a>  
 Franco Caspe, Andrew McPherson, Mark Sandler.  
 <i>Audio Mostly 2023</i>
