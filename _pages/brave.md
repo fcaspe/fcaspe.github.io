@@ -43,7 +43,7 @@ Coming Soon!
             <tr>
                 <th>Instrument</th>
                 <th>Original</th>
-                <th>noise_c2048_r10</th>
+                <th>RAVE</th>
                 <th>c2048_r10</th>
                 <th>c1024_r10</th>
                 <th>c512_r10</th>
@@ -91,11 +91,11 @@ Coming Soon!
             <tr>
                 <th>Instrument</th>
                 <th>Original</th>
-                <th>noise_c2048_r10</th>
+                <th>RAVE</th>
                 <th>c128_r10_p70</th>
                 <th>c128_r10_p40</th>
                 <th>c128_r05_p40</th>
-                <th>c128_r05_p40_light</th>
+                <th>BRAVE</th>
             </tr>
         </thead>
         <tbody>
@@ -139,7 +139,7 @@ Coming Soon!
             <tr>
                 <th>Instrument</th>
                 <th>Original</th>
-                <th>noise_c2048_r10</th>
+                <th>RAVE</th>
                 <th>c2048_r10</th>
                 <th>c1024_r10</th>
                 <th>c512_r10</th>
@@ -187,11 +187,11 @@ Coming Soon!
             <tr>
                 <th>Instrument</th>
                 <th>Original</th>
-                <th>noise_c2048_r10</th>
+                <th>RAVE</th>
                 <th>c128_r10_p70</th>
                 <th>c128_r10_p40</th>
                 <th>c128_r05_p40</th>
-                <th>c128_r05_p40_light</th>
+                <th>BRAVE</th>
             </tr>
         </thead>
         <tbody>
