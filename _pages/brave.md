@@ -1,12 +1,12 @@
 ---
 permalink: /brave/
-title: "Coming Soon"
+title: "Audio Examples"
 author_profile: false
 layout: splash
 ---
 <div>
 <center>
-Coming Soon!
+Audio Examples
 </center>
 </div>
 
@@ -34,10 +34,13 @@ Coming Soon!
         }
     </style>
 </head>
-<body>
-    <h2>Filosax Models with Audio Files</h2>
 
-    <h3>Group 1</h3>
+All reconstructions generated from data not seen during training.
+
+<body>
+    <h3>Models trained on <b>Filosax</b> dataset.</h3>
+
+    Reconstructions with varying compression ratio.
     <table>
         <thead>
             <tr>
@@ -85,7 +88,7 @@ Coming Soon!
         </tbody>
     </table>
 
-    <h3>Group 2</h3>
+    Reconstructions with same compression ratio (128) and varying receptive field and PQMF attenuation.
     <table>
         <thead>
             <tr>
@@ -128,12 +131,13 @@ Coming Soon!
             </tr>
         </tbody>
     </table>
+    BRAVE is a lightweight version of <b>c128_r05_p40</b>, with only half of its hidden channels.
 </body>
 
 <body>
-    <h2>Drumset Models with Audio Files</h2>
+    <h3>Models trained on <b>Drumset</b> dataset.</h3>
 
-    <h3>Group 1</h3>
+    Reconstructions with varying compression ratio.
     <table>
         <thead>
             <tr>
@@ -181,7 +185,7 @@ Coming Soon!
         </tbody>
     </table>
 
-    <h3>Group 2</h3>
+    Reconstructions with same compression ratio (128) and varying receptive field and PQMF attenuation.
     <table>
         <thead>
             <tr>
