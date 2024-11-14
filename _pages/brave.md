@@ -288,14 +288,10 @@ and then the same models trained for an additional 500M steps with adversarial, 
 </table>
 
 
-
 <table>
     <thead>
         <tr>
             <th>Instrument</th>
-            <th>Original</th>
-            <th>RAVE</th>
-            <th>c128_r10</th>
             <th>c128_r10_p70</th>
             <th>c128_r10_p40</th>
             <th>c128_r05_p40</th>
@@ -305,9 +301,6 @@ and then the same models trained for an additional 500M steps with adversarial, 
     <tbody>
         <tr>
             <td>Filosax (adversarial)</td>
-            <td><audio controls><source src="../../assets/brave/audios/Sax_45.wav" type="audio/wav"></audio></td>
-            <td><audio controls><source src="../../assets/brave/audios/noise_c2048_r10-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
-            <td><audio controls><source src="../../assets/brave/audios/c128_r10-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
             <td><audio controls><source src="../../assets/brave/audios/c128_r10_p70-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
             <td><audio controls><source src="../../assets/brave/audios/c128_r10_p40-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
             <td><audio controls><source src="../../assets/brave/audios/c128_r05_p40-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
@@ -315,9 +308,6 @@ and then the same models trained for an additional 500M steps with adversarial, 
         </tr>
         <tr>
             <td>Filosax (mss only)</td>
-            <td><audio controls><source src="../../assets/brave/audios/Sax_45.wav" type="audio/wav"></audio></td>
-            <td><audio controls><source src="../../assets/brave/audios/mss/noise_c2048_r10-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
-            <td><audio controls><source src="../../assets/brave/audios/mss/c128_r10-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
             <td><audio controls><source src="../../assets/brave/audios/mss/c128_r10_p70-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
             <td><audio controls><source src="../../assets/brave/audios/mss/c128_r10_p40-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
             <td><audio controls><source src="../../assets/brave/audios/mss/c128_r05_p40-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
