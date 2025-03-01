@@ -57,19 +57,39 @@ We run the nets at **~700 times a second**, providing **minimum latency**.
 <table class="center">
 <tr>
     <th>
-    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.12/BesselsTrick_MacOS_arm64.zip">macOS <font size="+1">ARM</font></a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.12/BesselsTrick_MacOS_arm64.zip" 
+       onclick="gtag('event', 'download', {
+         'event_category': 'Plugin Downloads', 
+         'event_label': 'MacOS ARM64',
+         'event_action': 'Plugin v0.12'
+       });">macOS <font size="+1">ARM</font></a>
     </th>
     <th>
-    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.12/BesselsTrick_MacOS_intel.zip">macOS <font size="+1">intel</font></a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.12/BesselsTrick_MacOS_intel.zip" 
+       onclick="gtag('event', 'download', {
+         'event_category': 'Plugin Downloads', 
+         'event_label': 'MacOS Intel',
+         'event_action': 'Plugin v0.12'
+       });">macOS <font size="+1">intel</font></a>
     </th>
     <th>
-    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.12/BesselsTrick_Ubuntu.zip">Ubuntu</a>
+    <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.12/BesselsTrick_Ubuntu.zip" 
+       onclick="gtag('event', 'download', {
+         'event_category': 'Plugin Downloads', 
+         'event_label': 'Ubuntu',
+         'event_action': 'Plugin v0.12'
+       });">Ubuntu</a>
     </th>
 </tr>
 
 </table>
 
-- Next, <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.12/PretrainedModels.zip"><b>Download the Pretrained Models</b></a>
+- Next, <a href="https://github.com/fcaspe/BesselsTrick/releases/download/v0.12/PretrainedModels.zip" 
+       onclick="gtag('event', 'download', {
+         'event_category': 'Model Downloads', 
+         'event_label': 'Pretrained Models',
+         'event_action': 'Models v0.12'
+       });"><b>Download the Pretrained Models</b></a>
 
 Latest update: `22/10/23 - Version 0.12`  
 
@@ -97,4 +117,3 @@ This project was developed as part of my PhD at the <a href="https://c4dm.eecs.q
 <p align="center" width="100%">
 <img src="../assets/BT/screenshot.png" alt="Screenshot" width=600>
 </p>
-
