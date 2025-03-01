@@ -16,6 +16,16 @@ header:
     - label: "Demo Video"
       url: "https://youtu.be/-Po4Y1WtoBs"
 ---
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QW4Q5E6HGY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QW4Q5E6HGY');
+</script>
+
 <style>
 .center {
   margin-left: auto;
