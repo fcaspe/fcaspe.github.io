@@ -1,6 +1,6 @@
 ---
 permalink: /brave/
-title: "Audio Examples"
+title: "Designing Neural Synthesizers for Low Latency Interaction"
 author_profile: false
 layout: splash
 ---
