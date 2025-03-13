@@ -139,6 +139,20 @@ Each **pretrained model** implements a new sound you can control with your instr
  - Open the plugin at your DAW, and select the folder where you stored the models.
  - **Done!** The models can now be selected from the GUI's list.
 
+## Pretrained models
+
+The provided models are trained from openly available datasets.
+
+
+| Model         | Dataset Description |
+|--------------|-----------------------------|
+| **birdsong.h5** | [British Birdsong Dataset](https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset), gathered from the [Xeno Canto collection](http://www.xeno-canto.org/). |
+| **candombe.h5** | [Uruguayan candombe drumming](https://zenodo.org/records/6533068) dataset.|
+| **drumset.h5**  | [The Expanded Groove MIDI Dataset](https://magenta.tensorflow.org/datasets/e-gmd). 2h 50m of a drummer performing on an electronic drum. kit. |
+| **filosax.h5**  | Trained using recordings of *Participant 1* from the [Filosax Dataset](https://dave-foster.github.io/filosax/). |
+
+Check [BRAVE's Repo](https://github.com/fcaspe/BRAVE) for instructions on how to train your own models. [Contact Me](https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY) if you would like to submit new models to the pretrained pack.
+
 ## Contact
 
 If you want to know more, stay up to date on this project, report a bug, or have any feedback, please contact me.
