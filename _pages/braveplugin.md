@@ -78,7 +78,7 @@ iframe {
 <br>
 <div class="container">
     <div class="video">
-        <b>Live Play</b><br>
+        <b>Play it Live!</b><br>
         <iframe src="https://www.youtube.com/embed/REJNKux2mzk" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="video">

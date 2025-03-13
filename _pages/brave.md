@@ -11,11 +11,11 @@ layout: splash
 <center>
 <font size="+3"><b>Designing Neural Synthesizers for Low Latency Interaction</b></font><br>
 <font size="+1"><b>Franco Caspe - Jordie Shier - Mark Sandler - Charalampos Saitis - Andrew McPherson*</b></font><br>
-<font size="4">Queen Mary University of London - Centre for Digital Music</font><br>
+<font size="4">Centre for Digital Music - Queen Mary University of London</font><br>
 <font size="4">*Dyson School of Design Engineering - Imperial College</font><br>
 <font size="+1"><b><a href="paper_link_here" target="_blank">Paper</a> -
 <a href="https://github.com/fcaspe/BRAVE" target="_blank">Code</a> - 
-<a href="" target="_blank">Plugin</a></b>
+<a href="/BravePlugin" target="_blank">Plugin</a></b>
 </font><br>
 
 </center>
@@ -311,7 +311,11 @@ Reconstructions with same compression ratio (128) and varying receptive field an
 </table>
 
 
-<h3>Adversarial Training</h3>
+<div>
+<center>
+<h2>Adversarial Training</h2>
+</center>
+</div>
 
 We illustrate how adversarial training affects melody rendering, probably due to a relatively small dataset size. 
 However, the models with small compression ratio, including BRAVE, do not seem to suffer this problem.<br>
