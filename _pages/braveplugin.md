@@ -101,7 +101,7 @@ iframe {
 
 <h2>Get the Plugin & Pretrained Models</h2>
 <div class="download-container">
-    <a href="https://github.com/fcaspe/link_for_download_zip" 
+    <a href="https://github.com/fcaspe/BraveDemoPluginReleases/releases/download/v1.0.0/BraveDemoPlugin.zip" 
        style="display: inline-block; padding: 15px 20px; font-size: 16px; font-weight: bold; text-decoration: none; color: white; background-color: #0073e6; border-radius: 5px; text-align: center;"
        onmouseover="this.style.backgroundColor='#005bb5'" 
        onmouseout="this.style.backgroundColor='#0073e6'"
@@ -112,7 +112,7 @@ iframe {
        });">
        Download Plugin (macOS Apple Silicon)</a>
 
-    <a href="https://github.com/fcaspe/link_for_download.zip" 
+    <a href="https://github.com/fcaspe/BraveDemoPluginReleases/releases/download/v1.0.0/pretrained.zip" 
        style="display: inline-block; padding: 15px 20px; font-size: 16px; font-weight: bold; text-decoration: none; color: white; background-color: #0073e6; border-radius: 5px; text-align: center;"
        onmouseover="this.style.backgroundColor='#005bb5'" 
        onmouseout="this.style.backgroundColor='#0073e6'"

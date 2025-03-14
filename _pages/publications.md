@@ -8,6 +8,10 @@ layout: splash
 
 ## Peer Reviewed Articles
 
+- <a href="https://fcaspe.github.io/brave/"><b>Designing Neural Synthesizers for Low Latency Interaction</b></a>  
+Franco Caspe, Jordie Shier, Mark Sandler, Charalampos Saitis, Andrew McPherson  
+<i>Journal of the Audio Engineering Society</i>
+{: .text-justify}
 
 - <a href="http://dx.doi.org/10.1145/3689043"><b>Shifting Ambiguity, Collapsing Indeterminacy: Designing with Data as Baradian Apparatus</b></a>  
 Courtney N. Reed, Adan L. Benito, Franco Caspe, Andrew P. McPherson.  
