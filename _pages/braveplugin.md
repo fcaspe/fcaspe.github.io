@@ -134,8 +134,8 @@ Note: This plugin is currently in beta testing, and there may be bugs or unexpec
 Use your preferred DAW (Digital Audio Workstation), that supports VST3 or AU plugin formats.  
 Each **pretrained model** implements a new sound you can control with your instrument.
 
- - <a href="/BravePlugin/#get-the-plugin">Download the plugin</a> into a directory where your <a href="https://higherhz.com/adding-a-new-vst-synth-plugin-to-reaper/">DAW can see it</a>.
- - Download and uncompress the <a href="/BesselsTrick">pretrained models</a>.
+ - Download the plugin to a directory where your <a href="https://higherhz.com/adding-a-new-vst-synth-plugin-to-reaper/">DAW can see it</a>.
+ - Download and uncompress the pretrained models.
  - Open the plugin at your DAW, and select the folder where you stored the models.
  - **Done!** The models can now be selected from the GUI's list.
 
