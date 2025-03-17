@@ -9,7 +9,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.2)
   actions:
     - label: "Get the Plugin"
-      url: "/BravePlugin/#get-the-plugin"
+      url: "/BravePlugin/#get-the-plugin--pretrained-models"
     - label: "Contact Form"
       url: "https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY"
 ---
@@ -99,7 +99,7 @@ iframe {
 <font size="+1">The BRAVE Plugin implements the <a href="/brave">BRAVE AI model</a> for real-time use, with really low latency (~10 ms).</font>
 
 
-<h2>Get the Plugin & Pretrained Models</h2>
+## Get the Plugin & Pretrained Models
 <div class="download-container">
     <a href="https://github.com/fcaspe/BraveDemoPluginReleases/releases/download/v1.0.0/BraveDemoPlugin.zip" 
        style="display: inline-block; padding: 15px 20px; font-size: 16px; font-weight: bold; text-decoration: none; color: white; background-color: #0073e6; border-radius: 5px; text-align: center;"
