@@ -1,6 +1,6 @@
 ---
 permalink: /brave/
-title: "Designing Neural Synthesizers for Low Latency Interaction"
+title: "Designing Neural Synthesizers for Low-Latency Interaction"
 author_profile: false
 layout: splash
 ---
@@ -9,7 +9,7 @@ layout: splash
 
 <div>
 <center>
-<font size="+3"><b>Designing Neural Synthesizers for Low Latency Interaction</b></font><br>
+<font size="+3"><b>Designing Neural Synthesizers for Low-Latency Interaction</b></font><br>
 <font size="+1"><b>Franco Caspe - Jordie Shier - Mark Sandler - Charalampos Saitis - Andrew McPherson*</b></font><br>
 <font size="4">Centre for Digital Music - Queen Mary University of London</font><br>
 <font size="4">*Dyson School of Design Engineering - Imperial College</font><br>
