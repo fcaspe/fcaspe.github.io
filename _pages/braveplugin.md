@@ -10,8 +10,8 @@ header:
   actions:
     - label: "Get the Plugin"
       url: "/BravePlugin/#get-the-plugin--pretrained-models"
-    - label: "Contact Form"
-      url: "https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY"
+    - label: "Training Code"
+      url: "https://github.com/fcaspe/BRAVE"
 ---
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QW4Q5E6HGY"></script>
