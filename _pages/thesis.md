@@ -23,13 +23,17 @@ header:
 # DDX7
 
 Link to Video
+[Link to Paper's Website](/ddx7)
 
 # Envelope Learning
 
+[Link to Paper's Website](/fmtt)
 [Link to Audio Plugin](/BesselsTrick)
 
 Link to Videos
 
+
 # Low-latency waveform autoencoding
 
+[Link to Paper's Website](/brave)
 [Link to Audio Plugin](/BravePlugin)
