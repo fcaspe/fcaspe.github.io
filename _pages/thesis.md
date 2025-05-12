@@ -24,20 +24,19 @@ header:
 Papers and info: 
 ## DDX7
 
-Link to Video
+Link to Video  
 [Link to Paper's Website](/ddx7)
 
 ## Envelope Learning
 
-[Link to Paper's Website](/fmtt)
-[Link to Audio Plugin](/BesselsTrick)
-
+[Link to Paper's Website](/fmtransfer)  
+[Link to Audio Plugin](/BesselsTrick)  
 Link to Videos
 
 # Low-latency waveform autoencoding
 Papers and info: 
 
-[Link to Paper's Website](/brave)
+[Link to Paper's Website](/brave)  
 [Link to Audio Plugin](/BravePlugin)
 
 # AI Design
