@@ -13,7 +13,7 @@ layout: splash
 <font size="+1"><b>Franco Caspe - Jordie Shier - Mark Sandler - Charalampos Saitis - Andrew McPherson*</b></font><br>
 <font size="4">Centre for Digital Music - Queen Mary University of London</font><br>
 <font size="4">*Dyson School of Design Engineering - Imperial College</font><br>
-<font size="+1"><b><a href="https://arxiv.org/abs/2503.11562" target="_blank">Paper</a> -
+<font size="+1"><b><a href="https://aes2.org/publications/elibrary-page/?id=22820" target="_blank">Paper</a> -
 <a href="https://github.com/fcaspe/BRAVE" target="_blank">Code</a> - 
 <a href="/BravePlugin" target="_blank">Plugin</a></b>
 </font><br>
