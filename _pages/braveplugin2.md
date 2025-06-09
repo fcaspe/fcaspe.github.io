@@ -207,9 +207,10 @@ layout: no_layout
         }
 
         .hero-section .brave-logo {
-            max-width: 700px;
+            width: 85%; /* Make it occupy 85% of its parent's width */
+            max-width: 850px; /* Allow it to grow larger on very wide screens */
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 15px; /* Reduced space below logo */
             filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.4));
         }
 
@@ -226,9 +227,9 @@ layout: no_layout
         }
 
         .hero-section p {
-            font-size: 1.5em;
+            font-size: 1.3em; /* Reduced text size */
             color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 25px;
+            margin-bottom: 20px; /* Reduced space below text */
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
@@ -237,15 +238,15 @@ layout: no_layout
         .hero-buttons {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px; /* Reduced gap between buttons */
             flex-wrap: wrap;
         }
 
         /* --- Buttons --- */
         .button {
             display: inline-block;
-            padding: 18px 30px;
-            font-size: 1.15em;
+            padding: 15px 25px; /* Reduced button size */
+            font-size: 1em; /* Reduced button text size */
             font-weight: 600;
             text-decoration: none;
             color: white; /* Initial color is white */
@@ -488,8 +489,10 @@ layout: no_layout
             h3 { font-size: 1.6em; }
             .section { padding: var(--section-padding-medium); } /* Uses defined medium padding */
             .button { padding: 15px 25px; font-size: 1em; }
+            
             .hero-section .brave-logo {
-                max-width: 450px;
+                width: 85%; /* Keep percentage */
+                max-width: 550px; /* Adjusted max-width for this breakpoint */
             }
             .feature-text-block {
                 padding: 25px;
@@ -524,7 +527,8 @@ layout: no_layout
         @media (max-width: 768px) {
             .hero-section { padding: 50px 20px; }
             .hero-section .brave-logo {
-                max-width: 350px;
+                width: 90%; /* Increase percentage slightly for smaller tablets/large phones */
+                max-width: 450px; /* Adjusted max-width */
             }
             .hero-section p { font-size: 1.1em; max-width: 90%; }
             .hero-buttons {
@@ -569,7 +573,8 @@ layout: no_layout
         @media (max-width: 480px) {
             .hero-section { padding: 40px 15px; }
             .hero-section .brave-logo {
-                max-width: 280px;
+                width: 95%; /* Make it almost full width on very small screens */
+                max-width: 350px; /* Adjusted max-width */
             }
             .hero-section p { font-size: 1em; }
             h2 { font-size: 1.5em; }
