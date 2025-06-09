@@ -666,9 +666,9 @@ layout: no_layout
         <h2><i class="ri-play-circle-fill"></i> See BRAVE in Action</h2>
         <div class="video-grid">
             <div class="video-item">
-                <p>Play it Live!</p>
+                <p>Play live, in time</p>
                 <div class="iframe-wrapper">
-                    <iframe src="https://www.youtube.com/embed/REJNKux2mzk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="BRAVE Plugin Live Performance Demonstration"></iframe>
+                    <iframe src="https://www.youtube.com/embed/mfhidA6t3F8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="BRAVE Plugin Live Performance Demonstration"></iframe>
                 </div>
             </div>
             <div class="video-item">

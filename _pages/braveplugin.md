@@ -79,7 +79,7 @@ iframe {
 <div class="container">
     <div class="video">
         <b>Play it Live!</b><br>
-        <iframe src="https://www.youtube.com/embed/REJNKux2mzk" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/mfhidA6t3F8" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="video">
         <b>Percussive augmentation</b><br>
