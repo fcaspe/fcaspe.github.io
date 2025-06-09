@@ -38,7 +38,7 @@ layout: no_layout
             /* Adjusted for less spacing and more cohesion */
             --section-padding-large: 35px 20px;
             --section-padding-medium: 25px 20px;
-            --section-padding-small: 10px 15px;
+            /* Section padding values will be adjusted in media queries for smaller screens */
 
             --max-content-width: 1000px;
         }
@@ -104,11 +104,7 @@ layout: no_layout
             margin-right: auto;
             max-width: 600px; /* Constrain width of list within block */
         }
-        .feature-text-block table {
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 900px; /* Allow tables to be wider */
-        }
+
 
         /* New: Top Survey Banner */
         .top-survey-banner {
@@ -211,7 +207,7 @@ layout: no_layout
         }
 
         .hero-section .brave-logo {
-            max-width: 650px;
+            max-width: 700px;
             height: auto;
             margin-bottom: 20px;
             filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.4));
@@ -377,20 +373,28 @@ layout: no_layout
         }
 
         /* --- Table Styling --- */
+        /* New wrapper for responsive table */
+        .table-responsive {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+            margin: 15px auto; /* Centering for the wrapper */
+            max-width: 100%; /* Ensure the wrapper fits */
+        }
         .model-table {
-            width: 100%;
+            width: 100%; /* Table takes full width of its scrollable container */
+            min-width: 500px; /* Ensure table doesn't get too squashed before scrolling kicks in */
             border-collapse: collapse;
-            margin: 15px auto;
             font-size: 1em;
             background-color: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             border-radius: 8px;
-            overflow: hidden;
+            overflow: hidden; /* Hide any internal overflow if not handled by cells */
         }
         .model-table th, .model-table td {
             border: 1px solid #eee;
             padding: 15px;
             text-align: left;
+            white-space: normal; /* Allow text to wrap within cells */
         }
         .model-table th {
             background-color: #f5f5f5;
@@ -430,7 +434,7 @@ layout: no_layout
             max-width: none; /* Override max-width for p in sections */
         }
 
-        /* --- New Value Proposition Grid & Items --- */
+        /* --- Value Proposition Grid & Items --- */
         .value-proposition-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 4 columns on large, adapts */
@@ -482,7 +486,7 @@ layout: no_layout
             .hero-section p { font-size: 1.2em; }
             h2 { font-size: 2em; }
             h3 { font-size: 1.6em; }
-            .section { padding: var(--section-padding-medium); }
+            .section { padding: var(--section-padding-medium); } /* Uses defined medium padding */
             .button { padding: 15px 25px; font-size: 1em; }
             .hero-section .brave-logo {
                 max-width: 450px;
@@ -499,12 +503,21 @@ layout: no_layout
                 margin-top: 10px; /* Space when stacked */
             }
             .value-proposition-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min-width for columns */
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets/larger phones */
                 gap: 20px;
                 margin-top: 30px;
             }
             .value-item {
-                padding: 25px;
+                padding: 25px 15px; /* Adjust padding for tighter 2-column layout */
+            }
+            .value-item i {
+                font-size: 2.2em; /* Slightly smaller icons for 2-column */
+            }
+            .value-item h3 {
+                font-size: 1.2em; /* Smaller heading for 2-column */
+            }
+            .value-item p {
+                font-size: 0.9em; /* Smaller text for 2-column */
             }
         }
 
@@ -514,16 +527,30 @@ layout: no_layout
                 max-width: 350px;
             }
             .hero-section p { font-size: 1.1em; max-width: 90%; }
-            .hero-buttons { flex-direction: column; align-items: center; gap: 15px; }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px; /* Keep gap for hero buttons if working well */
+            }
             h2 { font-size: 1.8em; }
             h3 { font-size: 1.5em; }
-            .section { padding: var(--section-padding-small); }
+            .section { padding: 30px 18px; } /* More generous padding for mid-size mobile */
              .video-grid {
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
             }
-            .download-section .button-group { flex-direction: column; }
-            .model-table th, .model-table td { padding: 10px; font-size: 0.9em; }
+            /* Adjust download section buttons for more robust vertical spacing */
+            .download-section .button-group {
+                flex-direction: column;
+                /* Removed gap: 15px; */ /* Rely on margins for consistent vertical space */
+            }
+            .download-section .button-group .button {
+                margin-bottom: 15px; /* Add margin below each button */
+            }
+            .download-section .button-group .button:last-child {
+                margin-bottom: 0; /* Remove margin from the last button to prevent extra space */
+            }
+            .model-table th, .model-table td { padding: 12px; font-size: 0.9em; } /* Adjust table cell padding */
             ol { padding-left: 20px; }
             ol li { font-size: 1em; }
             .feature-text-block {
@@ -534,23 +561,9 @@ layout: no_layout
                 font-size: 1em;
                 padding: 12px 15px;
             }
-            .value-proposition-grid {
-                grid-template-columns: 1fr; /* Stack on smaller screens */
-                gap: 20px;
-                margin-top: 25px;
-            }
-            .value-item {
-                padding: 20px;
-            }
-            .value-item i {
-                font-size: 2.5em;
-            }
-            .value-item h3 {
-                font-size: 1.3em;
-            }
-            .value-item p {
-                font-size: 0.95em;
-            }
+            /* Value proposition grid remains 2 columns from 900px down to 481px */
+            /* No change to .value-proposition-grid here, it uses the 900px rule. */
+            /* Ensure value-item padding/font sizes from 900px rule apply correctly or refine further if needed */
         }
 
         @media (max-width: 480px) {
@@ -562,8 +575,31 @@ layout: no_layout
             h2 { font-size: 1.5em; }
             h3 { font-size: 1.3em; }
             .button { font-size: 0.9em; padding: 12px 20px;}
+            .section { padding: 20px 15px; } /* Adjusted padding for very small screens */
             .feature-text-block {
                 padding: 15px;
+            }
+            .model-table th, .model-table td {
+                padding: 10px;
+                font-size: 0.85em;
+            }
+            /* Value proposition grid stacks to 1 column on very small phones */
+            .value-proposition-grid {
+                grid-template-columns: 1fr;
+                gap: 20px; /* Maintain good spacing when stacked */
+                margin-top: 25px;
+            }
+            .value-item {
+                padding: 20px; /* Restore more generous padding when stacked */
+            }
+            .value-item i {
+                font-size: 2.5em; /* Restore slightly larger icons when stacked */
+            }
+            .value-item h3 {
+                font-size: 1.3em; /* Restore slightly larger heading when stacked */
+            }
+            .value-item p {
+                font-size: 0.95em; /* Restore slightly larger text when stacked */
             }
         }
 
@@ -581,7 +617,7 @@ layout: no_layout
         </div>
     </header>
 
-<div class="top-survey-banner">
+    <div class="top-survey-banner">
         <p><strong><i class="ri-feedback-fill"></i> Working with sound or interaction? </strong> Let's make better tools for performers. <a href="https://research.typeform.com/to/guEbryYJ" class="button" target="_blank" rel="noopener noreferrer"
                onclick="gtag('event', 'click', {
                  'event_category': 'Survey CTA Top Banner',
@@ -590,31 +626,30 @@ layout: no_layout
                <i class="ri-survey-line"></i> Share your Insights
             </a></p>
     </div>
-
     <div class="section">
-        <h2>Unlock Your Creative Sound</h2>
+        <h2>Rediscover your Musical Instrument</h2>
         <div class="value-proposition-grid">
 
             <div class="value-item">
-                <i class="ri-zap-fill"></i>
+                <i class="ri-speed-fill"></i>
                 <h3>Instant Live Transformation</h3>
                 <p>Experience ultra-low latency timbre transfer for seamless, on-the-fly sonic changes during live performance.</p>
             </div>
 
             <div class="value-item">
-                <i class="ri-sparkling-2-fill"></i>
+                <i class="ri-palette-fill"></i>
                 <h3>Limitless Creative Expression</h3>
                 <p>Expand your artistic horizons and discover new ways to express your musical ideas beyond traditional limits.</p>
             </div>
 
             <div class="value-item">
-                <i class="ri-tuner-2-fill"></i>
+                <i class="ri-equalizer-fill"></i>
                 <h3>Unprecedented Sonic Control</h3>
                 <p>Reshape your instrument's timbre, exploring a vast spectrum of new sonic possibilities and unique textures.</p>
             </div>
 
             <div class="value-item">
-                <i class="ri-robot-2-fill"></i>
+                <i class="ri-brain-fill"></i>
                 <h3>Intuitive AI Interaction</h3>
                 <p>Interact with advanced AI models through simple, expressive controls, making complex sound manipulation intuitive.</p>
             </div>
@@ -654,7 +689,7 @@ layout: no_layout
 
     <div class="section download-section" id="get-the-plugin--pretrained-models">
         <h2>Get the Plugin & Pretrained Models</h2>
-        <p class="centered-text">Download the latest version for macOS Apple Silicon and the essential pretrained models to get started.</p>
+        <p class="centered-text">Download the latest version for <b>macOS Apple Silicon</b> and the essential pretrained models to get started.</p>
         <div class="button-group">
             <a href="https://github.com/fcaspe/BraveDemoPluginReleases/releases/download/v1.0.0/BraveDemoPlugin.zip"
                class="button"
@@ -663,7 +698,7 @@ layout: no_layout
                  'event_label': 'MacOS ARM64',
                  'event_action': 'BravePlugin v1.0.0'
                });">
-               <i class="ri-download-fill"></i> Download Plugin (macOS Apple Silicon)
+               <i class="ri-download-fill"></i> Download Plugin
             </a>
 
             <a href="https://github.com/fcaspe/BraveDemoPluginReleases/releases/download/v1.0.0/pretrained.zip"
@@ -697,33 +732,33 @@ layout: no_layout
         <div class="feature-text-block">
             <h3><i class="ri-folder-open-fill"></i> Pretrained models</h3>
             <p>The provided models are trained from openly available datasets.</p>
-            <table class="model-table">
-                <thead>
-                    <tr>
-                        <th>Model</th>
-                        <th>Dataset Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>birdsong.h5</strong></td>
-                        <td><a href="https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset" target="_blank" rel="noopener noreferrer">British Birdsong Dataset</a>, gathered from the <a href="http://www.xeno-canto.org/" target="_blank" rel="noopener noreferrer">Xeno Canto collection</a>.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>candombe.h5</strong></td>
-                        <td><a href="https://zenodo.org/records/6533068" target="_blank" rel="noopener noreferrer">Uruguayan candombe drumming</a> dataset.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>drumset.h5</strong></td>
-                        <td><a href="https://magenta.tensorflow.org/datasets/e-gmd" target="_blank" rel="noopener noreferrer">The Expanded Groove MIDI Dataset</a>. 2h 50m of a drummer performing on an electronic drum kit.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>filosax.h5</strong></td>
-                        <td>Trained using recordings of <em>Participant 1</em> from the <a href="https://dave-foster.github.io/filosax/" target="_blank" rel="noopener noreferrer">Filosax Dataset</a>.</td>
-                </tr>
-            </tbody>
-        </table>
-            <p>Check <a href="https://github.com/fcaspe/BRAVE" target="_blank" rel="noopener noreferrer">BRAVE's Repo</a> for instructions on how to train your own models. <a href="https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY" target="_blank" rel="noopener noreferrer">Contact Me</a> if you would like to submit new models to the pretrained pack.</p>
+            <div class="table-responsive"> <table class="model-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Dataset Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>birdsong.h5</strong></td>
+                            <td><a href="https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset" target="_blank" rel="noopener noreferrer">British Birdsong Dataset</a>, gathered from the <a href="http://www.xeno-canto.org/" target="_blank" rel="noopener noreferrer">Xeno Canto collection</a>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>candombe.h5</strong></td>
+                            <td><a href="https://zenodo.org/records/6533068" target="_blank" rel="noopener noreferrer">Uruguayan candombe drumming</a> dataset.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>drumset.h5</strong></td>
+                            <td><a href="https://magenta.tensorflow.org/datasets/e-gmd" target="_blank" rel="noopener noreferrer">The Expanded Groove MIDI Dataset</a>. 2h 50m of a drummer performing on an electronic drum kit.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>filosax.h5</strong></td>
+                            <td>Trained using recordings of <em>Participant 1</em> from the <a href="https://dave-foster.github.io/filosax/" target="_blank" rel="noopener noreferrer">Filosax Dataset</a>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <p>Check <a href="https://github.com/fcaspe/BRAVE" target="_blank" rel="noopener noreferrer">BRAVE's Repo</a> for instructions on how to train your own models. <a href="https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY" target="_blank" rel="noopener noreferrer">Contact Me</a> if you would like to submit new models to the pretrained pack.</p>
         </div>
     </div>
 
