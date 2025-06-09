@@ -77,14 +77,14 @@ layout: no_layout
             text-align: center;
         }
 
-        /* New: Feature Text Block for specific content enhancement */
+        /* New: Feature Text Block for specific content enhancement & consistent utility sections */
         .feature-text-block {
             background-color: white; /* White background for the text block */
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Very subtle shadow */
             max-width: 700px; /* Constrain its width */
-            margin: 20px auto; /* Center it below h2 */
+            margin: 20px auto; /* Center it below h2/h3 */
             text-align: center; /* Center content within this block */
         }
         /* Override general section p styling for text within feature-text-block */
@@ -96,6 +96,55 @@ layout: no_layout
         }
         .feature-text-block p.centered-text {
             text-align: center;
+        }
+        /* List items within feature-text-block */
+        .feature-text-block ol {
+            padding-left: 25px; /* Adjust padding for ordered lists */
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px; /* Constrain width of list within block */
+        }
+        .feature-text-block table {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 900px; /* Allow tables to be wider */
+        }
+
+        /* New: Top Survey Banner */
+        .top-survey-banner {
+            background-color: #dbeffc; /* A slightly more pronounced light blue */
+            padding: 15px 20px; /* Reduced padding for compactness */
+            text-align: center;
+            font-size: 1.1em;
+            color: var(--dark-text); /* Ensure text is readable */
+            border-bottom: 1px solid rgba(0,0,0,0.05); /* Subtle separation */
+        }
+
+        .top-survey-banner p {
+            margin: 0; /* Remove default paragraph margin */
+            display: inline-block; /* To contain text and button */
+            vertical-align: middle;
+            max-width: 800px; /* Limit width */
+        }
+
+        .top-survey-banner a.button {
+            margin-left: 15px; /* Space between text and button */
+            padding: 8px 18px; /* Smaller button for the banner */
+            font-size: 0.9em;
+            box-shadow: none; /* No shadow for a flatter look */
+            background-color: var(--primary-blue);
+            color: white; /* Ensure white text on blue button */
+        }
+
+        .top-survey-banner a.button:hover {
+            background-color: var(--primary-blue-dark);
+            transform: none; /* No lift effect for a flatter button */
+            box-shadow: none;
+        }
+
+        .top-survey-banner i {
+            margin-right: 8px;
+            vertical-align: middle;
         }
 
 
@@ -395,6 +444,14 @@ layout: no_layout
             .feature-text-block {
                 padding: 25px;
             }
+            .top-survey-banner p {
+                display: block; /* Stack text and button */
+                margin-bottom: 10px; /* Space between text and button when stacked */
+            }
+            .top-survey-banner a.button {
+                margin-left: 0;
+                margin-top: 10px; /* Space when stacked */
+            }
         }
 
         @media (max-width: 768px) {
@@ -419,6 +476,10 @@ layout: no_layout
                 padding: 20px;
                 margin: 15px auto;
             }
+            .top-survey-banner {
+                font-size: 1em;
+                padding: 12px 15px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -442,12 +503,22 @@ layout: no_layout
     <header class="hero-section">
         <img src="../assets/braveplugin/brave_logo_transparent.png" alt="BRAVE Plugin Logo" class="brave-logo">
         <h1>BRAVE Plugin</h1>
-        <p><b>An audio plugin for Instrumental Interaction</b></p>
+        <p><b>More sounds for your instruments</b></p>
         <div class="hero-buttons">
-            <a href="/BravePlugin/#get-the-plugin--pretrained-models" class="button"><i class="ri-download-fill"></i> Get the Plugin</a>
+            <a href="/BravePlugin2/#get-the-plugin--pretrained-models" class="button"><i class="ri-download-fill"></i> Get the Plugin</a>
             <a href="https://github.com/fcaspe/BRAVE" class="button" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i> Training Code</a>
         </div>
     </header>
+
+    <div class="top-survey-banner">
+        <p><strong><i class="ri-feedback-fill"></i> Help us improve BRAVE!</strong> Share your experience in our quick survey. <a href="https://example.com/your-survey-link" class="button" target="_blank" rel="noopener noreferrer"
+               onclick="gtag('event', 'click', {
+                 'event_category': 'Survey CTA Top Banner',
+                 'event_label': 'Take Survey Button Top'
+               });">
+               <i class="ri-survey-line"></i> Take the Survey
+            </a></p>
+    </div>
 
     <div class="section">
         <h2>Play an AI model as a musical instrument!</h2>
@@ -514,67 +585,68 @@ layout: no_layout
             </a>
         </div>
         <p class="centered-text" style="margin-top: 25px; font-size: 0.95em; color: white;">Plugin notarized by Apple - Latest update: `6/3/25 - Version 1.0`</p>
-        <p class="centered-text" style="font-size: 0.9em; color: white;">Note: This plugin is currently in beta testing, and there may be bugs or unexpected behavior. Your feedback is appreciated to help improve future versions. If you encounter any issues, please contact me.</p>
+        <p class="centered-text" style="font-size: 0.9em; color: white;">Note: This plugin is currently in beta testing, and there may be bugs or unexpected behavior. Your feedback is appreciated to help improve future versions. If you encounter any issues, please contact us.</p>
     </div>
 
     <div class="section">
-        <h3><i class="ri-book-read-fill"></i> Instructions</h3>
-        <p>Use your preferred DAW (Digital Audio Workstation), that supports VST3 or AU plugin formats. Each <strong>pretrained model</strong> implements a new sound you can control with your instrument.</p>
-        <ol>
-            <li>Download the plugin to a directory where your <a href="https://higherhz.com/adding-a-new-vst-synth-plugin-to-reaper/" target="_blank" rel="noopener noreferrer">DAW can see it</a>.</li>
-            <li>Download and uncompress the pretrained models.</li>
-            <li>Open the plugin at your DAW, and select the folder where you stored the models.</li>
-            <li><strong>Done!</strong> The models can now be selected from the GUI's list.</li>
-        </ol>
+        <div class="feature-text-block">
+            <h3><i class="ri-book-read-fill"></i> Instructions</h3>
+            <p>Use your preferred DAW (Digital Audio Workstation), that supports VST3 or AU plugin formats. Each <strong>pretrained model</strong> implements a new sound you can control with your instrument.</p>
+            <ol>
+                <li>Download the plugin to a directory where your <a href="https://higherhz.com/adding-a-new-vst-synth-plugin-to-reaper/" target="_blank" rel="noopener noreferrer">DAW can see it</a>.</li>
+                <li>Download and uncompress the pretrained models.</li>
+                <li>Open the plugin at your DAW, and select the folder where you stored the models.</li>
+                <li><strong>Done!</strong> The models can now be selected from the GUI's list.</li>
+            </ol>
+        </div>
     </div>
 
     <div class="section alt-background">
-        <h3><i class="ri-folder-open-fill"></i> Pretrained models</h3>
-        <p>The provided models are trained from openly available datasets.</p>
-        <table class="model-table">
-            <thead>
-                <tr>
-                    <th>Model</th>
-                    <th>Dataset Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>birdsong.h5</strong></td>
-                    <td><a href="https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset" target="_blank" rel="noopener noreferrer">British Birdsong Dataset</a>, gathered from the <a href="http://www.xeno-canto.org/" target="_blank" rel="noopener noreferrer">Xeno Canto collection</a>.</td>
-                </tr>
-                <tr>
-                    <td><strong>candombe.h5</strong></td>
-                    <td><a href="https://zenodo.org/records/6533068" target="_blank" rel="noopener noreferrer">Uruguayan candombe drumming</a> dataset.</td>
+        <div class="feature-text-block">
+            <h3><i class="ri-folder-open-fill"></i> Pretrained models</h3>
+            <p>The provided models are trained from openly available datasets.</p>
+            <table class="model-table">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Dataset Description</th>
                     </tr>
-                <tr>
-                    <td><strong>drumset.h5</strong></td>
-                    <td><a href="https://magenta.tensorflow.org/datasets/e-gmd" target="_blank" rel="noopener noreferrer">The Expanded Groove MIDI Dataset</a>. 2h 50m of a drummer performing on an electronic drum kit.</td>
-                </tr>
-                <tr>
-                    <td><strong>filosax.h5</strong></td>
-                    <td>Trained using recordings of <em>Participant 1</em> from the <a href="https://dave-foster.github.io/filosax/" target="_blank" rel="noopener noreferrer">Filosax Dataset</a>.</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>birdsong.h5</strong></td>
+                        <td><a href="https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset" target="_blank" rel="noopener noreferrer">British Birdsong Dataset</a>, gathered from the <a href="http://www.xeno-canto.org/" target="_blank" rel="noopener noreferrer">Xeno Canto collection</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>candombe.h5</strong></td>
+                        <td><a href="https://zenodo.org/records/6533068" target="_blank" rel="noopener noreferrer">Uruguayan candombe drumming</a> dataset.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>drumset.h5</strong></td>
+                        <td><a href="https://magenta.tensorflow.org/datasets/e-gmd" target="_blank" rel="noopener noreferrer">The Expanded Groove MIDI Dataset</a>. 2h 50m of a drummer performing on an electronic drum kit.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>filosax.h5</strong></td>
+                        <td>Trained using recordings of <em>Participant 1</em> from the <a href="https://dave-foster.github.io/filosax/" target="_blank" rel="noopener noreferrer">Filosax Dataset</a>.</td>
                 </tr>
             </tbody>
         </table>
-        <p>Check <a href="https://github.com/fcaspe/BRAVE" target="_blank" rel="noopener noreferrer">BRAVE's Repo</a> for instructions on how to train your own models. <a href="https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY" target="_blank" rel="noopener noreferrer">Contact Me</a> if you would like to submit new models to the pretrained pack.</p>
+            <p>Check <a href="https://github.com/fcaspe/BRAVE" target="_blank" rel="noopener noreferrer">BRAVE's Repo</a> for instructions on how to train your own models. <a href="https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY" target="_blank" rel="noopener noreferrer">Contact Me</a> if you would like to submit new models to the pretrained pack.</p>
+        </div>
     </div>
 
     <div class="section contact-section">
-        <h3><i class="ri-question-answer-fill"></i> Contact</h3>
-        <p>If you want to know more, stay up to date on this project, report a bug, or have any feedback, please contact me.</p>
-        <a href="https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY" class="button" target="_blank" rel="noopener noreferrer">
-           <i class="ri-mail-fill"></i> Contact Form
-        </a>
-    </div>
-
-    <div class="section alt-background">
-        <h3><i class="ri-information-fill"></i> About</h3>
-        <p>This project was developed as part of my PhD at the <a href="https://c4dm.eecs.qmul.ac.uk/" target="_blank" rel="noopener noreferrer">Centre For Digital Music</a> and the <a href="http://instrumentslab.org/index.html" target="_blank" rel="noopener noreferrer">Augmented Instruments Lab</a>.</p>
+        <div class="feature-text-block">
+            <h3><i class="ri-question-answer-fill"></i> Contact</h3>
+            <p>If you want to know more, stay up to date on this project, report a bug, or have any feedback, please contact us.</p>
+            <a href="https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY" class="button" target="_blank" rel="noopener noreferrer">
+               <i class="ri-mail-fill"></i> Contact Form
+            </a>
+        </div>
     </div>
 
     <footer class="site-footer">
-        <p>© 2025 Franco Caspe. All rights reserved.</p>
+        <p>© 2025 <a href="https://fcaspe.github.io">Franco Caspe</a>. All rights reserved.</p>
     </footer>
 
 </body>
