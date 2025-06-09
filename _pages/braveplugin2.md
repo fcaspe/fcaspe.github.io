@@ -503,7 +503,7 @@ layout: no_layout
     <header class="hero-section">
         <img src="../assets/braveplugin/brave_logo_transparent.png" alt="BRAVE Plugin Logo" class="brave-logo">
         <h1>BRAVE Plugin</h1>
-        <p><b>More sounds for your instruments</b></p>
+        <p>Reimagining Live Instrumental Performance.</p>
         <div class="hero-buttons">
             <a href="/BravePlugin2/#get-the-plugin--pretrained-models" class="button"><i class="ri-download-fill"></i> Get the Plugin</a>
             <a href="https://github.com/fcaspe/BRAVE" class="button" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i> Training Code</a>
@@ -521,11 +521,13 @@ layout: no_layout
     </div>
 
     <div class="section">
-        <h2>Play an AI model as a musical instrument!</h2>
+        <h2>Unlock Your Creative Sound</h2>
         <div class="feature-text-block">
-            <p class="centered-text">Just using an audio input.</p>
-            <p class="centered-text" style="margin-top: 15px; font-size: 1.2em; font-weight: 600; color: var(--dark-text);">
-                The BRAVE Plugin implements the <a href="/brave">BRAVE AI model</a> for real-time use, with really low latency (~10 ms), allowing you to interact with AI models as a musical instrument.
+            <p class="centered-text" style="font-size: 1.2em; font-weight: 600; color: var(--dark-text);">
+                Whether you sing or play an instrument, BRAVE empowers your artistic expression.
+            </p>
+            <p class="centered-text" style="font-size: 1.2em; font-weight: 600; color: var(--dark-text);">
+                Explore new sonic possibilities, expand your musical palette, and bring fresh ideas to life with your instrument, augmented by intuitive, malleable, and expressive controls.
             </p>
         </div>
     </div>
