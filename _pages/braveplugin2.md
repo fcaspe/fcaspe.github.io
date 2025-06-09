@@ -77,7 +77,7 @@ layout: no_layout
             text-align: center;
         }
 
-        /* New: Feature Text Block for specific content enhancement & consistent utility sections */
+        /* Feature Text Block for consistent utility sections (Instructions, Contact, About etc.) */
         .feature-text-block {
             background-color: white; /* White background for the text block */
             padding: 30px;
@@ -430,6 +430,52 @@ layout: no_layout
             max-width: none; /* Override max-width for p in sections */
         }
 
+        /* --- New Value Proposition Grid & Items --- */
+        .value-proposition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 4 columns on large, adapts */
+            gap: 30px; /* Space between cards */
+            margin-top: 40px; /* Space from h2 */
+            max-width: var(--max-content-width); /* Ensure it stays within content width */
+            margin-left: auto;
+            margin-right: auto;
+            align-items: stretch; /* Ensure all items have same height */
+        }
+
+        .value-item {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            padding: 30px;
+            text-align: center;
+            display: flex; /* For vertical alignment of icon, h3, p */
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Aligns content to top */
+        }
+
+        .value-item i {
+            font-size: 3em; /* Larger icons */
+            color: var(--primary-blue);
+            margin-bottom: 15px; /* Space below icon */
+            line-height: 1; /* Prevent extra space due to line-height */
+        }
+
+        .value-item h3 {
+            font-size: 1.4em; /* Adjust heading size */
+            margin-bottom: 10px; /* Space below h3 */
+            margin-top: 0; /* Override default margin-top from general h3 */
+            text-align: center;
+        }
+
+        .value-item p {
+            font-size: 1em; /* Smaller text for descriptions */
+            line-height: 1.6;
+            margin-bottom: 0; /* Remove last paragraph margin */
+            text-align: center; /* Ensure text is centered within the block */
+            max-width: none; /* Let the value-item control the width */
+        }
+
 
         /* --- Responsive Adjustments --- */
         @media (max-width: 900px) {
@@ -451,6 +497,14 @@ layout: no_layout
             .top-survey-banner a.button {
                 margin-left: 0;
                 margin-top: 10px; /* Space when stacked */
+            }
+            .value-proposition-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min-width for columns */
+                gap: 20px;
+                margin-top: 30px;
+            }
+            .value-item {
+                padding: 25px;
             }
         }
 
@@ -479,6 +533,23 @@ layout: no_layout
             .top-survey-banner {
                 font-size: 1em;
                 padding: 12px 15px;
+            }
+            .value-proposition-grid {
+                grid-template-columns: 1fr; /* Stack on smaller screens */
+                gap: 20px;
+                margin-top: 25px;
+            }
+            .value-item {
+                padding: 20px;
+            }
+            .value-item i {
+                font-size: 2.5em;
+            }
+            .value-item h3 {
+                font-size: 1.3em;
+            }
+            .value-item p {
+                font-size: 0.95em;
             }
         }
 
@@ -510,25 +581,44 @@ layout: no_layout
         </div>
     </header>
 
-    <div class="top-survey-banner">
-        <p><strong><i class="ri-feedback-fill"></i> Help us improve BRAVE!</strong> Share your experience in our quick survey. <a href="https://example.com/your-survey-link" class="button" target="_blank" rel="noopener noreferrer"
+<div class="top-survey-banner">
+        <p><strong><i class="ri-feedback-fill"></i> Working with sound or interaction? </strong> Let's make better tools for performers. <a href="https://research.typeform.com/to/guEbryYJ" class="button" target="_blank" rel="noopener noreferrer"
                onclick="gtag('event', 'click', {
                  'event_category': 'Survey CTA Top Banner',
                  'event_label': 'Take Survey Button Top'
                });">
-               <i class="ri-survey-line"></i> Take the Survey
+               <i class="ri-survey-line"></i> Share your Insights
             </a></p>
     </div>
 
     <div class="section">
         <h2>Unlock Your Creative Sound</h2>
-        <div class="feature-text-block">
-            <p class="centered-text" style="font-size: 1.2em; font-weight: 600; color: var(--dark-text);">
-                Whether you sing or play an instrument, BRAVE empowers your artistic expression.
-            </p>
-            <p class="centered-text" style="font-size: 1.2em; font-weight: 600; color: var(--dark-text);">
-                Explore new sonic possibilities, expand your musical palette, and bring fresh ideas to life with your instrument, augmented by intuitive, malleable, and expressive controls.
-            </p>
+        <div class="value-proposition-grid">
+
+            <div class="value-item">
+                <i class="ri-zap-fill"></i>
+                <h3>Instant Live Transformation</h3>
+                <p>Experience ultra-low latency timbre transfer for seamless, on-the-fly sonic changes during live performance.</p>
+            </div>
+
+            <div class="value-item">
+                <i class="ri-sparkling-2-fill"></i>
+                <h3>Limitless Creative Expression</h3>
+                <p>Expand your artistic horizons and discover new ways to express your musical ideas beyond traditional limits.</p>
+            </div>
+
+            <div class="value-item">
+                <i class="ri-tuner-2-fill"></i>
+                <h3>Unprecedented Sonic Control</h3>
+                <p>Reshape your instrument's timbre, exploring a vast spectrum of new sonic possibilities and unique textures.</p>
+            </div>
+
+            <div class="value-item">
+                <i class="ri-robot-2-fill"></i>
+                <h3>Intuitive AI Interaction</h3>
+                <p>Interact with advanced AI models through simple, expressive controls, making complex sound manipulation intuitive.</p>
+            </div>
+
         </div>
     </div>
 
