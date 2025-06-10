@@ -200,7 +200,7 @@ layout: no_layout
 
         /* --- Hero Section Specifics --- */
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../assets/braveplugin/texture.png') no-repeat center center / cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../assets/braveplugin/texture.jpeg') no-repeat center center / cover;
             padding: 60px 20px;
             color: white;
             text-align: center;
