@@ -747,19 +747,27 @@ layout: no_layout
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>birdsong.h5</strong></td>
+                            <td><strong>Birdsong.h5</strong></td>
                             <td><a href="https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset" target="_blank" rel="noopener noreferrer">British Birdsong Dataset</a>, gathered from the <a href="http://www.xeno-canto.org/" target="_blank" rel="noopener noreferrer">Xeno Canto collection</a>.</td>
                         </tr>
                         <tr>
-                            <td><strong>candombe.h5</strong></td>
+                            <td><strong>LatinDrums.h5</strong></td>
                             <td><a href="https://zenodo.org/records/6533068" target="_blank" rel="noopener noreferrer">Uruguayan candombe drumming</a> dataset.</td>
                         </tr>
                         <tr>
-                            <td><strong>drumset.h5</strong></td>
+                            <td><strong>Drumset.h5</strong></td>
                             <td><a href="https://magenta.tensorflow.org/datasets/e-gmd" target="_blank" rel="noopener noreferrer">The Expanded Groove MIDI Dataset</a>. 2h 50m of a drummer performing on an electronic drum kit.</td>
                         </tr>
                         <tr>
-                            <td><strong>filosax.h5</strong></td>
+                            <td><strong>DxPiano.h5</strong></td>
+                            <td>Trained using renders of Yamaha DX7 E. PIANO, synthesized with <a href="https://asb2m10.github.io/dexed/" target="_blank" rel="noopener noreferrer">Dexed</a>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vocals.h5</strong></td>
+                            <td>Trained using the full corpus of the <a href="https://datashare.ed.ac.uk/handle/10283/2950" target="_blank" rel="noopener noreferrer">VCTK Dataset</a>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>filoSax.h5</strong></td>
                             <td>Trained using recordings of <em>Participant 1</em> from the <a href="https://dave-foster.github.io/filosax/" target="_blank" rel="noopener noreferrer">Filosax Dataset</a>.</td>
                         </tr>
                     </tbody>
