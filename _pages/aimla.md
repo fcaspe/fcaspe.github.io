@@ -19,3 +19,10 @@ Deep learning has found wide use in audio and music applications supporting a va
 </div>
 
 ## <a href="https://colab.research.google.com/drive/1GBVoNxyBoMIKsuy6f9B8uLF2WYgwKrhm">Fuzz Modeling Notebook</a>
+
+## More info
+- [RTNeural](https://github.com/jatinchowdhury18/RTNeural)  
+    - [Example Audio Plugin](https://github.com/jatinchowdhury18/RTNeural-example)  
+    - [Performance Comparisons](https://github.com/jatinchowdhury18/RTNeural-compare)  
+    - [NAM WaveNet in RTNeural](https://github.com/jatinchowdhury18/RTNeural-NAM)  
+- [Sources of Latency – Designing Neural Synthesizers for Low-Latency Interaction](https://fcaspe.github.io/brave/)  
