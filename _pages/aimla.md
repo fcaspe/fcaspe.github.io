@@ -1,0 +1,21 @@
+---
+permalink: /aimla/
+title: "Real-time Neural Audio"
+author_profile: false
+layout: splash
+---
+<div>
+<center>
+<img src="../assets/images/aimla25.png" width="60%">
+</center>
+</div>
+<div>
+<center><h2>Abstract</h2></center>
+<p align="justify">
+<font size="4">
+Deep learning has found wide use in audio and music applications supporting a variety of uses, from music generation and audio effects to timbre transfer, transcription, and serving as gestural processors and synthesizers in digital musical instruments. The potential for innovation in these areas is vast. However, a significant gap exists between data science engineers and DSP engineers, as training and deploying models for musical applications involve distinctly different skills. This divide can complicate practical implementation for deep learning engineers, sometimes resulting in challenging or impractical systems for real-world applications. Through this tutorial, we aim to close this gap within the AI for the audio community by sharing relevant use cases, challenges, and possibilities.
+</font>
+</p>
+</div>
+
+## <a href="https://colab.research.google.com/drive/1GBVoNxyBoMIKsuy6f9B8uLF2WYgwKrhm">Fuzz Modeling Notebook</a>
