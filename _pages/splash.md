@@ -91,7 +91,7 @@ layout: splash #Overriding default Layout for main webpage.
       <tr>
         <td>8th Sep 2025</td>
         <td>
-          <a href="https://fcaspe.github.io/aimla/">Presenting a Tutorial on Real-time Neural Audio Inference and Design</a> 
+          <a href="https://fcaspe.github.io/aimla/">Giving a Tutorial on Real-time Neural Audio Inference and Design</a> 
           with Jatin Chowdhury at the first AES conference in AI and ML for Audio 
           (<a href="https://aes2.org/events-calendar/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/">AIMLA</a>) in London
         </td>
@@ -99,13 +99,13 @@ layout: splash #Overriding default Layout for main webpage.
       <tr>
         <td>24th Jun 2025</td>
         <td>
-          Presenting my <a href="https://instrumentslab.org/data/andrew/caspe_nime2025.pdf">paper and demo</a> on Waveform Autoencoding for Instrumental Interaction at NIME 25 in Australia
+          I am presenting my <a href="https://instrumentslab.org/data/andrew/caspe_nime2025.pdf">paper and demo</a> on Waveform Autoencoding for Instrumental Interaction at NIME 25 in Australia
         </td>
       </tr>
       <tr>
         <td>12–14th Jun 2025</td>
         <td>
-          Presenting the <a href="https://fcaspe.github.io/BravePlugin">BRAVE Plugin</a> at <a href="https://sonar.es/">Sonar 2025</a> in Barcelona!
+          Showcasing the <a href="https://fcaspe.github.io/BravePlugin">BRAVE Plugin</a> at <a href="https://sonar.es/">Sonar 2025</a> in Barcelona!
         </td>
       </tr>
       <tr>
@@ -120,7 +120,7 @@ layout: splash #Overriding default Layout for main webpage.
       <tr>
         <td>11th Apr 2025</td>
         <td>
-          Our paper <a href="https://fcaspe.github.io/brave/">Designing Neural Synthesizers for Low-Latency Interaction</a> has been published in the May Issue of JAES.
+          Our paper <a href="https://fcaspe.github.io/brave/">Designing Neural Synthesizers for Low-Latency Interaction</a> has been published in the May 2025 Issue of JAES.
         </td>
       </tr>
     </tbody>

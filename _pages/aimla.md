@@ -6,7 +6,7 @@ layout: splash
 ---
 <div>
 <center>
-<img src="../assets/images/aimla25.png" width="60%">
+<img src="../assets/images/tutorial/poster.png" width="60%">
 </center>
 </div>
 <div>
@@ -21,8 +21,14 @@ Deep learning has found wide use in audio and music applications supporting a va
 ## <a href="https://colab.research.google.com/drive/1GBVoNxyBoMIKsuy6f9B8uLF2WYgwKrhm">Fuzz Modeling Notebook</a>
 
 ## More info
-- [RTNeural](https://github.com/jatinchowdhury18/RTNeural)  
+- [RTNeural](https://github.com/jatinchowdhury18/RTNeural)
     - [Example Audio Plugin](https://github.com/jatinchowdhury18/RTNeural-example)  
     - [Performance Comparisons](https://github.com/jatinchowdhury18/RTNeural-compare)  
     - [NAM WaveNet in RTNeural](https://github.com/jatinchowdhury18/RTNeural-NAM)  
-- [Sources of Latency – Designing Neural Synthesizers for Low-Latency Interaction](https://fcaspe.github.io/brave/)  
+- [Sources of Latency – Designing Neural Synthesizers for Low-Latency Interaction](https://fcaspe.github.io/brave/)
+- [ChowDSP](https://chowdsp.com/) Homepage
+- Other projects that use RTNeural
+    - [NeuralNote](https://github.com/DamRsn/NeuralNote/tree/master) - Transcription plugin
+    - [GuitarML](https://guitarml.com/)
+    - [BRAVE Plugin](https://fcaspe.github.io/BravePlugin/) - Live Timbre Transfer
+    - [ToobAmp](https://github.com/rerdavies/ToobAmp) - FX Models for Raspberry Pi
