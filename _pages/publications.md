@@ -8,6 +8,13 @@ layout: splash
 
 ## Peer Reviewed Articles
 
+- <a href="https://www.nime.org/proc/nime2025_10/"><b>Waveform Autoencoding at the Edge of Perceivable Latency</b></a>  
+Franco Caspe, Andrew McPherson, Mark Sandler.  
+<i>NIME 2025</i>
+{: .text-justify}
+
+
+
 - <a href="https://fcaspe.github.io/brave/"><b>Designing Neural Synthesizers for Low Latency Interaction</b></a>  
 Franco Caspe, Jordie Shier, Mark Sandler, Charalampos Saitis, Andrew McPherson  
 <i>Journal of the Audio Engineering Society</i>
