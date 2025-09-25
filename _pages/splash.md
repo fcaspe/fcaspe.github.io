@@ -89,11 +89,16 @@ layout: splash #Overriding default Layout for main webpage.
     </thead>
     <tbody>
       <tr>
+        <td>25th Sep 2025</td>
+        <td>
+          Streaming online our <a href="/workshop/rt_neural_audio/"> tutorial on Real-time Neural Audio Inference and Design</a> with Jatin Chowdhury!
+        </td>
+      </tr>
+      <tr>
         <td>8th Sep 2025</td>
         <td>
-          <a href="https://fcaspe.github.io/aimla/">Giving a Tutorial on Real-time Neural Audio Inference and Design</a> 
-          with Jatin Chowdhury at the first AES conference in AI and ML for Audio 
-          (<a href="https://aes2.org/events-calendar/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/">AIMLA</a>) in London
+          Giving a Tutorial on Real-time Neural Audio Inference and Design with Jatin Chowdhury at the first AES conference in AI and ML for Audio 
+          (<a href="https://aes2.org/events-calendar/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/">AIMLA</a>) in London.
         </td>
       </tr>
       <tr>
