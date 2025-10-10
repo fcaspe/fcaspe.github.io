@@ -15,7 +15,8 @@ layout: splash
 <font size="4">*Dyson School of Design Engineering - Imperial College</font><br>
 <font size="+1"><b><a href="https://aes2.org/publications/elibrary-page/?id=22820" target="_blank">Paper</a> -
 <a href="https://github.com/fcaspe/BRAVE" target="_blank">Code</a> - 
-<a href="/BravePlugin" target="_blank">Plugin</a></b>
+<a href="/BravePlugin" target="_blank">Original BRAVE Plugin</a></b> -
+<a href="https://minifusion.live" target="_blank">Minifusion Live (New Plugin!)</a></b>
 </font><br>
 
 </center>
