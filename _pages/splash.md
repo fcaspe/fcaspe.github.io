@@ -89,6 +89,25 @@ layout: splash #Overriding default Layout for main webpage.
     </thead>
     <tbody>
       <tr>
+        <td>23rd Oct 2025</td>
+        <td>
+          Presenting our paper in <a href="/brave"> Low-Latency Neural Synthesizers </a> at the <a href="https://aesshow2025lb.sched.com/event/28veP/designing-neural-synthesizers-for-low-latency-interaction"> AES Show</a> in Long Beach, California.
+        </td>
+      </tr>
+      <tr>
+        <td>13th Oct 2025</td>
+        <td>
+          In-person demoing of <a href="https://minifusion.live"> Minifusion: Live Instrument Transformation</a> at <a href="https://waspaa.com/technical-program-schedule/"> WASPAA</a> in Lake Tahoe, California, USA.
+        </td>
+      </tr>
+      <tr>
+        <td>10th Oct 2025</td>
+        <td>
+          I am giving a talk on Neural Audio Synthesis for Low-Latency Interaction at the 
+          <a href="https://www.cirmmt.org/en/events/workshops/research/10-oct-2025-generative-audio-music-making"> CIRMMT's GAMMa Workshop</a>
+        </td>
+      </tr>
+      <tr>
         <td>25th Sep 2025</td>
         <td>
           Streaming online our <a href="/workshop/rt_neural_audio/"> tutorial on Real-time Neural Audio Inference and Design</a> with Jatin Chowdhury!
