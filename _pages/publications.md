@@ -25,7 +25,7 @@ Courtney N. Reed, Adan L. Benito, Franco Caspe, Andrew P. McPherson.
 <i>ACM Transactions on Computer-Human Interaction</i>
 {: .text-justify}
 
-- <a href="https://fcaspe.github.io/fmtransfer/"><b>FM Tone Transfer with Learned Envelopes</b></a>  
+- <a href="https://fcaspe.github.io/fmtransfer/"><b>FM Tone Transfer with Envelope Learning</b></a>
 Franco Caspe, Andrew McPherson, Mark Sandler.  
 <i>Audio Mostly 2023</i>
 {: .text-justify}
