@@ -624,12 +624,12 @@ layout: no_layout
     </header>
 
     <div class="top-survey-banner">
-        <p><strong><i class="ri-feedback-fill"></i> Working with sound or interaction? </strong> Let's make better tools for performers. <a href="https://research.typeform.com/to/guEbryYJ" class="button" target="_blank" rel="noopener noreferrer"
+        <p><strong> New Plugin Available! </strong> Compatible with BRAVE Models <a href="https://minifusion.live" class="button" target="_blank" rel="noopener noreferrer"
                onclick="gtag('event', 'click', {
                  'event_category': 'Survey CTA Top Banner',
                  'event_label': 'Take Survey Button Top'
                });">
-               <i class="ri-survey-line"></i> Share your Insights
+            Download the Minifusion Plugin
             </a></p>
     </div>
     <div class="section">
@@ -694,101 +694,19 @@ layout: no_layout
     </div>
 
     <div class="section download-section" id="get-the-plugin--pretrained-models">
-        <h2>Get the Plugin & Pretrained Models</h2>
-        <p class="centered-text">Download the latest version for <b>macOS Apple Silicon</b> and the essential pretrained models to get started.</p>
+        <h2>Get the new Live Timbre Transfer Plugin</h2>
+        <p class="centered-text">Compatible with BRAVE models and also a higher quality iteration.
         <div class="button-group">
-            <a href="https://github.com/fcaspe/BraveDemoPluginReleases/releases/download/v1.0.0/BraveDemoPlugin.zip"
+            <a href="https://minifusion.live"
                class="button"
                onclick="gtag('event', 'download', {
                  'event_category': 'Plugin Downloads',
                  'event_label': 'MacOS ARM64',
                  'event_action': 'BravePlugin v1.0.0'
                });">
-               <i class="ri-download-fill"></i> Download Plugin
-            </a>
-
-            <a href="https://github.com/fcaspe/BraveDemoPluginReleases/releases/download/v1.0.0/pretrained.zip"
-               class="button"
-               onclick="gtag('event', 'download', {
-                 'event_category': 'Model Downloads',
-                 'event_label': 'Pretrained Models',
-                 'event_action': 'BRAVE Pretrained'
-               });">
-               <i class="ri-folder-zip-fill"></i> Download Pretrained Models
+               <i class="ri-download-fill"></i> Go to Minifusion's Webiste
             </a>
         </div>
-        <p class="centered-text" style="margin-top: 25px; font-size: 0.95em; color: white;">Plugin notarized by Apple - Latest update: `6/3/25 - Version 1.0`</p>
-        <p class="centered-text" style="font-size: 0.9em; color: white;">Note: This plugin is currently in beta testing, and there may be bugs or unexpected behavior. Your feedback is appreciated to help improve future versions. If you encounter any issues, please contact us.</p>
-    </div>
 
-    <div class="section">
-        <div class="feature-text-block">
-            <h3><i class="ri-book-read-fill"></i> Instructions</h3>
-            <p>Use your preferred DAW (Digital Audio Workstation), that supports VST3 or AU plugin formats. Each <strong>pretrained model</strong> implements a new sound you can control with your instrument.</p>
-            <ol>
-                <li>Download the plugin to a directory where your <a href="https://higherhz.com/adding-a-new-vst-synth-plugin-to-reaper/" target="_blank" rel="noopener noreferrer">DAW can see it</a>.</li>
-                <li>Download and uncompress the pretrained models.</li>
-                <li>Open the plugin at your DAW, and select the folder where you stored the models.</li>
-                <li><strong>Done!</strong> The models can now be selected from the GUI's list.</li>
-            </ol>
-        </div>
-    </div>
 
-    <div class="section alt-background">
-        <div class="feature-text-block">
-            <h3><i class="ri-folder-open-fill"></i> Pretrained models</h3>
-            <p>The provided models are trained from openly available datasets.</p>
-            <div class="table-responsive"> <table class="model-table">
-                    <thead>
-                        <tr>
-                            <th>Model</th>
-                            <th>Dataset Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Birdsong.h5</strong></td>
-                            <td><a href="https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset" target="_blank" rel="noopener noreferrer">British Birdsong Dataset</a>, gathered from the <a href="http://www.xeno-canto.org/" target="_blank" rel="noopener noreferrer">Xeno Canto collection</a>.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>LatinDrums.h5</strong></td>
-                            <td><a href="https://zenodo.org/records/6533068" target="_blank" rel="noopener noreferrer">Uruguayan candombe drumming</a> dataset.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Drumset.h5</strong></td>
-                            <td><a href="https://magenta.tensorflow.org/datasets/e-gmd" target="_blank" rel="noopener noreferrer">The Expanded Groove MIDI Dataset</a>. 2h 50m of a drummer performing on an electronic drum kit.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>DxPiano.h5</strong></td>
-                            <td>Trained using renders of Yamaha DX7 E. PIANO, synthesized with <a href="https://asb2m10.github.io/dexed/" target="_blank" rel="noopener noreferrer">Dexed</a>.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Vocals.h5</strong></td>
-                            <td>Trained using the full corpus of the <a href="https://datashare.ed.ac.uk/handle/10283/2950" target="_blank" rel="noopener noreferrer">VCTK Dataset</a>.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>filoSax.h5</strong></td>
-                            <td>Trained using recordings of <em>Participant 1</em> from the <a href="https://dave-foster.github.io/filosax/" target="_blank" rel="noopener noreferrer">Filosax Dataset</a>.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div> <p>Check <a href="https://github.com/fcaspe/BRAVE" target="_blank" rel="noopener noreferrer">BRAVE's Repo</a> for instructions on how to train your own models. <a href="https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY" target="_blank" rel="noopener noreferrer">Contact Me</a> if you would like to submit new models to the pretrained pack.</p>
-        </div>
-    </div>
-
-    <div class="section contact-section">
-        <div class="feature-text-block">
-            <h3><i class="ri-question-answer-fill"></i> Contact</h3>
-            <p>If you want to know more, stay up to date on this project, report a bug, or have any feedback, please contact us.</p>
-            <a href="https://docs.google.com/forms/d/1nB1DjQSS-S3RNT1TiE_z2SoBZPDdIY2svXx1yg-z2fY" class="button" target="_blank" rel="noopener noreferrer">
-               <i class="ri-mail-fill"></i> Contact Form
-            </a>
-        </div>
-    </div>
-
-    <footer class="site-footer">
-        <p>© 2025 <a href="https://fcaspe.github.io">Franco Caspe</a>. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+        <centered><p>© 2025 <a href="https://fcaspe.github.io">Franco Caspe</a>. All rights reserved.</p></centered>
