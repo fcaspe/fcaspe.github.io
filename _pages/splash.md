@@ -4,25 +4,83 @@ title: "Franco Caspe"
 layout: splash #Overriding default Layout for main webpage.
 ---
 
+<style>
+/* CSS for the About Me Card Container */
+.about-me-card-wrapper {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
 
-<div style="display:flex; align-items:flex-start; flex-wrap:wrap; justify-content:left"> 
-	<img style="padding-right:30px" src="/assets/images/40k2.jpeg" width="460px/">
-	<div style="min-width:30px; max-width: 770px;flex-shrink:1">
-	<p align="justify"><b>I am a PhD student at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, maker, and photographer using analog processes.</b>
-    </p>
-    <p align="justify"> 
-    I have an International M.Sc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>, my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>.
-    </p>
-    <p align="justify">
-    Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>.
-    During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.</p>
-    <p align="justify"> 
-    During 2018-2019, I worked in India as a Research Intern on <code>RF Metamaterial Applications</code>
-    and in Italy developing a synthesis plattform for a <code>Tonewheel Organ Synthesizer</code>.
-    </p>
+/* KEY FOR TWO-COLUMN LAYOUT: CSS Grid */
+.about-me-container {
+    display: grid;
+    /* Defines two columns: one narrow for the vertical image, one wider for text */
+    grid-template-columns: 400px 1fr; 
+    gap: 40px; 
+    align-items: start; /* Align content to the top */
+}
 
+.about-me-image-column {
+    /* Ensures the image respects the 400px column width */
+    max-width: 100%; 
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+.about-me-image-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Optional: Ensure image fills the space cleanly */
+    object-fit: cover; 
+}
+
+.about-me-content-column p {
+    margin-bottom: 1.2em; /* Good separation between paragraphs */
+    line-height: 1.6;
+}
+
+/* RESPONSIVENESS: Switches to a single column on smaller screens */
+@media (max-width: 900px) {
+    .about-me-container {
+        /* On small screens, stack columns vertically */
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .about-me-image-column {
+        /* Center the image and make it a reasonable size */
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+</style>
+
+<div class="about-me-card-wrapper">
+    <div class="about-me-container"> 
+        <div class="about-me-image-column">
+            <img src="/assets/images/40k2.jpeg" alt="Franco Caspe professional portrait">
+        </div>
+        <div class="about-me-content-column">
+            <p>
+                <b>I am a PhD student at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, maker, and photographer using analog processes.</b>
+            </p>
+            <p> 
+                I have an International M.Sc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>; my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>.
+            </p>
+            <p>
+                Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>. During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.
+            </p>
+            <p> 
+                During 2018-2019, I worked in India as a Research Intern on <code>RF Metamaterial Applications</code> and in Italy developing a synthesis platform for a <code>Tonewheel Organ Synthesizer</code>.
+            </p>
+        </div>  
+    </div>
 </div>
-
 
 <style>
 /* Scoped only to .news-table so it won’t conflict */
@@ -88,6 +146,12 @@ layout: splash #Overriding default Layout for main webpage.
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td>11th Nov 2025</td>
+        <td>
+          Presenting a new talk at <a href="https://audio.dev/conference/"> ADC 2025</a>, <a href="https://conference.audio.dev/session/2025/engineering-practices-break-music-interaction-but-can-also-fix-it/">Engineering Practices Break Music Interaction</a>, where I share the main takeaways of my PhD journey designing AI systems for low-latency musical interaction.
+        </td>
+      </tr>
       <tr>
         <td>23rd Oct 2025</td>
         <td>
