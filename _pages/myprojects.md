@@ -104,7 +104,7 @@ layout: splash
                 <h3>Minifusion: Live Instrument Transformation</h3>
                 <p>Real-time Timbre Transfer for musical instruments.</p>
                 <div class="card-links">
-                    <span>Website</span> &bull; <span>Demo Video</span>
+                    <span>Website</span>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@ layout: splash
                 <h3>Bessel's Trick</h3>
                 <p>FM Tone Transfer plugin for real-time performances!</p>
                 <div class="card-links">
-                    <span>Website</span> &bull; <span>Demo Video</span>
+                    <span>Website</span>
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@ layout: splash
                 <h3>40k On The Floor</h3>
                 <p>Re-imagined barrel organ for electronic music live performances. <i>Presented at the Synthlux Hackaton 2023</i></p>
                 <div class="card-links">
-                    <span>Website</span> &bull; <span>Demo Video</span>
+                    <span>Website</span>
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@ layout: splash
                 <h3>bFreeOrgan2</h3>
                 <p>Open Source Additive Synthesizer for Cortex M4.</p>
                 <div class="card-links">
-                    <span>GitHub</span> &bull; <span>Demo Video</span>
+                    <span>GitHub</span>
                 </div>
             </div>
         </div>
