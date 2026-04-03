@@ -67,15 +67,15 @@ layout: splash #Overriding default Layout for main webpage.
         </div>
         <div class="about-me-content-column">
             <p>
-                <b>
-                I am a PhD candidate at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, maker, and analog photographer.</b>
+                <b>I am a PhD candidate at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, maker, and analog photographer.</b>
             </p>
-            <p> I am interested in expressive, and nuanced interactive music technology that is context-aware, and feel natural to use. 
-            At QMUL, I am designing novel <a href= "https://minifusion.live"> sound-based control modalities for musical instruments with AI </a>. </p>
+            <p> 
+                I am interested in expressive, and nuanced interactive music technology that is context-aware, and feel natural to use. At QMUL, I am designing novel <a href= "https://minifusion.live"> sound-based control modalities for musical instruments with AI </a>. </p>
             <p>
-            I also have an International M.Sc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>; my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>. </p>
+                I also have an International M.Sc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>; my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>.
+            </p>
             <p>
-            Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>. During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.
+                Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>. During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.
             </p>
             <p> 
                 I have interned in Yamaha Music, Max Plank Institute for Software Systems, and with the IAESTE programme.

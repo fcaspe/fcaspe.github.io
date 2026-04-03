@@ -55,8 +55,75 @@ Papers and info:
 [Link to Audio Plugin](/BravePlugin)
 
 ### Timbre Transfer with BRAVE
-Show differences between rave and brave timbre transfer
+We present the reconstruction results of percussive and tonal sounds of RAVE and BRAVE models trained on the **Filosax** and **Drumset** datasets.
 
+**Models Trained on the Drumset Dataset**  
+We encode and decode original excerpts of Drumset, Beatbox and Candombe datasets, using RAVE and BRAVE models trained on Drumset, and present the results on the following table.
+
+<table>
+    <thead>
+        <tr>
+            <th>Instrument</th>
+            <th>Original</th>
+            <th>RAVE (Trained on Drumset)</th>
+            <th>BRAVE (Trained on Drumset)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Drumset</td>
+            <td><audio controls><source src="../../assets/brave/audios/3_soul-groove3_86_beat_4-4_1.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/noise_c2048_r10-drumset_drumset_3_soul-groove3_86_beat_4-4_1.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/c128_r05_p40_light-drumset_drumset_3_soul-groove3_86_beat_4-4_1.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>Beatbox</td>
+            <td><audio controls><source src="../../assets/brave/audios/P10_HHclosed_Personal.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/noise_c2048_r10-drumset_beatbox_P10_HHclosed_Personal.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/c128_r05_p40_light-drumset_beatbox_P10_HHclosed_Personal.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>Candombe</td>
+            <td><audio controls><source src="../../assets/brave/audios/csic.1995_ansina1_05.flac.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/noise_c2048_r10-drumset_candombe_csic.1995_ansina1_05.flac.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/c128_r05_p40_light-drumset_candombe_csic.1995_ansina1_05.flac.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+**Models Trained on the Filosax Dataset**  
+We encode and decode original excerpts of the Filosax, Svoice and Viola datasets, using RAVE and BRAVE models trained on Filosax, and present the results on the following table.
+
+<table>
+    <thead>
+        <tr>
+            <th>Instrument</th>
+            <th>Original</th>
+            <th>RAVE (Trained on Filosax)</th>
+            <th>BRAVE (Trained on Filosax)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Filosax</td>
+            <td><audio controls><source src="../../assets/brave/audios/Sax_45.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/noise_c2048_r10-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/c128_r05_p40_light-filosax_filosax_Sax_45.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>Svoice</td>
+            <td><audio controls><source src="../../assets/brave/audios/pos_7.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/noise_c2048_r10-filosax_svoice_pos_7.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/c128_r05_p40_light-filosax_svoice_pos_7.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>Viola</td>
+            <td><audio controls><source src="../../assets/brave/audios/AuSep_3_va_24_Pirates.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/noise_c2048_r10-filosax_viola_AuSep_3_va_24_Pirates.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="../../assets/brave/audios/c128_r05_p40_light-filosax_viola_AuSep_3_va_24_Pirates.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
 
 # Chapter 7: Interaction Design with Neural Audio
 Papers and info:
