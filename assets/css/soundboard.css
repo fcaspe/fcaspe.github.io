@@ -1,0 +1,48 @@
+/* assets/css/soundboard.css */
+.soundboard-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.soundboard-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.soundboard-table td {
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.sound-img {
+    width: 480px;
+    height: 200px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.sound-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stop-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.stop-btn:hover {
+    background-color: #c9302c;
+}

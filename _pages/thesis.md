@@ -5,15 +5,6 @@ author_profile: false
 layout: splash
 
 excerpt: "<b><br>Audiovisual repository</b><br><i>for the Thesis</i>."
-header:
-  overlay_image: ../assets/braveplugin/logo.png
-  overlay_filter: rgba(0, 0, 0, 255)
-  actions:
-    - label: "Projects"
-      url: ""
-    - label: "Publications"
-      url: ""
-
 ---
 
 &nbsp;
@@ -33,8 +24,14 @@ Add audio examples for DDX7 parameter intervention
 
 ### DDX7 Tone Transfer
 
-Add here the video 
+Playing a model trained on violin audio!
 
+<iframe 
+  src="https://drive.google.com/file/d/1fpukk2Zu1SMlr0CLHk2CA9mmbNo0rjYV/preview" 
+  width="640" 
+  height="360" 
+  allow="autoplay">
+</iframe>
 
 ## 5.2 Direct Envelope Learning
 
@@ -43,10 +40,14 @@ Add here the video
 ### Envelope Learning Audio Examples?
 Show that the reconstructed audio samples sound the same?? (not refereced by thesis)
 
+
 ### Envelope Learning Demo
-
-Add demo video of envelope learning demo
-
+<iframe 
+  src="https://drive.google.com/file/d/1uazCV46NHEftv0E4DsvEo-fD6QqZRx8U/preview" 
+  width="640" 
+  height="360" 
+  allow="autoplay">
+</iframe>
 
 # Chapter 6: Representation Learning for Low-Latency Interaction
 Papers and info: 
@@ -129,3 +130,43 @@ We encode and decode original excerpts of the Filosax, Svoice and Viola datasets
 Papers and info:
 
 ### Rendered Transformations for different BRAVE Configurations
+
+<button class="stop-btn" onclick="stopSound()">Click on a Spectrum to play its sound. Click again to stop it.</button>
+
+<link rel="stylesheet" href="{{ '/assets/css/soundboard.css' | relative_url }}">
+
+
+{% assign row_names = "Original (Input), FM Tone Transfer (BRASS), BRAVE Filosax, BRAVE 2 Filosax, BRAVE 2d Filosax, BRAVE 2d Filosax (G Aug.), BRAVE 2d Filosax (Grafted / G Aug)" | split: ", " %}
+
+<div class="soundboard-container">
+    <table class="soundboard-table">
+        <thead>
+            <tr>
+                <th>Sound Example</th>
+                <th>Acoustic Guitar, Arpeggio</th>
+                <th>Electric Guitar, Muted Strings (Ambiguous Pitch)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in (0..6) %}
+            <tr>
+                <td class="row-label">
+                    <strong>{{ row_names[i] }}</strong>
+                </td>
+                <td>
+                    <img src="{{ '/assets/thesis/images/ds/all_arpeggio/ds_arpeggio_' | append: i | append: '.png' | relative_url }}" 
+                         class="sound-img" 
+                         onclick="playSound('{{ '/assets/thesis/sounds/ds/all_arpeggio/ds_arpeggio_' | append: i | append: '.wav' | relative_url }}')">
+                </td>
+                <td>
+                    <img src="{{ '/assets/thesis/images/ds/all_ambpitch/ds_ambpitch_' | append: i | append: '.png' | relative_url }}" 
+                         class="sound-img" 
+                         onclick="playSound('{{ '/assets/thesis/sounds/ds/all_ambpitch/ds_ambpitch_' | append: i | append: '.wav' | relative_url }}')">
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script src="{{ '/assets/js/soundboard.js' | relative_url }}"></script>
