@@ -136,7 +136,7 @@ Papers and info:
 <link rel="stylesheet" href="{{ '/assets/css/soundboard.css' | relative_url }}">
 
 
-{% assign row_names = "Original (Input), FM Tone Transfer (BRASS), BRAVE Filosax, BRAVE 2 Filosax, BRAVE 2d Filosax, BRAVE 2d Filosax (G Aug.), BRAVE 2d Filosax (Grafted / G Aug)" | split: ", " %}
+{% assign row_names = "Original (Input), FM Tone Transfer (BRASS), BRAVE Original, BRAVE Two-Phase, BRAVE One-Phase, BRAVE 2d Filosax (G Aug.), BRAVE Grafted (VCTK)" | split: ", " %}
 
 <div class="soundboard-container">
     <table class="soundboard-table">
@@ -149,6 +149,7 @@ Papers and info:
         </thead>
         <tbody>
             {% for i in (0..6) %}
+            {% if i == 5 %}{% continue %}{% endif %}
             <tr>
                 <td class="row-label">
                     <strong>{{ row_names[i] }}</strong>
