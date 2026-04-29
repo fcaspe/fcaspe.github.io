@@ -143,8 +143,8 @@ Papers and info:
         <thead>
             <tr>
                 <th>Sound Example</th>
-                <th>Acoustic Guitar, Arpeggio</th>
-                <th>Electric Guitar, Muted Strings (Ambiguous Pitch)</th>
+                <th>Acoustic Guitar, Chord and Arpeggio</th>
+                <th>Electric Guitar, Muted Strings</th>
             </tr>
         </thead>
         <tbody>
@@ -155,9 +155,9 @@ Papers and info:
                     <strong>{{ row_names[i] }}</strong>
                 </td>
                 <td>
-                    <img src="{{ '/assets/thesis/images/ds/all_arpeggio/ds_arpeggio_' | append: i | append: '.png' | relative_url }}" 
+                    <img src="{{ '/assets/thesis/images/ds/all_chord_arpeggio/ds_chord_arpeggio_' | append: i | append: '.png' | relative_url }}" 
                          class="sound-img" 
-                         onclick="playSound('{{ '/assets/thesis/sounds/ds/all_arpeggio/ds_arpeggio_' | append: i | append: '.wav' | relative_url }}')">
+                         onclick="playSound('{{ '/assets/thesis/sounds/ds/all_chord_arpeggio/ds_chord_arpeggio_' | append: i | append: '.wav' | relative_url }}')">
                 </td>
                 <td>
                     <img src="{{ '/assets/thesis/images/ds/all_ambpitch/ds_ambpitch_' | append: i | append: '.png' | relative_url }}" 
