@@ -143,8 +143,8 @@ Papers and info:
         <thead>
             <tr>
                 <th>Sound Example</th>
-                <th>Acoustic Guitar, Chord and Arpeggio</th>
-                <th>Electric Guitar, Muted Strings</th>
+                <th>Acoustic Guitar: Chord and Arpeggio</th>
+                <th>Electric Guitar: Muted Strings</th>
             </tr>
         </thead>
         <tbody>
@@ -171,3 +171,95 @@ Papers and info:
 </div>
 
 <script src="{{ '/assets/js/soundboard.js' | relative_url }}"></script>
+
+
+### Tonal and Percussive Rendering for Different Representations
+
+The following table presents audio examples of transformations of different violin articulation excerpts models trained on the same data, but which learn different representations. 
+
+It seems that one-phase models, and models grafted with one-phase encoders, learn representations with a good capacity of tonal rendering, where a tonal input seems to "bleed" through the model (highlighted in blue). Models trained on a two-phase approach, or grafted with a two-phase encoder, seem to render atonal outputs even in presence of tonal inputs (in orange), a phenomenom through which the model seems to "hallucinate" atonal sounds in response to a tonal input.
+
+<style>
+/* Define your colors */
+.highlight-tonal { background-color: #e3f2fd; } /* Very light blue */
+.highlight-perc { background-color: #fff3e0; } /* Very light orange */
+/* Keep the text readable */
+table tr td { padding: 8px; }   
+</style>
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Bowing behind the bridge</th>
+      <th>Ordinario</th>
+      <th>Jeté/Ricochet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Original Category -->
+    <tr>
+      <td></td>
+      <td><strong>Input</strong></td>
+      <td><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/original/violin_articulation1.wav"></audio></td>
+      <td><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/original/violin_articulation2.wav"></audio></td>
+      <td><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/original/violin_articulation3.wav"></audio></td>
+    </tr>
+    <!-- Animals Dataset -->
+    <tr>
+      <td rowspan="3"><strong>Animals</strong></td>
+      <td class="highlight-perc">Two-Phase</td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_constrained/violin_articulation1.wav"></audio></td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_constrained/violin_articulation2.wav"></audio></td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_constrained/violin_articulation3.wav"></audio></td>
+    </tr>
+    <tr>
+      <td class="highlight-tonal">One-Phase</td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_std/violin_articulation1.wav"></audio></td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_std/violin_articulation2.wav"></audio></td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_std/violin_articulation3.wav"></audio></td>
+    </tr>
+    <tr>
+      <td class="highlight-tonal">Grafted (one-phase)</td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_tonal/violin_articulation1.wav"></audio></td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_tonal/violin_articulation2.wav"></audio></td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/animals_tonal/violin_articulation3.wav"></audio></td>
+    </tr>
+    <!-- Dice Dataset -->
+    <tr>
+      <td rowspan="3"><strong>Dice</strong></td>
+      <td class="highlight-perc">Two-Phase</td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_constrained/violin_articulation1.wav"></audio></td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_constrained/violin_articulation2.wav"></audio></td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_constrained/violin_articulation3.wav"></audio></td>
+    </tr>
+    <tr>
+      <td class="highlight-perc">Grafted (two-phase)</td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_percussive/violin_articulation1.wav"></audio></td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_percussive/violin_articulation2.wav"></audio></td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_percussive/violin_articulation3.wav"></audio></td>
+    </tr>
+    <tr>
+      <td class="highlight-tonal">One-Phase</td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_std/violin_articulation1.wav"></audio></td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_std/violin_articulation2.wav"></audio></td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/dice_std/violin_articulation3.wav"></audio></td>
+    </tr>
+    <!-- Music Dataset -->
+    <tr>
+      <td rowspan="2"><strong>Music</strong></td>
+      <td class="highlight-perc">Two-Phase</td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/music_constrained/violin_articulation1.wav"></audio></td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/music_constrained/violin_articulation2.wav"></audio></td>
+      <td class="highlight-perc"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/music_constrained/violin_articulation3.wav"></audio></td>
+    </tr>
+    <tr>
+      <td class="highlight-tonal">One-Phase</td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/music_std/violin_articulation1.wav"></audio></td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/music_std/violin_articulation2.wav"></audio></td>
+      <td class="highlight-tonal"><audio controls src="/assets/thesis/sounds/ds/rep_as_materials/music_std/violin_articulation3.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
