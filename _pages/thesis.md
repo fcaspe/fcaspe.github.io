@@ -11,37 +11,21 @@ excerpt: "<b><br>Audiovisual repository</b><br><i>for the Thesis</i>."
 
 # Chapter 5: Tone Transfer with FM Synthesis
 
-## 5.1: Differentiable FM Synthesis
+### Audio Examples
 
-### DDX7 Audio Examples
+You can access to the audio examples at the corresponding website:
 
-Add here the DDX7 audio examples from the paper. WIP: refer to this section in the Thesis
+[DDX7 paper website](/ddx7)
 
-### Parameter Intervention
-
-Add audio examples for DDX7 parameter intervention
+[Envelope Learning paper website](/fmtt)
 
 
-### DDX7 Tone Transfer
+### FM Tone Transfer Plugin
 
-Playing a model trained on violin audio!
+Using the Envelope Learning model. Link to download the plugin and demo video.
 
-<iframe 
-  src="https://drive.google.com/file/d/1fpukk2Zu1SMlr0CLHk2CA9mmbNo0rjYV/preview" 
-  width="640" 
-  height="360" 
-  allow="autoplay">
-</iframe>
+[FM tone transfer Plugin](/BesselsTrick)
 
-## 5.2 Direct Envelope Learning
-
-[Link to Audio Plugin](/BesselsTrick)
-
-### Envelope Learning Audio Examples?
-Show that the reconstructed audio samples sound the same?? (not refereced by thesis)
-
-
-### Envelope Learning Demo
 <iframe 
   src="https://drive.google.com/file/d/1uazCV46NHEftv0E4DsvEo-fD6QqZRx8U/preview" 
   width="640" 
@@ -50,13 +34,12 @@ Show that the reconstructed audio samples sound the same?? (not refereced by the
 </iframe>
 
 # Chapter 6: Representation Learning for Low-Latency Interaction
-Papers and info: 
 
-[Link to Paper's Website](/brave)  
-[Link to Audio Plugin](/BravePlugin)
+The full collection of audio examples for the chapter is available at the website of the paper.
+[BRAVE Audio Examples](/brave)
 
 ### Timbre Transfer with BRAVE
-We present the reconstruction results of percussive and tonal sounds of RAVE and BRAVE models trained on the **Filosax** and **Drumset** datasets.
+We also present an excerpt of the audio examples, highlighting the reconstruction results of percussive and tonal sounds of RAVE and BRAVE models trained on the **Filosax** and **Drumset** datasets.
 
 **Models Trained on the Drumset Dataset**  
 We encode and decode original excerpts of Drumset, Beatbox and Candombe datasets, using RAVE and BRAVE models trained on Drumset, and present the results on the following table.
@@ -126,8 +109,15 @@ We encode and decode original excerpts of the Filosax, Svoice and Viola datasets
     </tbody>
 </table>
 
+
+### BRAVE Audio Plugin
+
+[Link to BRAVE Audio Plugin](https://minifusion.live)
+
+
 # Chapter 7: Interaction Design with Neural Audio
-Papers and info:
+
+Here we present several audio recordings of different BRAVE training configurations, discussed in the thesis. Each yields different representations.
 
 ### Rendered Transformations for different BRAVE Configurations
 
