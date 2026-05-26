@@ -76,10 +76,15 @@ The training tasks consists of reconstructing the temporal envelope sequence ùë
 <center>
 Excerpt from an envelope dataset extracted from the E.PIANO 1 patch.
 </center>
+
+
+## Patch collection
+
+The [Collection](/assets/fmtransfer/fmtransfer.syx) of classic patches used for training is available for inspection with any DX7 emulator such as [Dexed](https://asb2m10.github.io/dexed/).
+
 ## Audio examples
 
-We show that our model can reconstruct the oscillator envelopes and synthesize high fidelity audio with them.
-
+We show a few audio examples that illustrate how our model can reconstruct the oscillator envelopes and synthesize high fidelity audio with them.
 
 <br>
 <table>
