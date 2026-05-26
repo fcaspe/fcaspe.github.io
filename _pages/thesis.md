@@ -9,6 +9,19 @@ excerpt: "<b><br>Audiovisual repository</b><br><i>for the Thesis</i>."
 
 &nbsp;
 
+<div>
+<center>
+<font size="+3"><b>Critical Design of Neural Audio Synthesizers for Live Musical Performance</b></font><br>
+<font size="+2"><b>Franco Santiago Caspe</b></font><br>
+<font size="+2"><b>Supervisors: Mark Sandler - Andrew McPherson</b></font><br>
+<font size="+2">Queen Mary University of London - Centre for Digital Music</font><br>
+<font size="+3"> Additional Material: Audio Examples and Videos</font><br>
+</center>
+</div>
+<br>
+
+This website contains audio examples and videos, as well to relevant links to additional material referenced in the thesis.
+
 # Chapter 5: Tone Transfer with FM Synthesis
 
 ### Audio Examples
@@ -26,6 +39,7 @@ Using the Envelope Learning model. Link to download the plugin and demo video.
 
 [FM tone transfer Plugin](/BesselsTrick)
 
+<b>Demo Video</b>
 <iframe 
   src="https://drive.google.com/file/d/1uazCV46NHEftv0E4DsvEo-fD6QqZRx8U/preview" 
   width="640" 
@@ -33,10 +47,11 @@ Using the Envelope Learning model. Link to download the plugin and demo video.
   allow="autoplay">
 </iframe>
 
+&nbsp;
 # Chapter 6: Representation Learning for Low-Latency Interaction
 
-The full collection of audio examples for the chapter is available at the website of the paper.
-[BRAVE Audio Examples](/brave)
+### BRAVE Audio Examples
+The full collection of audio examples for the chapter is available at the [paper website](/brave).
 
 ### Timbre Transfer with BRAVE
 We also present an excerpt of the audio examples, highlighting the reconstruction results of percussive and tonal sounds of RAVE and BRAVE models trained on the **Filosax** and **Drumset** datasets.
@@ -110,9 +125,11 @@ We encode and decode original excerpts of the Filosax, Svoice and Viola datasets
 </table>
 
 
-### BRAVE Audio Plugin
+### BRAVE Audio Plugin and Demo Videos
 
-[Link to BRAVE Audio Plugin](https://minifusion.live)
+Includes demo videos.
+
+[BRAVE Audio Plugin](https://minifusion.live)
 
 
 # Chapter 7: Interaction Design with Neural Audio
