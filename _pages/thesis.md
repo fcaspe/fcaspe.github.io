@@ -26,7 +26,7 @@ This website contains audio examples and videos, as well to relevant links to ad
 
 ## Audio Examples
 
-You can access to the audio examples at the corresponding website:
+You can access the audio examples at the corresponding website:
 
 [DDX7 paper website](/ddx7)
 
@@ -35,9 +35,7 @@ You can access to the audio examples at the corresponding website:
 
 ## FM Tone Transfer Plugin
 
-Using the Envelope Learning model. Link to download the plugin and demo video.
-
-[FM tone transfer Plugin](/BesselsTrick)
+Download link: [FM tone transfer Plugin](/BesselsTrick)
 
 <b>Demo Video</b>
 <iframe 
