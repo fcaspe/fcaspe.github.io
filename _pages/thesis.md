@@ -24,7 +24,7 @@ This website contains audio examples and videos, as well to relevant links to ad
 
 # Chapter 5: Tone Transfer with FM Synthesis
 
-### Audio Examples
+## Audio Examples
 
 You can access to the audio examples at the corresponding website:
 
@@ -33,7 +33,7 @@ You can access to the audio examples at the corresponding website:
 [Envelope Learning paper website](/fmtt)
 
 
-### FM Tone Transfer Plugin
+## FM Tone Transfer Plugin
 
 Using the Envelope Learning model. Link to download the plugin and demo video.
 
@@ -50,10 +50,10 @@ Using the Envelope Learning model. Link to download the plugin and demo video.
 &nbsp;
 # Chapter 6: Representation Learning for Low-Latency Interaction
 
-### BRAVE Audio Examples
+## BRAVE Audio Examples
 The full collection of audio examples for the chapter is available at the [paper website](/brave).
 
-### Timbre Transfer with BRAVE
+## Timbre Transfer with BRAVE
 We also present an excerpt of the audio examples, highlighting the reconstruction results of percussive and tonal sounds of RAVE and BRAVE models trained on the **Filosax** and **Drumset** datasets.
 
 **Models Trained on the Drumset Dataset**  
@@ -125,18 +125,18 @@ We encode and decode original excerpts of the Filosax, Svoice and Viola datasets
 </table>
 
 
-### BRAVE Audio Plugin and Demo Videos
+## BRAVE Audio Plugin and Demo Videos
 
-Includes demo videos.
+This link includes both a plugin to run BRAVE models and a set of demo videos showing the capabilities of low-latency representation learning.
 
-[BRAVE Audio Plugin](https://minifusion.live)
+[Minifusion Audio Plugin](https://minifusion.live)
 
 
 # Chapter 7: Interaction Design with Neural Audio
 
 Here we present several audio recordings of different BRAVE training configurations, discussed in the thesis. Each yields different representations.
 
-### Rendered Transformations for different BRAVE Configurations
+## Rendered Transformations for different BRAVE Configurations
 
 <button class="stop-btn" onclick="stopSound()">Click on a Spectrum to play its sound. Click again to stop it.</button>
 
@@ -179,8 +179,22 @@ Here we present several audio recordings of different BRAVE training configurati
 
 <script src="{{ '/assets/js/soundboard.js' | relative_url }}"></script>
 
+### Guitar Playing with VCTK Model
 
-### Tonal and Percussive Rendering for Different Representations
+Example of guitar playing with a model trained on continuous speech. Its encoder can then be used as a fixed representation to train other models in a "Grafted" approach.
+
+<div style="max-width: 700px;">
+  <iframe 
+    style="width: 100%; aspect-ratio: 16/9;"
+    src="https://www.youtube.com/embed/LekgVDA8ptw" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin">
+  </iframe>
+</div>
+
+## Tonal and Percussive Rendering for Different Representations
 
 The following table presents audio examples of transformations of different violin articulation excerpts models trained on the same data, but which learn different representations. 
 
