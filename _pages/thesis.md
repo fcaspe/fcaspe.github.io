@@ -194,9 +194,9 @@ Example of guitar playing with a model trained on continuous speech. Its encoder
 
 ## Tonal and Percussive Rendering for Different Representations
 
-The following table presents audio examples of transformations of different violin articulation excerpts models trained on the same data, but which learn different representations. 
+The following table presents audio examples of transformations of different violin articulation excerpts, processed by models trained on the same data, but which learn different representations. 
 
-It seems that one-phase models, and models grafted with one-phase encoders, learn representations with a good capacity of tonal rendering, where a tonal input seems to "bleed" through the model (highlighted in blue). Models trained on a two-phase approach, or grafted with a two-phase encoder, seem to render atonal outputs even in presence of tonal inputs (in orange), a phenomenom through which the model seems to "hallucinate" atonal sounds in response to a tonal input.
+It seems that one-phase models, and models grafted with one-phase encoders, learn representations with a good capacity of tonal rendering, where a tonal input seems to <b>"bleed"</b> through the model <b>(highlighted in blue)</b>. Models trained on a two-phase approach, or grafted with a two-phase encoder, seem to render atonal outputs even in presence of tonal inputs, a phenomenom through which the model seems to <b>"hallucinate"</b> atonal sounds in response to a tonal input <b>(in orange)</b>.
 
 <style>
 /* Define your colors */
