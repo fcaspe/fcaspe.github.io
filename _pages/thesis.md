@@ -30,7 +30,7 @@ You can access the audio examples at the corresponding website:
 
 [DDX7 paper website](/ddx7)
 
-[Envelope Learning paper website](/fmtt)
+[Envelope Learning paper website](/fmtransfer)
 
 
 ## FM Tone Transfer Plugin
