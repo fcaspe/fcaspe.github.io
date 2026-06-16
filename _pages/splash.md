@@ -70,9 +70,9 @@ layout: splash #Overriding default Layout for main webpage.
                 <b>I am a PhD candidate at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, maker, and analog photographer.</b>
             </p>
             <p> 
-                I am interested in expressive, and nuanced interactive music technology that is context-aware, and feel natural to use. At QMUL, I am designing novel <a href= "https://minifusion.live"> sound-based control modalities for musical instruments with AI </a>. </p>
+                I am interested in expressive, and nuanced interactive music tech that is context-aware, and feels natural to use. As a PhD Candidate at <a href="https://c4dm.eecs.qmul.ac.uk/"> C4DM </a>, I am designing <a href= "https://minifusion.live"> generative systems for live sound transformation</a>. </p>
             <p>
-                I also have an International M.Sc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>; my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>.
+                I also have a MSc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>; my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>.
             </p>
             <p>
                 Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>. During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.
@@ -149,9 +149,27 @@ layout: splash #Overriding default Layout for main webpage.
     </thead>
     <tbody>
       <tr>
+        <td>4th-6th April 2026</td>
+        <td>
+          Working with pianist and composer Hongbo Tsai on a <a href='https://www.instagram.com/p/DW8tji4CgBx/sound-based'> sound-based interactive installation</a>.
+        </td>
+      </tr>
+      <tr>
+        <td>31st March 2026</td>
+        <td>
+          Demoing Minifusion at Berklee College of Music in Boston, MA!
+        </td>
+      </tr>
+      <tr>
+        <td>26th-27th March 2026</td>
+        <td>
+          We are presenting in New York at the <a href='https://www.juilliard.edu/sites/default/files/3.26_future_stages_1.pdf'>Future Stages Festival</a> a composition by Ziyi Tao for string quartet and live Minifusion timbre transfer.
+        </td>
+      </tr>
+      <tr>
         <td>11th Nov 2025</td>
         <td>
-          Presenting a new talk at <a href="https://audio.dev/conference/"> ADC 2025</a>, <a href="https://conference.audio.dev/session/2025/engineering-practices-break-music-interaction-but-can-also-fix-it/">Engineering Practices Break Music Interaction</a>, where I share the main takeaways of my PhD journey designing AI systems for low-latency musical interaction.
+          Presenting a new talk at <a href="https://audio.dev/conference/"> ADC 2025</a>, <a href="https://www.youtube.com/watch?v=aGYPFjibwaY">Engineering Practices Break Music Interaction</a>, where I share the main takeaways of my PhD journey designing AI systems for low-latency musical interaction.
         </td>
       </tr>
       <tr>

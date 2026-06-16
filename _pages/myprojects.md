@@ -73,6 +73,13 @@ layout: splash
     color: #333;
 }
 
+
+.project-card-content h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+
 .project-card-content p {
     font-size: 1em;
     color: #666;
@@ -101,7 +108,7 @@ layout: splash
                 <img src="https://minifusion.live/assets/img/ui.png" alt="Minifusion Plugin UI">
             </div>
             <div class="project-card-content">
-                <h3>Minifusion: Live Instrument Transformation</h3>
+                <h4>Minifusion: Live Instrument Transformation</h4>
                 <p>Real-time Timbre Transfer for musical instruments.</p>
                 <div class="card-links">
                     <span>Website</span>
@@ -116,7 +123,7 @@ layout: splash
                 <img src="../assets/BT/screenshot.png" alt="Bessel's Trick image">
             </div>
             <div class="project-card-content">
-                <h3>Bessel's Trick</h3>
+                <h4>Bessel's Trick</h4>
                 <p>FM Tone Transfer plugin for real-time performances!</p>
                 <div class="card-links">
                     <span>Website</span>
@@ -131,7 +138,7 @@ layout: splash
                 <img src="/assets/images/40k.jpeg" alt="40k On The Floor image">
             </div>
             <div class="project-card-content">
-                <h3>40k On The Floor</h3>
+                <h4>40k On The Floor</h4>
                 <p>Re-imagined barrel organ for electronic music live performances. <i>Presented at the Synthlux Hackaton 2023</i></p>
                 <div class="card-links">
                     <span>Website</span>
@@ -146,7 +153,7 @@ layout: splash
                 <img src="/assets/images/ddsp_vcvrack.png" alt="DDSP in VCVRack image">
             </div>
             <div class="project-card-content">
-                <h3>DDSP in VCVRack</h3>
+                <h4>DDSP in VCVRack</h4>
                 <p>Neural Synthesizer for virtual Eurorack. <i>Presented at NASH, the Neural Audio Synthesis Hackathon</i></p>
                 <div class="card-links">
                     <span>GitHub</span>
@@ -161,7 +168,7 @@ layout: splash
                 <img src="/assets/images/bfreeorgan2.png" alt="bFreeOrgan2 image">
             </div>
             <div class="project-card-content">
-                <h3>bFreeOrgan2</h3>
+                <h4>bFreeOrgan2</h4>
                 <p>Open Source Additive Synthesizer for Cortex M4.</p>
                 <div class="card-links">
                     <span>GitHub</span>
@@ -176,7 +183,7 @@ layout: splash
                 <img src="/assets/images/efficient_dnn_serving.png" alt="Master's Thesis image">
             </div>
             <div class="project-card-content">
-                <h3>Master's Thesis: Efficient DNN Serving</h3>
+                <h4>Master's Thesis: Efficient DNN Serving</h4>
                 <p>Inference efficiency with FPGAs (Erasmus Mundus MsC).</p>
                 <div class="card-links">
                     <span>Msc Thesis PDF</span>
@@ -191,7 +198,7 @@ layout: splash
                 <img src="/assets/images/bnn_fpga.jpg" alt="Binary Neural Networks image">
             </div>
             <div class="project-card-content">
-                <h3>Binary Neural Networks for FPGAs</h3>
+                <h4>Binary Neural Networks for FPGAs</h4>
                 <p>Extremely Fast - Extremely quantized.</p>
                 <div class="card-links">
                     <span>Post</span>
@@ -206,7 +213,7 @@ layout: splash
                 <img src="/assets/images/dx7pytorch.png" alt="dx7pytorch image">
             </div>
             <div class="project-card-content">
-                <h3>dx7pytorch</h3>
+                <h4>dx7pytorch</h4>
                 <p>Musical instrument dataset synthesized on-the-fly.</p>
                 <div class="card-links">
                     <span>GitHub</span>

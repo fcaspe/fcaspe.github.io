@@ -4,6 +4,36 @@ title: "Music"
 layout: splash
 ---
 
+## Collaborations
+
+Lately, I had the pleasure of collaborating with talented artists and practitioners in artistic installations, the development of music interfaces and live performances and compositions.
+
+<center>
+<iframe src="https://drive.google.com/file/d/16s0QaorEknBOVUywrlW7tjIOjBWJndjQ/preview" width="640" height="360" allow="autoplay"></iframe>
+<br>
+<i>Excerpt of “There is an image by Paul Klee,” or, Recursivity and Simultaneity by Ziyi Tao. <br>
+The String Quartet live audio is transformed by Minifusion and live electronics.</i>
+</center>
+
+&nbsp;
+
+<center>
+<img src="/assets/images/aimla_live.jpg" width=600/>
+<br>
+<i>Playing guitar and Minifusion live with Anthony Charretier at AES AIMLA 2025</i>
+</center>
+
+&nbsp;
+
+<center>
+<iframe src="https://drive.google.com/file/d/1brRtsk8D0CLjKIwmuWiiQCg3YcUMMYJb/preview" width="640" height="360" allow="autoplay"></iframe>
+<br>
+<i>Artist Nicola Privato with his Stacco Instrument that conditions Minifusion's latent space.</i>
+</center>
+
+
+
+
 ## Mode Collapse
 
 In Mode Collapse we explored with Xiaowan Yi the use of Deep Learning algorithms 

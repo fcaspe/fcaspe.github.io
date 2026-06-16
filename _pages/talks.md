@@ -90,6 +90,10 @@ layout: splash
     color: #333;
 }
 
+.project-card-content h4 {
+    margin-top: 0;
+    color: #333;
+}
 .project-card-content p {
     font-size: 1em;
     color: #666;
@@ -113,78 +117,69 @@ layout: splash
 ## Talks and Presentations
 
 <div id="projects-container">
-
+    <a href="https://www.youtube.com/watch?v=aGYPFjibwaY" class="project-card-link">
+        <div class="project-card">
+            <div class="project-card-image">
+                <img src="../../assets/images/adc25.jpeg" alt="Cover Image for talk">
+            </div>
+            <div class="project-card-content">
+                <h4>Engineering Practices Break Music Interaction - (but Can Also Fix It)</h4>
+                <p>A presentation on the main takeaways of my PhD in designing generative AI systems that support instrumental interaction.</p>
+            </div>
+        </div>
+    </a>
     <a href="https://www.youtube.com/watch?v=LaGFZBucAVM" class="project-card-link">
         <div class="project-card">
             <div class="project-card-image">
                 <img src="../../assets/images/workshop/rt_neural_audio/poster.png" alt="Real-time Neural Audio: Design and Inference video image">
             </div>
             <div class="project-card-content">
-                <h3>Real-time Neural Audio: Design and Inference Workshop</h3>
+                <h4>Real-time Neural Audio: Design and Inference Workshop</h4>
                 <p>A tutorial on neural networks for audio processing, covering design, latency, streaming architectures, and the RT Neural framework.</p>
-                <div class="card-links">
-                    <span>Video Link</span>
-                </div>
             </div>
         </div>
     </a>
-
     <a href="https://www.youtube.com/watch?v=mFuvUfFJ1uo" class="project-card-link">
         <div class="project-card">
             <div class="project-card-image">
                 <img src="../assets/images/adc23.jpeg" alt="Deep Learning for DSP Engineers video image">
             </div>
             <div class="project-card-content">
-                <h3>Deep Learning for DSP Engineers: Challenges & Tricks for Audio AI</h3>
+                <h4>Deep Learning for DSP Engineers: Challenges & Tricks for Audio AI</h4>
                 <p>A presentation at ADC23 focused on making deep learning more approachable for DSP Engineers, with an emphasis on real-time music audio applications.</p>
-                <div class="card-links">
-                    <span>Video Link</span>
-                </div>
             </div>
         </div>
     </a>
-
     <a href="https://www.youtube.com/watch?v=-Po4Y1WtoBs" class="project-card-link">
         <div class="project-card">
             <div class="project-card-image">
                 <img src="../../assets/images/bttalk.jpg" alt="Bessel's Trick: A Neural FM Synthesis Plugin video image">
             </div>
             <div class="project-card-content">
-                <h3>Bessel's Trick: A Neural FM Synthesis Plugin</h3>
+                <h4>Bessel's Trick: A Neural FM Synthesis Plugin</h4>
                 <p>A demonstration of Bessel's Trick, an audio plugin that uses very small neural networks and FM synthesis for real-time tone transformation.</p>
-                <div class="card-links">
-                    <span>Video Link</span>
-                </div>
             </div>
         </div>
     </a>
-
     <a href="https://www.youtube.com/watch?v=Xb7Q3tk79JI" class="project-card-link">
         <div class="project-card">
             <div class="project-card-image">
                 <img src="../../assets/images/nime22talk.png" alt="Embedded AI Workshop video image">
             </div>
             <div class="project-card-content">
-                <h3>Embedded AI Workshop @ NIME 2022</h3>
+                <h4>Embedded AI Workshop @ NIME 2022</h4>
                 <p>This session includes the "REAL-TIME FM Tone Transfer with BELA" presentation, detailing the implementation of low-latency FM tone transfer on the Bela embedded platform.</p>
-                <div class="card-links">
-                    <span>Video Link</span>
-                </div>
             </div>
         </div>
     </a>
-    
     <a href="https://www.youtube.com/watch?v=hxlgO3EWVYI" class="project-card-link">
         <div class="project-card">
             <div class="project-card-image">
                 <img src="../../assets/images/ddx7talk.png" alt="DDX7 @ MILA Reading Group image">
             </div>
             <div class="project-card-content">
-                <h3>DDX7 @ MILA Reading Group</h3>
-                <p>A presentation at the MILA Reading Group discussing my paper DDX7.</p>
-                <div class="card-links">
-                    <span>Video Link</span>
-                </div>
+                <h4>DDX7 @ MILA Reading Group</h4>
+                <p>A presentation at the MILA Reading Group discussing differentiable FM synthesis.</p>
             </div>
         </div>
     </a>
