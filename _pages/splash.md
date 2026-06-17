@@ -67,7 +67,7 @@ layout: splash #Overriding default Layout for main webpage.
         </div>
         <div class="about-me-content-column">
             <p>
-                <b>I am a PhD candidate at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, maker, and analog photographer.</b>
+                <b>I am a PhD candidate at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, and maker.</b>
             </p>
             <p> 
                 I am interested in expressive, and nuanced interactive music tech that is context-aware, and feels natural to use. As a PhD Candidate at <a href="https://c4dm.eecs.qmul.ac.uk/"> C4DM </a>, I am designing <a href= "https://minifusion.live"> generative systems for live sound transformation</a>. </p>
@@ -75,7 +75,7 @@ layout: splash #Overriding default Layout for main webpage.
                 I also have a MSc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>; my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>.
             </p>
             <p>
-                Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>. During that time I also studied music and played with several bands in my city, playing guitar, keyboards and singing.
+                Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>. There, I learned guitar, piano and singing, playing with several local bands.
             </p>
             <p> 
                 I have interned in Yamaha Music, Max Plank Institute for Software Systems, and with the IAESTE programme.
