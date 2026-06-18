@@ -78,7 +78,7 @@ layout: splash #Overriding default Layout for main webpage.
                 Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>. There, I learned guitar, piano and singing, playing with several local bands.
             </p>
             <p> 
-                I have interned in Yamaha Music, Max Plank Institute for Software Systems, and with the IAESTE programme.
+                I have interned at Yamaha Music, Max Plank Institute for Software Systems, and with the IAESTE programme.
             </p>
         </div>  
     </div>
