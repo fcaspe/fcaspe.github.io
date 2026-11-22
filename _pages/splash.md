@@ -19,13 +19,13 @@ layout: splash #Overriding default Layout for main webpage.
 .about-me-container {
     display: grid;
     /* Defines two columns: one narrow for the vertical image, one wider for text */
-    grid-template-columns: 400px 1fr; 
+    grid-template-columns: 360px 1fr; 
     gap: 40px; 
     align-items: start; /* Align content to the top */
 }
 
 .about-me-image-column {
-    /* Ensures the image respects the 400px column width */
+    /* Ensures the image respects the 360px column width */
     max-width: 100%; 
     overflow: hidden;
     border-radius: 8px;
@@ -54,7 +54,7 @@ layout: splash #Overriding default Layout for main webpage.
     }
     .about-me-image-column {
         /* Center the image and make it a reasonable size */
-        max-width: 400px;
+        max-width: 360px;
         margin: 0 auto;
     }
 }
@@ -63,24 +63,20 @@ layout: splash #Overriding default Layout for main webpage.
 <div class="about-me-card-wrapper">
     <div class="about-me-container"> 
         <div class="about-me-image-column">
-            <img src="/assets/images/40k2.jpeg" alt="Franco Caspe professional portrait">
+            <img src="/assets/images/fran.png" alt="Franco Caspe professional portrait">
         </div>
         <div class="about-me-content-column">
             <p>
-                <b>I am a PhD candidate at <a href="https://www.aim.qmul.ac.uk/">QMUL's AIM CDT</a>, a musician, and maker.</b>
-            </p>
-            <p> 
-                I am interested in expressive, and nuanced interactive music tech that is context-aware, and feels natural to use. As a PhD Candidate at <a href="https://c4dm.eecs.qmul.ac.uk/"> C4DM </a>, I am designing <a href= "https://minifusion.live"> generative systems for live sound transformation</a>. </p>
-            <p>
-                I also have a MSc. Degree in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a>; my thesis was about <code>Real-Time</code> DNN serving infrastructure, done at <a href="https://www.mpi-sws.org/">MPI-SWS</a>.
+                I am an applied AI researcher on generative audio, a musician, and maker.
+                I hold a PhD from the <a href="https://c4dm.eecs.qmul.ac.uk/">Centre for Digital Music</a> (<a href="https://qmro.qmul.ac.uk/items/0e0c5108-151c-4e0a-9e2b-569ebcaf0c82">thesis</a>). I am currently taking a short detour from AI research, working in an Innovate UK ICURe grant for market exploration until December 2026.
             </p>
             <p>
-                Previously, I studied in Argentina where I received my diploma in <code>Electronic Engineering</code> while working in R&D on <code>Defense and Communications</code>. There, I learned guitar, piano and singing, playing with several local bands.
+                I have 6+ years of experience building real-time generative models for voice and musical instrument synthesis. My work spans neural audio architectures for timbre transfer of vocals and instruments, bespoke low-latency streaming codecs adapted for live use, flow-based generative architectures, and real-time embedded deployment. I can take a project from concept and training code in PyTorch to a C++/JUCE product, and evaluate it with listening tests, user interviews and thematic analysis.
             </p>
-            <p> 
-                I have interned at Yamaha Music, Max Plank Institute for Software Systems, and with the IAESTE programme.
+            <p>
+                I also have an MSc in <a href="http://ipcv.eu/">Image Processing and Computer Vision</a> and an Electronic Engineer degree from UTN-FRBB (Argentina). I have interned at Yamaha (real-time vocal synthesis and transformation) and <a href="https://www.mpi-sws.org/">MPI-SWS</a> (Efficient DNN classifiers on FPGA). Outside research, I play guitar and keys, and sing.
             </p>
-        </div>  
+        </div>
     </div>
 </div>
 
@@ -148,6 +144,18 @@ layout: splash #Overriding default Layout for main webpage.
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td>30th Sep 2026</td>
+        <td>
+          I have just been awarded my PhD degree! My thesis, <a href="https://qmro.qmul.ac.uk/items/0e0c5108-151c-4e0a-9e2b-569ebcaf0c82">Critical Design of Neural Audio Synthesizers for Live Musical Performance</a>, is now available online.
+        </td>
+      </tr>
+      <tr>
+        <td>1st Jul 2026</td>
+        <td>
+          Accepted to <a href="https://iuk-business-connect.org.uk/opportunities/icure-explore/">ICURe Explore</a> (September to December 2026), with up to £35k in funding for our project <a href="https://minifusion.live">Minifusion</a>.
+        </td>
+      </tr>
       <tr>
         <td>4th-6th April 2026</td>
         <td>
