@@ -41,7 +41,6 @@ layout: splash
 .music-card p {
   line-height: 1.6;
   margin-bottom: 0.9em;
-  text-align: justify;
 }
 
 .music-meta {
@@ -50,25 +49,23 @@ layout: splash
   margin-bottom: 0.8rem;
 }
 
-/* Media grid: videos and images sit side by side, never full width */
-.media-grid {
+/* Uniform card layout: media column (left) next to text (right) */
+.split {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 1rem;
+  grid-template-columns: 3fr 2fr;
+  gap: 28px;
+  align-items: start;
 }
 
-.media-grid.two {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  max-width: 820px;
+/* Every video / photo in a card has the same width and 16:9 shape */
+.media-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.media-item figure {
-  margin: 0;
-}
-
-.media-frame,
-.media-item img {
+.media-col img,
+.media-col .media-frame {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -79,29 +76,21 @@ layout: splash
   background: #000;
 }
 
-.media-item figcaption {
-  font-size: 0.85rem;
-  line-height: 1.45;
-  color: #555;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-
-/* Side-by-side layout: image next to text */
-.split {
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 28px;
-  align-items: start;
-}
-
-.split img {
-  width: 100%;
-  border-radius: 8px;
+.media-col a {
   display: block;
 }
 
-.split blockquote {
+/* Album covers etc.: show the whole image instead of cropping */
+.media-col img.contain {
+  object-fit: contain;
+  background: #111;
+}
+
+.card-text p {
+  text-align: left;
+}
+
+.card-text blockquote {
   font-style: italic;
   font-size: 0.95rem;
   line-height: 1.6;
@@ -128,10 +117,12 @@ Lately, I had the pleasure of collaborating with talented artists and practition
 
 <div class="music-card">
   <div class="split">
-    <iframe class="media-frame" src="https://www.youtube.com/embed/mawEpKLz_yc" title="There is an image by Paul Klee, or, Recursivity and Simultaneity by Ziyi Tao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    <div>
+    <div class="media-col">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/mawEpKLz_yc" title="There is an image by Paul Klee, or, Recursivity and Simultaneity by Ziyi Tao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="card-text">
       <h3>“There is an image by Paul Klee,” or, Recursivity and Simultaneity</h3>
-      <div class="music-meta">Composition by Ziyi Tao · String quartet, Minifusion and live electronics</div>
+      <div class="music-meta">Composition by Ziyi Tao · String quartet, Minifusion and live electronics · 2026</div>
       <p>
         The String Quartet live audio is transformed by Minifusion and live electronics. Played at Juilliard (Future Stages Festival, March 2026), and at Evangelische Stadtkirche, Offenbach am Main (July 2026).
       </p>
@@ -141,10 +132,12 @@ Lately, I had the pleasure of collaborating with talented artists and practition
 
 <div class="music-card">
   <div class="split">
-    <img src="/assets/images/aimla_live.jpg" alt="Playing guitar and Minifusion live at AES AIMLA 2025" loading="lazy">
-    <div>
+    <div class="media-col">
+      <img src="/assets/images/aimla_live.jpg" alt="Playing guitar and Minifusion live at AES AIMLA 2025" loading="lazy">
+    </div>
+    <div class="card-text">
       <h3>Live at AES AIMLA 2025</h3>
-      <div class="music-meta">With Anthony Charretier · Guitar, Minifusion</div>
+      <div class="music-meta">With Anthony Charretier · Guitar, Minifusion · 2025</div>
       <p>
         Playing guitar and Minifusion live with Anthony Charretier at AES AIMLA 2025.
       </p>
@@ -154,10 +147,12 @@ Lately, I had the pleasure of collaborating with talented artists and practition
 
 <div class="music-card">
   <div class="split">
-    <iframe class="media-frame" src="https://drive.google.com/file/d/1brRtsk8D0CLjKIwmuWiiQCg3YcUMMYJb/preview" title="Nicola Privato with the Stacco instrument" allow="autoplay" loading="lazy"></iframe>
-    <div>
+    <div class="media-col">
+      <iframe class="media-frame" src="https://drive.google.com/file/d/1brRtsk8D0CLjKIwmuWiiQCg3YcUMMYJb/preview" title="Nicola Privato with the Stacco instrument" allow="autoplay" loading="lazy"></iframe>
+    </div>
+    <div class="card-text">
       <h3>Stacco and Minifusion</h3>
-      <div class="music-meta">With Nicola Privato</div>
+      <div class="music-meta">With Nicola Privato · 2025</div>
       <p>
         Artist Nicola Privato with his Stacco Instrument that conditions Minifusion's latent space.
       </p>
@@ -165,16 +160,14 @@ Lately, I had the pleasure of collaborating with talented artists and practition
   </div>
 </div>
 
-<h2>Projects</h2>
-
 <div class="music-card">
   <div class="split">
-    <a href="https://drive.google.com/file/d/10bhdxu8KEbWc6AKpZGq_cEj2XIwzOxY5/view?usp=sharing">
-      <img src="/assets/images/mcollapse.jpg" alt="Mode Collapse live at Iklectic, London" loading="lazy">
-    </a>
-    <div>
+    <div class="media-col">
+      <a href="https://drive.google.com/file/d/10bhdxu8KEbWc6AKpZGq_cEj2XIwzOxY5/view?usp=sharing"><img src="/assets/images/mcollapse.jpg" alt="Mode Collapse live at Iklectic, London" loading="lazy"></a>
+    </div>
+    <div class="card-text">
       <h3>Mode Collapse</h3>
-      <div class="music-meta">Live at Iklectic (London), 2023 · with Xiaowan Yi</div>
+      <div class="music-meta">With Xiaowan Yi · Live at Iklectic (London) · 2023 · <a href="https://drive.google.com/file/d/10bhdxu8KEbWc6AKpZGq_cEj2XIwzOxY5/view?usp=sharing">Watch</a></div>
       <p>
         In Mode Collapse we explored with Xiaowan Yi the use of Deep Learning algorithms for sound generation in live electronic music performances, combining different styles within a techno narrative.
       </p>
@@ -186,12 +179,15 @@ Lately, I had the pleasure of collaborating with talented artists and practition
   </div>
 </div>
 
+<h2>Bands in Argentina</h2>
+
 <div class="music-card">
   <div class="split">
-    <a href="https://lobaratosalecaro.bandcamp.com/releases">
-      <img src="/assets/images/lbsc.jpg" alt="Lo Barato Sale Caro EP 2017 cover" loading="lazy">
-    </a>
-    <div>
+    <div class="media-col">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/x-Zkgu6Rqc4" title="Lo Barato Sale Caro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <a href="https://lobaratosalecaro.bandcamp.com/releases"><img src="/assets/images/lbsc.jpg" alt="Lo Barato Sale Caro EP 2017 cover" class="contain" loading="lazy"></a>
+    </div>
+    <div class="card-text">
       <h3>Lo Barato Sale Caro</h3>
       <div class="music-meta">Vocals, guitar, synthesizer · <a href="https://lobaratosalecaro.bandcamp.com/releases">EP 2017 on Bandcamp</a></div>
       <p>
@@ -202,49 +198,47 @@ Lately, I had the pleasure of collaborating with talented artists and practition
       </p>
     </div>
   </div>
-  <div class="media-grid two">
-    <div class="media-item">
-      <iframe class="media-frame" src="https://www.youtube.com/embed/x-Zkgu6Rqc4" title="Lo Barato Sale Caro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    </div>
-  </div>
 </div>
 
 <div class="music-card">
-  <h3>Eclécticos</h3>
-  <div class="music-meta">Keyboards, synthesizer, Rhodes piano</div>
-  <p>
-    Eclécticos was a pop band with original songs and many popular covers. I played as a regular drop-in keyboardist when time allowed me. The composer, guitarist and friend Pablo Benedetti invited me to record synthesizer and Rhodes piano in two of their songs.
-  </p>
-  <div class="media-grid two">
-    <div class="media-item">
+  <div class="split">
+    <div class="media-col">
       <iframe class="media-frame" src="https://www.youtube.com/embed/vmLkvHtOVXM" title="Eclécticos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    </div>
-    <div class="media-item">
       <iframe class="media-frame" src="https://www.youtube.com/embed/qzH1wcTUehE" title="Eclécticos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
     </div>
-  </div>
-</div>
-
-<div class="music-card">
-  <h3>Novansamba Duo</h3>
-  <div class="music-meta">Guitar, piano</div>
-  <p>
-    With Novansamba I explored the enchanting sound of Bossa-Nova. An excellent middle step for learning jazz harmony while keeping things not so complicated. While playing in this duo I learned many interesting harmonic and rhythmic techniques in guitar playing. I also jumped to the piano from time to time.
-  </p>
-  <div class="media-grid two">
-    <div class="media-item">
-      <iframe class="media-frame" src="https://www.youtube.com/embed/V1zqI1AoGNk" title="Novansamba Duo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    </div>
-    <div class="media-item">
-      <iframe class="media-frame" src="https://www.youtube.com/embed/AqfVADBYZIQ" title="Novansamba Duo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <div class="card-text">
+      <h3>Eclécticos</h3>
+      <div class="music-meta">Keyboards, synthesizer, Rhodes piano</div>
+      <p>
+        Eclécticos was a pop band with original songs and many popular covers. I played as a regular drop-in keyboardist when time allowed me. The composer, guitarist and friend Pablo Benedetti invited me to record synthesizer and Rhodes piano in two of their songs.
+      </p>
     </div>
   </div>
 </div>
 
 <div class="music-card">
   <div class="split">
-    <img src="/assets/images/music/raices_2.jpg" alt="Raices de limon live" loading="lazy">
-    <div>
+    <div class="media-col">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/V1zqI1AoGNk" title="Novansamba Duo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <iframe class="media-frame" src="https://www.youtube.com/embed/AqfVADBYZIQ" title="Novansamba Duo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="card-text">
+      <h3>Novansamba Duo</h3>
+      <div class="music-meta">Guitar, piano</div>
+      <p>
+        With Novansamba I explored the enchanting sound of Bossa-Nova. An excellent middle step for learning jazz harmony while keeping things not so complicated. While playing in this duo I learned many interesting harmonic and rhythmic techniques in guitar playing. I also jumped to the piano from time to time.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="music-card">
+  <div class="split">
+    <div class="media-col">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/FpYQ8I3-nLk" title="Raices de limon" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <img src="/assets/images/music/raices_2.jpg" alt="Raices de limon live" loading="lazy">
+    </div>
+    <div class="card-text">
       <h3>Raices de limon</h3>
       <div class="music-meta">Lead electric guitar</div>
       <p>
@@ -252,22 +246,19 @@ Lately, I had the pleasure of collaborating with talented artists and practition
       </p>
     </div>
   </div>
-  <div class="media-grid two">
-    <div class="media-item">
-      <iframe class="media-frame" src="https://www.youtube.com/embed/FpYQ8I3-nLk" title="Raices de limon" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    </div>
-  </div>
 </div>
 
 <div class="music-card">
-  <h3>Wayron</h3>
-  <div class="music-meta">Synthesizer</div>
-  <p>
-    One of the first groups I took part with, I played synthesizer while doing 80's covers.
-  </p>
-  <div class="media-grid two">
-    <div class="media-item">
+  <div class="split">
+    <div class="media-col">
       <iframe class="media-frame" src="https://www.youtube.com/embed/xnsj6AjDX1g" title="Wayron" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="card-text">
+      <h3>Wayron</h3>
+      <div class="music-meta">Synthesizer</div>
+      <p>
+        One of the first groups I took part with, I played synthesizer while doing 80's covers.
+      </p>
     </div>
   </div>
 </div>
