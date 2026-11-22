@@ -4,93 +4,272 @@ title: "Music"
 layout: splash
 ---
 
-## Collaborations
+<style>
+/* Scoped styles for the music page */
+.music-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
+.music-page h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 0.4rem;
+}
+
+.music-intro {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.music-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px 24px;
+  margin: 1.5rem 0;
+}
+
+.music-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.music-card p {
+  line-height: 1.6;
+  margin-bottom: 0.9em;
+  text-align: justify;
+}
+
+.music-meta {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Media grid: videos and images sit side by side, never full width */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.media-grid.two {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 820px;
+}
+
+.media-item figure {
+  margin: 0;
+}
+
+.media-frame,
+.media-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #000;
+}
+
+.media-item figcaption {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #555;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Side-by-side layout: image next to text */
+.split {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.split img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.split blockquote {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0.8rem 0 0;
+}
+
+@media (max-width: 800px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+  .music-card {
+    padding: 16px;
+  }
+}
+</style>
+
+<div class="music-page fitvidsignore">
+
+<h2>Collaborations</h2>
+
+<p class="music-intro">
 Lately, I had the pleasure of collaborating with talented artists and practitioners in artistic installations, the development of music interfaces and live performances and compositions.
+</p>
 
-<center>
-<iframe src="https://drive.google.com/file/d/16s0QaorEknBOVUywrlW7tjIOjBWJndjQ/preview" width="640" height="360" allow="autoplay"></iframe>
-<br>
-<i>Excerpt of “There is an image by Paul Klee,” or, Recursivity and Simultaneity by Ziyi Tao. <br>
-The String Quartet live audio is transformed by Minifusion and live electronics.</i>
-</center>
+<div class="music-card">
+  <div class="split">
+    <iframe class="media-frame" src="https://www.youtube.com/embed/mawEpKLz_yc" title="There is an image by Paul Klee, or, Recursivity and Simultaneity by Ziyi Tao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <div>
+      <h3>“There is an image by Paul Klee,” or, Recursivity and Simultaneity</h3>
+      <div class="music-meta">Composition by Ziyi Tao · String quartet, Minifusion and live electronics</div>
+      <p>
+        The String Quartet live audio is transformed by Minifusion and live electronics. Played at Juilliard (Future Stages Festival, March 2026), and at Evangelische Stadtkirche, Offenbach am Main (July 2026).
+      </p>
+    </div>
+  </div>
+</div>
 
-&nbsp;
+<div class="music-card">
+  <div class="split">
+    <img src="/assets/images/aimla_live.jpg" alt="Playing guitar and Minifusion live at AES AIMLA 2025" loading="lazy">
+    <div>
+      <h3>Live at AES AIMLA 2025</h3>
+      <div class="music-meta">With Anthony Charretier · Guitar, Minifusion</div>
+      <p>
+        Playing guitar and Minifusion live with Anthony Charretier at AES AIMLA 2025.
+      </p>
+    </div>
+  </div>
+</div>
 
-<center>
-<img src="/assets/images/aimla_live.jpg" width=600/>
-<br>
-<i>Playing guitar and Minifusion live with Anthony Charretier at AES AIMLA 2025</i>
-</center>
+<div class="music-card">
+  <div class="split">
+    <iframe class="media-frame" src="https://drive.google.com/file/d/1brRtsk8D0CLjKIwmuWiiQCg3YcUMMYJb/preview" title="Nicola Privato with the Stacco instrument" allow="autoplay" loading="lazy"></iframe>
+    <div>
+      <h3>Stacco and Minifusion</h3>
+      <div class="music-meta">With Nicola Privato</div>
+      <p>
+        Artist Nicola Privato with his Stacco Instrument that conditions Minifusion's latent space.
+      </p>
+    </div>
+  </div>
+</div>
 
-&nbsp;
+<h2>Projects</h2>
 
-<center>
-<iframe src="https://drive.google.com/file/d/1brRtsk8D0CLjKIwmuWiiQCg3YcUMMYJb/preview" width="640" height="360" allow="autoplay"></iframe>
-<br>
-<i>Artist Nicola Privato with his Stacco Instrument that conditions Minifusion's latent space.</i>
-</center>
+<div class="music-card">
+  <div class="split">
+    <a href="https://drive.google.com/file/d/10bhdxu8KEbWc6AKpZGq_cEj2XIwzOxY5/view?usp=sharing">
+      <img src="/assets/images/mcollapse.jpg" alt="Mode Collapse live at Iklectic, London" loading="lazy">
+    </a>
+    <div>
+      <h3>Mode Collapse</h3>
+      <div class="music-meta">Live at Iklectic (London), 2023 · with Xiaowan Yi</div>
+      <p>
+        In Mode Collapse we explored with Xiaowan Yi the use of Deep Learning algorithms for sound generation in live electronic music performances, combining different styles within a techno narrative.
+      </p>
+      <blockquote>
+        Pain and pleasure are the different sides of the same coin. Arm-wrestling sensations that crush our mind towards the primal. As said by Marvin Minsky “Too much suffering diminishes us by restricting the complexities that constitute our very selves. It must be the same for pleasure as well.”
+        Artificial brains seem to suffer from similar problems. They can lock into repeating themselves in order to sustain the presence of a reward signal. If we build machines in our likeness, how can we learn to think differently?
+      </blockquote>
+    </div>
+  </div>
+</div>
 
+<div class="music-card">
+  <div class="split">
+    <a href="https://lobaratosalecaro.bandcamp.com/releases">
+      <img src="/assets/images/lbsc.jpg" alt="Lo Barato Sale Caro EP 2017 cover" loading="lazy">
+    </a>
+    <div>
+      <h3>Lo Barato Sale Caro</h3>
+      <div class="music-meta">Vocals, guitar, synthesizer · <a href="https://lobaratosalecaro.bandcamp.com/releases">EP 2017 on Bandcamp</a></div>
+      <p>
+        Back in Argentina, Lo Barato Sale Caro was my primary music project. A flexible funk power-trio of friends that generally incorporated guest musicians in the gigs, I had the best of times playing with them. While being the main vocalist and composer, I played the guitar or the synthesizer depending on the song.
+      </p>
+      <p>
+        The flexibility of the band allowed me to explore different genres within it, such as blues, funk, Classic R&amp;B and West Coast. In 2017 we issued our first and only EP comprising five original songs.
+      </p>
+    </div>
+  </div>
+  <div class="media-grid two">
+    <div class="media-item">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/x-Zkgu6Rqc4" title="Lo Barato Sale Caro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
 
+<div class="music-card">
+  <h3>Eclécticos</h3>
+  <div class="music-meta">Keyboards, synthesizer, Rhodes piano</div>
+  <p>
+    Eclécticos was a pop band with original songs and many popular covers. I played as a regular drop-in keyboardist when time allowed me. The composer, guitarist and friend Pablo Benedetti invited me to record synthesizer and Rhodes piano in two of their songs.
+  </p>
+  <div class="media-grid two">
+    <div class="media-item">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/vmLkvHtOVXM" title="Eclécticos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="media-item">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/qzH1wcTUehE" title="Eclécticos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
 
+<div class="music-card">
+  <h3>Novansamba Duo</h3>
+  <div class="music-meta">Guitar, piano</div>
+  <p>
+    With Novansamba I explored the enchanting sound of Bossa-Nova. An excellent middle step for learning jazz harmony while keeping things not so complicated. While playing in this duo I learned many interesting harmonic and rhythmic techniques in guitar playing. I also jumped to the piano from time to time.
+  </p>
+  <div class="media-grid two">
+    <div class="media-item">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/V1zqI1AoGNk" title="Novansamba Duo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="media-item">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/AqfVADBYZIQ" title="Novansamba Duo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
 
-## Mode Collapse
+<div class="music-card">
+  <div class="split">
+    <img src="/assets/images/music/raices_2.jpg" alt="Raices de limon live" loading="lazy">
+    <div>
+      <h3>Raices de limon</h3>
+      <div class="music-meta">Lead electric guitar</div>
+      <p>
+        In this beautiful family of reggae and ska I explored my <code>rockiest</code> side playing lead electric guitar.
+      </p>
+    </div>
+  </div>
+  <div class="media-grid two">
+    <div class="media-item">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/FpYQ8I3-nLk" title="Raices de limon" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
 
-In Mode Collapse we explored with Xiaowan Yi the use of Deep Learning algorithms 
-for sound generation in live electronic music performances, combining
-different stlyes within a techno narrative.
+<div class="music-card">
+  <h3>Wayron</h3>
+  <div class="music-meta">Synthesizer</div>
+  <p>
+    One of the first groups I took part with, I played synthesizer while doing 80's covers.
+  </p>
+  <div class="media-grid two">
+    <div class="media-item">
+      <iframe class="media-frame" src="https://www.youtube.com/embed/xnsj6AjDX1g" title="Wayron" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
 
-<i>Pain and pleasure are the different sides of the same coin. Arm-wrestling sensations that crush our mind towards the primal. As said by Marvin Minsky “Too much suffering diminishes us by restricting the complexities that constitute our very selves. It must be the same for pleasure as well.” 
-Artificial brains seem to suffer from similar problems. They can lock into repeating themselves in order to sustain the presence of a reward signal. If we build machines in our likeness, how can we learn to think differently?
-<center>
-<a href="https://drive.google.com/file/d/10bhdxu8KEbWc6AKpZGq_cEj2XIwzOxY5/view?usp=sharing">
-<img src="/assets/images/mcollapse.jpg" width=600/>
-</a> <br>
-<i>Live at Iklectic (London) 2023</i>
-</center>
-
-## Lo Barato Sale Caro
-
-Back in Argentina, Lo Barato Sale Caro was my primary music project. A flexible funk power-trio of friends that generally incorporated guest musics in the gigs,
-I had the best of the times playing with them. While being the main vocalist and composer, I played the guitar or the synthesizer depending of the song. 
-{: .text-justify}
-The flexibility of the band allowed me to explore different genres within it, such as
-blues, funk, Classic R&B and West Coast. In 2017 we issued our first and only EP comprising five original songs.
-{: .text-justify}
-
-{% include video id="x-Zkgu6Rqc4" provider="youtube" %}
-
-<b>Lo Barato Sale Caro - EP 2017</b>  
-<a href="https://lobaratosalecaro.bandcamp.com/releases">
-<img src="/assets/images/lbsc.jpg" width=600/>
-</a>
-
-
-
-## Eclécticos
-Eclécticos was a pop band with original songs and many popular covers. I played as a regular drop-in keyboardist when time allowed me.
-The composer, guitarist and friend Pablo Benedetti invited me to record synthesizer and Rhodes piano in two of their songs.
-{: .text-justify}
-
-{% include video id="vmLkvHtOVXM" provider="youtube" %}
-{% include video id="qzH1wcTUehE" provider="youtube" %}
-
-
-
-## Novansamba Duo
-With Novansamba I explored the enchanting sound of Bossa-Nova. An excellent middle step for learning jazz armony while keeping things not so complicated.
-While playing in this duo I learned many interesing armonic and rythmic techniques in guitar playing. I also jumped to the piano from time to time.
-{: .text-justify}
-{% include video id="V1zqI1AoGNk" provider="youtube" %}
-{% include video id="AqfVADBYZIQ" provider="youtube" %}
-
-## Raices de limon
-{% include figure image_path="/assets/images/music/raices_2.jpg" alt="this is a placeholder image"%}
-In this beautiful family of reggae and ska I explored my <code>rockiest</code> side playing lead electric guitar.
-{: .text-justify}
-{% include video id="FpYQ8I3-nLk" provider="youtube" %}
-
-## Wayron
-One of the first groups I took part with, I played synthesizer while doing 80's covers.
-{: .text-justify}
-{% include video id="xnsj6AjDX1g" provider="youtube" %}
+</div>
